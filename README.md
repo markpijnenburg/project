@@ -46,6 +46,7 @@ The data is available in JSON, so I do not need to edit the data before using. P
 
 * [D3-tip](https://github.com/caged/d3-tip)
 * [D3Plus](https://d3plus.org/)
+* [Datamaps](http://datamaps.github.io/)
 * [TopoJSON](https://github.com/topojson/topojson)
 * [Bootstrap](https://getbootstrap.com/)
 
