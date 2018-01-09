@@ -15,7 +15,7 @@ Nowadays, there is a lot going on about cyber security and hacking. Unfortunatel
 ### Solution
 This visualization project aims to provide the target audience insight in cyber security around the globe, based on open source data.
 
-![](doc/sketch.png)
+![Sketch](doc/sketch.png)
 
 **Main Features**
 * See total security incidents per country when hovering world map;
