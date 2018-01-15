@@ -18,11 +18,16 @@ function countIndustry(vcdb, year) {
   .rollup(function(v) {
     return v.length;
   })
-  .entries(vcdb)
-  // .object(vcdb.filter(function(d) {
-    // return d.timeline.incident.year == year
-  // }));
+  .entries(vcdb.filter(function(d) {
+    return d.timeline.incident.year == year
+  }));
 }
+
+// function sortIndustryCount(industryData) {
+//   industryData.sort(function(x,y ) {
+//     return d3.descending(x.value, y.value);
+//   })
+// };
 
 function prepareDataMap(vcdb, year) {
   var dataset = {};

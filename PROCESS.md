@@ -17,3 +17,7 @@ Changed my HTML layout. Instead of two visualizations next to each other I chose
 
 ### Friday
 Mapped/nested the data for the donut chart. Tested if I could filter it on year, which I could. After preparing the data I made a start with the donut chart and the legend. Basic visualization is present.
+
+## Week 2
+### Monday
+Fixed the position of my donut chart in the HTML page. Changed my idea for the donut chart. I only show the top 5 industries instead of all the industries. This was too much information to show in the donut chart. Also fixed the legend and tool-tip. When hovering a slice of the donut, the specific industry name is shown, including the corresponding number of incidents.
