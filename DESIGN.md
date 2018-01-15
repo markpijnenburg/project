@@ -52,7 +52,7 @@ Like the other update functions, update the bubble chart when another year or co
 
 ## Code structure/lay-out
 ### JavaScript
-The JavaScript codestructure for this project is quite uncomplicated. I will include the functions mentioned above in one overarching file, main.js. No other JavaScript files are required at this time. Depending on the size of the file, I maybe consider making seperate JavaScript files for the initialization and updating of the dashboard.
+The JavaScript codestructure for this project is quite uncomplicated. I will include the functions mentioned above in one overarching file, main.js. Supportive functions, like mapping of data, counting occurences or determing color with a color scale are placed in a support.js file. The main functionality of the code will be present in main.js, whereas supportive functions will be placed in the support.js file. With this distribution I aim to create clarity and modularity. Later in the project I may divide the code in more files. I will update this design document accordingly.
 
 ### HTML
 I choose Bootstrap to make my dashboard look nice. It is a famous webpage framework that can be easily used to style an page. Luckily for me, Bootstrap has a built-in [grid system](https://v4-alpha.getbootstrap.com/layout/grid/). My goal is to create a visualization that looks, acts and feels like a dashboard.
