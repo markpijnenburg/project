@@ -10,18 +10,38 @@ function countIncidentsCountry(vcdb, year) {
   }));
 }
 
-function countIndustry(vcdb, year) {
-  return d3.nest()
-  .key(function(d) {
-    return d.victim.industry;
-  })
-  .rollup(function(v) {
-    return v.length;
-  })
-  .entries(vcdb.filter(function(d) {
-    return d.timeline.incident.year == year
-  }));
+function countIndustry(vcdb, year, country) {
+  if (country == null) {
+    return d3.nest()
+    .key(function(d) {
+      return d.victim.industry;
+    })
+    .rollup(function(v) {
+      return v.length;
+    })
+    .entries(vcdb.filter(function(d) {
+      return d.timeline.incident.year == year
+    }));
+  } else {
+    return d3.nest()
+    .key(function(d) {
+      return d.victim.industry;
+    })
+    .rollup(function(v) {
+      return v.length;
+    })
+    .entries(vcdb.filter(function(d) {
+      return (d.timeline.incident.year == year && d.victim.country == country)
+    }));
+  }
 }
+// function arcTween(d, arc) {
+//   var i = d3.interpolate(this._current, d);
+//   this._current = i(0);
+//   return function(t) {
+//     return arc(i(t))
+//   }
+// }
 
 // function sortIndustryCount(industryData) {
 //   industryData.sort(function(x,y ) {
@@ -47,4 +67,18 @@ function prepareDataMap(vcdb, year) {
       }
     }
   return dataset;
+}
+
+function mouseoverDonut() {
+  donutTooltip.html("<b>Industry: </b>" + d.data.key + "<br><b>Nr. of incidents: </b>" + d.value)
+  donutTooltip.style('display', 'block')
+}
+
+function mouseoutDonut() {
+  donutTooltip.style('display', 'none')
+}
+
+function mousemoveDonut() {
+  donutTooltip.style('top', (d3.event.layerY + 10) + 'px')
+    .style('left', (d3.event.layerX + 10) + 'px');
 }

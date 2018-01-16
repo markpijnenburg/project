@@ -21,3 +21,7 @@ Mapped/nested the data for the donut chart. Tested if I could filter it on year,
 ## Week 2
 ### Monday
 Fixed the position of my donut chart in the HTML page. Changed my idea for the donut chart. I only show the top 5 industries instead of all the industries. This was too much information to show in the donut chart. Also fixed the legend and tool-tip. When hovering a slice of the donut, the specific industry name is shown, including the corresponding number of incidents.
+
+## Tuesday
+
+Partly implemented the linking of the donut chart when changing the year/clicking a country on the map. Donut is updated but not the legend. Decided for updating to use a global variable storing the neccassary parts of the visualizations.
