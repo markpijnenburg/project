@@ -33,4 +33,7 @@ Made the legend from the donut chart updatable. When changing the year from the 
 Continued all day with Python to parse my original JSON file. This was not easy. At a given moment I skipped parsing the dataset for the stacked bar chart and went on with the dataset for the last visualization, a bubble chart. This dataset was created more easily because there is not that much of nesting/complexity present. End of the day my bubble chart JSON was ready and my stacked bar chart almost.
 
 ## Friday
-Finally fixed the dataset for the stacked bar chart. Implemented a very basic (static) stacked bar chart with the parsed dataset. The visualization is far from done, but now I at least now the dataset is correct. Next week I am going to finish the stacked bar chart and make it interactive / link it with the other parts of the dashboard. Also had presentations in the afternoon. 
+Finally fixed the dataset for the stacked bar chart. Implemented a very basic (static) stacked bar chart with the parsed dataset. The visualization is far from done, but now I at least now the dataset is correct. Next week I am going to finish the stacked bar chart and make it interactive / link it with the other parts of the dashboard. Also had presentations in the afternoon.
+
+The progress of my donut chart and stacked bar chart at the end of week 2:
+![Progress_week2](doc/progress_week2.png)
