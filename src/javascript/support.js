@@ -10,6 +10,21 @@ function countIncidentsCountry(vcdb, year) {
   }));
 }
 
+function dataBarchart(vcdb, year) {
+  return d3.map()
+  .rollup(function(v) {
+    return v.length;
+  })
+  .object(vcdb.filter(function(d) {
+    // console.log(d3.keys(d.actor)[0])
+    // console.log(d)
+    // return d3.keys(d.actor[0])
+    // return d.actor.external.motive[0] == 'Ideology'
+    return d.timeline.incident.year == year
+  }));
+}
+
+
 function countIndustry(vcdb, year, country) {
   if (country == null) {
     return d3.nest()
@@ -35,19 +50,6 @@ function countIndustry(vcdb, year, country) {
     }));
   }
 }
-// function arcTween(d, arc) {
-//   var i = d3.interpolate(this._current, d);
-//   this._current = i(0);
-//   return function(t) {
-//     return arc(i(t))
-//   }
-// }
-
-// function sortIndustryCount(industryData) {
-//   industryData.sort(function(x,y ) {
-//     return d3.descending(x.value, y.value);
-//   })
-// };
 
 function prepareDataMap(vcdb, year) {
   var dataset = {};
@@ -69,16 +71,19 @@ function prepareDataMap(vcdb, year) {
   return dataset;
 }
 
-function mouseoverDonut() {
+function mouseoverDonut(d) {
+  var donutTooltip = d3.select('.donutTooltip');
   donutTooltip.html("<b>Industry: </b>" + d.data.key + "<br><b>Nr. of incidents: </b>" + d.value)
   donutTooltip.style('display', 'block')
 }
 
-function mouseoutDonut() {
+function mouseoutDonut(d) {
+  var donutTooltip = d3.select('.donutTooltip');
   donutTooltip.style('display', 'none')
 }
 
-function mousemoveDonut() {
+function mousemoveDonut(d) {
+  var donutTooltip = d3.select('.donutTooltip');
   donutTooltip.style('top', (d3.event.layerY + 10) + 'px')
     .style('left', (d3.event.layerX + 10) + 'px');
 }

@@ -24,4 +24,13 @@ Fixed the position of my donut chart in the HTML page. Changed my idea for the d
 
 ## Tuesday
 
-Partly implemented the linking of the donut chart when changing the year/clicking a country on the map. Donut is updated but not the legend. Decided for updating to use a global variable storing the neccassary parts of the visualizations.
+Partly implemented the linking of the donut chart when changing the year/clicking a country on the map. Donut is updated but not the legend. Decided for updating to use a global variable storing the necessary parts of the visualizations. Made an start implementing an updatable legend.
+
+## Wednesday
+Made the legend from the donut chart updatable. When changing the year from the drop down menu, or when clicking a country, the donut chart including the legend is updated accordingly. Tried to make a start with the next visualization, a stacked bar chart. I then found out that my dataset nesting was not easy to use for this purpose. End of the day I was busy in Python trying to fix a usable JSON file.
+
+## Thursday
+Continued all day with Python to parse my original JSON file. This was not easy. At a given moment I skipped parsing the dataset for the stacked bar chart and went on with the dataset for the last visualization, a bubble chart. This dataset was created more easily because there is not that much of nesting/complexity present. End of the day my bubble chart JSON was ready and my stacked bar chart almost.
+
+## Friday
+Finally fixed the dataset for the stacked bar chart. Implemented a very basic (static) stacked bar chart with the parsed dataset. The visualization is far from done, but now I at least now the dataset is correct. Next week I am going to finish the stacked bar chart and make it interactive / link it with the other parts of the dashboard. Also had presentations in the afternoon. 

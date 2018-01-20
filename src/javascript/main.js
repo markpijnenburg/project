@@ -1,6 +1,7 @@
 window.onload = function() {
   queue()
-    .defer(d3.json, "./vcdb.json")
+    .defer(d3.json, "src/vcdb.json")
+    .defer(d3.json, "src/barchartdata.json")
     .await(initDashboard);
 }
 
@@ -8,11 +9,14 @@ var country;
 
 var donutUpdateNecessities = {};
 
-function initDashboard(error, vcdb) {
-  // console.log(prepareDataMap(vcdb, 2014))
+var barchartUpdateNecessities = {};
+
+function initDashboard(error, vcdb, barchartdata) {
 
   function initMap(year) {
     //https://github.com/markmarkoh/datamaps/blob/master/src/examples/highmaps_world.html
+
+    // console.log(prepareDataMap(vcdb,year))
 
     var worldMap = new Datamap({
       element: document.getElementById("worldmap"),
@@ -115,19 +119,9 @@ function initDashboard(error, vcdb) {
         this._current = d;
       });
 
-    path.on('mouseover', function(d) {
-      donutTooltip.html("<b>Industry: </b>" + d.data.key + "<br><b>Nr. of incidents: </b>" + d.value)
-      donutTooltip.style('display', 'block')
-    });
-
-    path.on('mouseout', function() {
-      donutTooltip.style('display', 'none')
-    });
-
-    path.on('mousemove', function(d) {
-      donutTooltip.style('top', (d3.event.layerY + 10) + 'px')
-        .style('left', (d3.event.layerX + 10) + 'px');
-    })
+    path.on('mouseover', mouseoverDonut);
+    path.on('mouseout', mouseoutDonut);
+    path.on('mousemove', mousemoveDonut);
 
     var legend = d3.select('.donutSVG').append('g')
       .attr("class", 'legendDonut')
@@ -164,20 +158,123 @@ function initDashboard(error, vcdb) {
     donutUpdateNecessities["legend"] = legend;
     donutUpdateNecessities["path"] = path;
     donutUpdateNecessities["color"] = color;
+    donutUpdateNecessities["divWidth"] = divWidth;
+    donutUpdateNecessities["divHeight"] = divHeight;
+    donutUpdateNecessities["innerRadius"] = innerRadius;
 
 
     return donut;
   }
 
+  function initBarChart(year, barchartdata) {
+
+    var margin = {
+        top: 20,
+        right: 50,
+        bottom: 30,
+        left: 20
+      },
+      width = 665 - margin.left - margin.right,
+      height = 350 - margin.top - margin.bottom;
+
+
+    var x = d3.scale.ordinal().rangeRoundBands([0, width]);
+
+    var y = d3.scale.linear().rangeRound([height, 0]);
+
+    var z = d3.scale.category20();
+
+    // var color = d3.scale.log()
+    //   .domain([1, 120])
+    //   .range(["#BBDEFB", "#0D47A1"])
+    //   .interpolate(d3.interpolateHcl);
+
+    var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient('bottom');
+
+    var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient('left');
+
+    var svg = d3.select('#barchartID').append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+      .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
+
+    var xData = ["Financial", "Other", "Unknown", "Grudge", "Fun", "Ideology", "Convenience", "Espionage", "Fear", "Secondary"]
+    var country = 'Worldwide'
+    var dataset = barchartdata[year][country]
+    console.log(dataset)
+    var dataIntermediate = xData.map(function(c) {
+      return dataset.map(function(d) {
+        // console.log(d[c])
+        if (d[c] == null) {
+          return {
+            x: d.actor,
+            y: 0
+          };
+        } else {
+          return {
+            x: d.actor,
+            y: d[c]
+          };
+        }
+      });
+    });
+    var dataStackLayout = d3.layout.stack()(dataIntermediate);
+
+    x.domain(dataStackLayout[0].map(function(d) {
+      return d.x;
+    }));
+
+    y.domain([0, d3.max(dataStackLayout[dataStackLayout.length - 1], function(d) {
+      return d.y0 + d.y;
+    })]).nice();
+
+    var layer = svg.selectAll('.stack')
+      .data(dataStackLayout)
+      .enter()
+      .append('g')
+      .attr('class', 'stack')
+      .style('fill', function(d, i) {
+        return z(i);
+      });
+
+    layer.selectAll('rect')
+      .data(function(d) {
+        return d;
+      })
+      .enter()
+      .append('rect')
+      .attr('x', function(d) {
+        return x(d.x);
+      })
+      .attr('y', function(d) {
+        return y(d.y + d.y0);
+      })
+      .attr('height', function(d) {
+        return y(d.y0) - y(d.y + d.y0);
+      })
+      .attr('width', x.rangeBand());
+
+    svg.append('g')
+      .attr('class', 'axis')
+      .attr('transform', "translate(0," + height + ")")
+      .call(xAxis);
+
+  }
 
   var worldMap = initMap(2017)
-  var donut = initDonut(2017)
+  initDonut(2017)
+  initBarChart(2017, barchartdata)
 
   // Change map when year selected from dropdown
   d3.select("#dropdown_year")
     .on("change", function() {
       var year = d3.select("#dropdown_year").node().value;
-      updateDashboard(vcdb, worldMap, country, year, donut)
+      updateDashboard(vcdb, worldMap, country, year)
     });
 
   d3.selectAll('.datamaps-subunit').on('click', function(geography) {
@@ -185,12 +282,12 @@ function initDashboard(error, vcdb) {
       d3.select("h2").html(geography.properties.name);
       country = geography.id;
       var year = d3.select("#dropdown_year").node().value
-      updateDashboard(vcdb, worldMap, country, year, donut)
+      updateDashboard(vcdb, worldMap, country, year)
     }
   })
 }
 
-function updateDashboard(vcdb, worldMap, country, year, donut) {
+function updateDashboard(vcdb, worldMap, country, year) {
   // console.log(donut)
   function updateMap(vcdb, worldMap, year) {
     worldMap.updateChoropleth(null, {
@@ -213,7 +310,7 @@ function updateDashboard(vcdb, worldMap, country, year, donut) {
     });
   }
 
-  function updateDonut(vcdb, donut, country, year) {
+  function updateDonut(vcdb, country, year) {
     var industryData = countIndustry(vcdb, year, country)
     industryData.sort(function(x, y) {
       return d3.descending(x.value, y.value)
@@ -227,44 +324,55 @@ function updateDashboard(vcdb, worldMap, country, year, donut) {
       return d.value;
     });
 
+    // console.log(d3.select('.donutSVG').selectAll('path'))
+    // console.log(donutUpdateNecessities.path)
     donutUpdateNecessities.color.domain([minIndustryData, maxIndustryData]);
     donutUpdateNecessities.path = donutUpdateNecessities.path.data(donutUpdateNecessities.donut(industryData));
-    donutUpdateNecessities.path.enter().append('path').attr('fill', function(d) {
-      return donutUpdateNecessities.color(d.data.value);
-    });
+    // console.log(donutUpdateNecessities.path)
+
+    donutUpdateNecessities.path.enter().append('path').attr('fill', '#F5F5F5');
+    donutUpdateNecessities.path.transition()
+      .duration(1000)
+      .attr('fill', function(d) {
+        return donutUpdateNecessities.color(d.data.value);
+      })
+      .attr('d', donutUpdateNecessities.arc)
+      .each(function(d) {
+        this._current = d;
+      });
 
     donutUpdateNecessities.path.exit().remove();
     donutUpdateNecessities.path.attr("d", donutUpdateNecessities.arc);
 
-    donutUpdateNecessities.legend = donutUpdateNecessities.legend.data(industryData)
+    var legend = d3.select('.legendDonut').selectAll('g.legend').data(industryData);
+    var legendEnter = legend.enter().append('g').attr('class', 'legend');
+    legendEnter.append('rect').attr('width', 15).attr('height', 15);
+    legendEnter.append('text').attr('x', 25).attr('y', 13);
+    legend.select('rect').style('fill', function(d) {
+      return donutUpdateNecessities.color(d.value)
+    });
+    legend.select('text').text(function(d) {
+      return d.key;
+    });
+    legend.attr('transform', function(d, i) {
+      var height = 23;
+      var offset = height * donutUpdateNecessities.donut(industryData).length / 2;
+      var horz = 0;
+      var vert = i * height - offset;
+      return 'translate(' + horz + ',' + vert + ')';
+    });
 
-    var legendEnter = donutUpdateNecessities.legend.enter().append('g')
-    .attr('class', 'test');
+    legend.exit().remove();
 
-    // console.log(donutUpdateNecessities['color'].domain())
+    donutUpdateNecessities.path.on('mouseover', mouseoverDonut);
+    donutUpdateNecessities.path.on('mouseout', mouseoutDonut);
+    donutUpdateNecessities.path.on('mousemove', mousemoveDonut);
 
-    // var color = d3.scale.log()
-    //   .domain([minIndustryData, maxIndustryData])
-    //   .range(["#BBDEFB", "#0D47A1"])
-    //   .interpolate(d3.interpolateHcl);
-
-    // var arc = d3.svg.arc()
-    //   .outerRadius(183.75)
-    //   .innerRadius(100);
-
-    // var path = d3.select('.gDonut').selectAll('path');
-    // path = path.data(donut(industryData));
-    // donutUpdateNecessities['path'].data(donut(industryData));
-
-    // console.log(path)
-    // console.log(donutUpdateNecessities['path'])
-    // var path = donutUpdateNecessities['path']
-    // console.log(industryData)
   }
 
   if (d3.select("#dropdown_year").node().value == year) {
     updateMap(vcdb, worldMap, year)
   }
-  updateDonut(vcdb, donut, country, year);
+  updateDonut(vcdb, country, year);
   // console.log(donut)
 }
