@@ -26,7 +26,7 @@ function dataBarchart(vcdb, year) {
 
 
 function countIndustry(vcdb, year, country) {
-  if (country == null) {
+  if (country == "Worldwide") {
     return d3.nest()
     .key(function(d) {
       return d.victim.industry;
@@ -85,5 +85,22 @@ function mouseoutDonut(d) {
 function mousemoveDonut(d) {
   var donutTooltip = d3.select('.donutTooltip');
   donutTooltip.style('top', (d3.event.layerY + 10) + 'px')
+    .style('left', (d3.event.layerX + 10) + 'px');
+}
+
+function mouseoverBarChart(d) {
+  var barChartTooltip = d3.select('.barChartTooltip');
+  barChartTooltip.html("<b>" + d.y + "</b> actors had <b>'" + d.m + "'</b> as motive.")
+  barChartTooltip.style('display', 'block')
+}
+
+function mouseoutBarChart(d) {
+  var barChartTooltip = d3.select('.barChartTooltip');
+  barChartTooltip.style('display', 'none')
+}
+
+function mousemoveBarChart(d) {
+  var barChartTooltip = d3.select('.barChartTooltip');
+  barChartTooltip.style('top', (d3.event.layerY + 10) + 'px')
     .style('left', (d3.event.layerX + 10) + 'px');
 }

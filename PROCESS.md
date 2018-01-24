@@ -22,18 +22,22 @@ Mapped/nested the data for the donut chart. Tested if I could filter it on year,
 ### Monday
 Fixed the position of my donut chart in the HTML page. Changed my idea for the donut chart. I only show the top 5 industries instead of all the industries. This was too much information to show in the donut chart. Also fixed the legend and tool-tip. When hovering a slice of the donut, the specific industry name is shown, including the corresponding number of incidents.
 
-## Tuesday
+### Tuesday
 
 Partly implemented the linking of the donut chart when changing the year/clicking a country on the map. Donut is updated but not the legend. Decided for updating to use a global variable storing the necessary parts of the visualizations. Made an start implementing an updatable legend.
 
-## Wednesday
+### Wednesday
 Made the legend from the donut chart updatable. When changing the year from the drop down menu, or when clicking a country, the donut chart including the legend is updated accordingly. Tried to make a start with the next visualization, a stacked bar chart. I then found out that my dataset nesting was not easy to use for this purpose. End of the day I was busy in Python trying to fix a usable JSON file.
 
-## Thursday
+### Thursday
 Continued all day with Python to parse my original JSON file. This was not easy. At a given moment I skipped parsing the dataset for the stacked bar chart and went on with the dataset for the last visualization, a bubble chart. This dataset was created more easily because there is not that much of nesting/complexity present. End of the day my bubble chart JSON was ready and my stacked bar chart almost.
 
-## Friday
+### Friday
 Finally fixed the dataset for the stacked bar chart. Implemented a very basic (static) stacked bar chart with the parsed dataset. The visualization is far from done, but now I at least now the dataset is correct. Next week I am going to finish the stacked bar chart and make it interactive / link it with the other parts of the dashboard. Also had presentations in the afternoon.
 
-The progress of my donut chart and stacked bar chart at the end of week 2:
-![Progress_week2](doc/progress_week2.png)
+## Week 3
+### Monday
+Decided not to use my Material Design color palette function for my stacked bar chart. It became very unclear where the line was between the different rectangles. I now use a default color palette from D3 to color the stacked bar chart.
+
+### Tuesday
+Did not make any design decisions today. Fixed the legend of the stacked bar chart. The visualization is now also linked to the worldmap and the drop down menu. When updating, both the legend and the stacked bar update accordingly.
