@@ -69,24 +69,34 @@ with open('vcdb.json') as f:
                                     # print(key)
                                     # print(key[i][:1])
             # print(country)
-            newDict[year][country]['actions'] = {}
+            newDict[year][country]['actions'] = []
             for action in actions:
-                newDict[year][country]['actions'][action] = actions[action]
+                newDict[year][country]['actions'].append({"action": action})
+                newDict[year][country]['actions'][-1].update({"value": actions[action]})
 
-            newDict[year][country]['assets'] = {}
+
+            newDict[year][country]['assets'] = []
             for asset in assets:
-                newDict[year][country]['assets'][asset] = assets[asset]
+                newDict[year][country]['assets'].append({"asset": asset})
+                newDict[year][country]['assets'][-1].update({"value": assets[asset]})
+                # newDict[year][country]['assets'][asset] = assets[asset]
 
-        newDict[year]['Worldwide']['actions'] = {}
+        newDict[year]['Worldwide']['actions'] = []
         for action in world_actions:
-            newDict[year]['Worldwide']['actions'][action] = world_actions[action]
+            newDict[year]['Worldwide']['actions'].append({"action": action})
+            newDict[year]['Worldwide']['actions'][-1].update({"value": world_actions[action]})
 
-        newDict[year]["Worldwide"]['assets'] = {}
+        newDict[year]["Worldwide"]['assets'] = []
         for asset in world_assets:
-            newDict[year]["Worldwide"]['assets'][asset] = world_assets[asset]
+            newDict[year]['Worldwide']['assets'].append({"asset": asset})
+            newDict[year]['Worldwide']['assets'][-1].update({"value": world_assets[asset]})
+            # newDict[year]["Worldwide"]['assets'][asset] = world_assets[asset]
 
 
 print(json.dumps(newDict))
+with open("test_bubble.json", 'w') as outfile:
+    json.dump(newDict, outfile)
+
 
             # newDict[str(year)][country][]
             # print(year)

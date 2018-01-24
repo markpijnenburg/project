@@ -41,3 +41,6 @@ Decided not to use my Material Design color palette function for my stacked bar 
 
 ### Tuesday
 Did not make any design decisions today. Fixed the legend of the stacked bar chart. The visualization is now also linked to the worldmap and the drop down menu. When updating, both the legend and the stacked bar update accordingly.
+
+### Wednesday
+Created my bubble chart. As with the stacked barchart I decided not to use the material design color pallete. This for the same reason (colors difference is too small). Also change my dropdown in a HTML slider. This is way better for the UX and also more intuitive. The functionality of the slider is the same as the dropdown, namely changing the year of the chosen country.

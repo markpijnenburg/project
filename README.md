@@ -1,5 +1,5 @@
 # Visualizing Security Incidents  | Minor Programmeren | UvA
-[Link to visualization](https://markpijnenburg.github.io/project/src/index.html)
+[Link to visualization](https://markpijnenburg.github.io/project/)
 ## Author
 * Mark Pijnenburg
 

@@ -104,3 +104,20 @@ function mousemoveBarChart(d) {
   barChartTooltip.style('top', (d3.event.layerY + 10) + 'px')
     .style('left', (d3.event.layerX + 10) + 'px');
 }
+
+function mouseoverBubble(d) {
+  var bubbleTooltip = d3.select('.bubbleTooltip');
+  bubbleTooltip.html("<b>Type: " + "</b>" + d[selectionBubble.slice(0,-1)] + "<br><b>Nr. of occurrences: " + "</b>" + d.value)
+  bubbleTooltip.style('display', 'block')
+}
+
+function mouseoutBubble(d) {
+  var bubbleTooltip = d3.select('.bubbleTooltip');
+  bubbleTooltip.style('display', 'none')
+}
+
+function mousemoveBubble(d) {
+  var bubbleTooltip = d3.select('.bubbleTooltip');
+  bubbleTooltip.style('top', (d3.event.layerY + 10) + 'px')
+    .style('left', (d3.event.layerX + 10) + 'px');
+}

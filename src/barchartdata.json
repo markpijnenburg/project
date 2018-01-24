@@ -211,7 +211,6 @@
       "Grudge": 1,
       "Financial": 1
     } ],
-    "BWA": [],
     "JAM": [{
       "actor": "External",
       "Fun": 1
@@ -280,7 +279,6 @@
       "actor": "External",
       "Unknown": 1
     } ],
-    "ZAF": [],
     "Worldwide": [{
       "actor": "Internal",
       "Unknown": 376,
@@ -684,7 +682,6 @@
       "actor": "External",
       "Unknown": 1
     } ],
-    "COL": [],
     "ISR": [{
       "actor": "Internal",
       "Unknown": 1
@@ -2704,7 +2701,6 @@
       "actor": "External",
       "Financial": 1
     } ],
-    "RUS": [],
     "CHE": [{
       "actor": "Internal",
       "Espionage": 1
@@ -2925,7 +2921,6 @@
       "actor": "Partner",
       "Financial": 2
     }],
-    "JPN": [],
     "CAN": [{
       "actor": "Internal",
       "Unknown": 1
