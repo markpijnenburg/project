@@ -121,3 +121,13 @@ function mousemoveBubble(d) {
   bubbleTooltip.style('top', (d3.event.layerY + 10) + 'px')
     .style('left', (d3.event.layerX + 10) + 'px');
 }
+
+function showError()
+{
+  var toast = document.getElementById('snackbar')
+  var countryName = d3.select('.countryName')
+  year = document.getElementById('myRange').value;
+  d3.select('#snackbar').html("<b>" + countryName.text() + "</b> has no data available for <b>" + year + "</b>.<br>Please choose another country or year")
+  toast.className = 'show';
+  setTimeout(function(){ toast.className = toast.className.replace('show', ""); }, 3000);
+}

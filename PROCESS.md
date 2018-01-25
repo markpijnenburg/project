@@ -44,3 +44,6 @@ Did not make any design decisions today. Fixed the legend of the stacked bar cha
 
 ### Wednesday
 Created my bubble chart. As with the stacked barchart I decided not to use the material design color pallete. This for the same reason (colors difference is too small). Also change my dropdown in a HTML slider. This is way better for the UX and also more intuitive. The functionality of the slider is the same as the dropdown, namely changing the year of the chosen country.
+
+### Thursday
+Made some small design decisions today. I implemented a check to see if data is available when a selection is made with the map or the slider. If no data is available, an error message is shown. This is done with a HTML snackbar/toast notification. It pop's up from the bottom. That way it is always visible to the user. I may do some additional styling to it. Also chosen another color category scale for the bubble chart. The last design decision is the placement of the gradient bar legend on the world map. I think it looks best on the lowerleft bottom of the map.

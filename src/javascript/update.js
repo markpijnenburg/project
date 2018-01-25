@@ -27,6 +27,13 @@ function updateDashboard(vcdb, worldMap, country, year) {
       return d3.descending(x.value, y.value)
     });
     industryData = industryData.slice(0, 5)
+
+    if (industryData.length == 0) {
+      showError();
+      return;
+    }
+
+    // console.log(industryData.length)
     d3.select('.donutTitle').html("Top " + industryData.length + " Industries");
 
 
@@ -83,6 +90,7 @@ function updateDashboard(vcdb, worldMap, country, year) {
     var dataset = barchartUpdateNecessities.dataset[year][country]
 
     if (dataset == null) {
+      showError();
       return;
     }
 
@@ -186,7 +194,7 @@ function updateDashboard(vcdb, worldMap, country, year) {
     d3.select('.barchartSVG').select('.x.axis').transition().duration(300).call(xAxis)
     d3.select('.barchartSVG').select('.y.axis').transition().duration(300).call(yAxis)
 
-    var legend = d3.select('.legendBarChart').selectAll('g.legend').data(legendArray);
+    var legend = d3.select('.legendBarChart').selectAll('g.legend').data(legendArray.reverse());
     var legendEnter = legend.enter().append('g').attr('class', 'legend');
     legendEnter.append('rect').attr('width', 15).attr('height', 15);
     legendEnter.append('text').attr('x', 25).attr('y', 13);
@@ -197,9 +205,9 @@ function updateDashboard(vcdb, worldMap, country, year) {
     legend.attr('transform', function(d, i) {
       var height = 23;
       var offset = height * legendArray.length / 2;
-      var horz = 0;
+      var horz = -10;
       var vert = i * height - offset;
-      return 'translate(' + horz + ',' + vert + ')';
+      return 'translate(-20,' + vert + ')';
     });
 
     legend.exit().remove();
@@ -208,13 +216,14 @@ function updateDashboard(vcdb, worldMap, country, year) {
 
   function updateBubble(year) {
 
-    var color = d3.scale.category20();
+    var color = d3.scale.category20c();
     var bubble = bubbleSettings.bubble;
     var svg = bubbleSettings.svg;
-    // if (typeof bubbleSettings.dataset.year.country[selectionBubble] == "undefined") {
-    //   return;
-    // }
 
+    if (bubbleSettings.dataset[year][country] == undefined) {
+      showError();
+      return;
+    }
     var dataset = bubbleSettings.dataset[year][country][selectionBubble]
 
 
@@ -280,28 +289,7 @@ function updateDashboard(vcdb, worldMap, country, year) {
 
     node.exit().remove();
 
-    // var text = d3.select('.bubbleSVG').selectAll('g.node').data(nodes);
-    // var textEnter = node.enter().append('text')
-    //   .attr('x', function(d) {
-    //     return d.x;
-    //   })
-    //   .attr('y', function(d) {
-    //     return d.y;
-    //   })
-    //   .attr('text-anchor', 'middle')
-    //   .text(function(d) {
-    //     if (d.r > 55) {
-    //       return d[selectionBubble];
-    //     }
-    //   });
-    //
-    //   text.exit().remove();
-
   }
-
-  // if (d3.select("#dropdown_year").node().value == year) {
-  //   updateMap(vcdb, worldMap, year)
-  // }
 
   updateMap(vcdb, worldMap, year)
   updateDonut(vcdb, country, year);

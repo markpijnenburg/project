@@ -1,10 +1,13 @@
 html, body {
-    height: 100%;
+  height: 100%;
 }
+
 .fill-height {
-    min-height: 100%;
-    height:auto !important; /* cross-browser */
-    height: 100%; /* cross-browser */
+  min-height: 100%;
+  height: auto !important;
+  /* cross-browser */
+  height: 100%;
+  /* cross-browser */
 }
 
 body {
@@ -20,7 +23,6 @@ body {
   height: 76%;
   width: 64%;
   margin: 0 auto;
-
 }
 
 .visContainer {
@@ -66,29 +68,130 @@ h1, text {
 }
 
 .domain {
-		fill: none;
-		stroke: #000;
-		stroke-width: 2px;
-	}
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
 
-  .slidecontainer {
-     width: 100%; /* Width of the outside container */
- }
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
 
- /* The slider itself */
- .slider {
-     -webkit-appearance: none;  /* Override default CSS styles */
-     appearance: none;
-     width: 100%; /* Full-width */
-     height: 25px; /* Specified height */
-     background: whitesmoke; /* Grey background */
-     outline: none; /* Remove outline */
-     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-     transition: opacity .2s;
- }
+/* The slider itself */
 
- /* Mouse-over effects */
- .slider:hover {
-     opacity: 1; /* Fully shown on mouse-over */
- }
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: whitesmoke;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+.gradientAxis path, .gradientAxis line {
+  fill: black;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+#snackbar {
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  min-width: 250px;
+  /* Set a default minimum width */
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: #333;
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 6px;
+  /* Rounded borders */
+  padding: 16px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  bottom: 30px;
+  /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

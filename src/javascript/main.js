@@ -20,10 +20,10 @@ var bubbleSettings = {};
 
 var widthVis;
 
+var year;
 
 function initDashboard(error, vcdb, barchartData, bubbleData) {
   widthVis = document.getElementById("container").offsetWidth / 3.33
-  // console.log(widthVis)
 
   function initMap(year) {
     //https://github.com/markmarkoh/datamaps/blob/master/src/examples/highmaps_world.html
@@ -57,8 +57,57 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       }
     });
 
-    // d3.select('.datamap').append('text').text("test");
-    // return worldMap;
+
+    var mapHeight = document.getElementById("worldmap").offsetHeight - 50;
+    var mapWidth = document.getElementById("worldmap").offsetWidth / 10;
+    var gradientScale = d3.scale.linear().domain([0, 167]).range([0, 160]);
+
+    var legendSVG = d3.select('.datamap').append('g')
+      .attr('class', 'gradientLegend')
+      .attr('width', 100)
+      .attr('height', 40)
+      .attr({
+        transform: 'translate(120,' + 725 + ')'
+      });
+
+    var xAxisGradient = d3.svg.axis().scale(gradientScale).ticks(3);
+
+    var xAxisGroup = legendSVG.append('g')
+    .attr('class', 'gradientAxis')
+    .call(xAxisGradient)
+  
+    var defs = d3.select('.datamap').append('defs');
+    var linearGradient = defs.append('linearGradient')
+      .attr('id', 'linear-gradient')
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "0%");
+
+    linearGradient.append("stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "#DDDDDD");
+
+    linearGradient.append("stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "#0D47A1");
+
+    d3.select('.datamap').append("rect")
+      .attr("width", 160)
+      .attr("height", 20)
+      .style("fill", "url(#linear-gradient)")
+      .attr({
+        transform: 'translate(120,' + mapHeight + ')'
+      });
+
+    d3.select('.datamap').append("text")
+      .attr("class", "label")
+      .style("font-size", "15px")
+      .style("text-anchor", "middle")
+      .text("Nr. of Security Incidents")
+      .attr({
+        transform: 'translate(' + mapWidth * 1.66 + "," + (mapHeight - 4) + ')'
+      });
   }
 
   function initDonut(year) {
@@ -85,7 +134,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .padAngle(.03);
 
-    var donutWidth = widthVis / 2 + 50;
+    var donutWidth = widthVis / 1.5;
     // console.log(donutWidth)
     var donutHeight = divWidth / 2;
     var outerRadius = donutWidth / 2;
@@ -107,12 +156,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .append('svg')
       .attr({
         width: widthVis,
-        height: widthVis / 1.5,
+        height: divHeight,
         class: 'shadow donutSVG'
       }).attr({
-        transform: 'translate(0,' + divHeight / 16 + ')'
+        transform: 'translate(0,' + divHeight / 8 + ')'
       })
-    .append('g')
+      .append('g')
       .attr('class', 'gDonut')
       .attr({
         transform: 'translate(' + widthVis / 2 + ',' + divHeight / 2 + ')'
@@ -149,9 +198,9 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr('transform', function(d, i) {
         var height = 23;
         var offset = height * donut(industryData).length / 2;
-        var horz = 0;
+        var horz = -10;
         var vert = i * height - offset;
-        return 'translate(' + horz + ',' + vert + ')';
+        return 'translate(0,' + vert + ')';
       });
 
     legend.append('rect')
@@ -350,11 +399,11 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
     var divWidth = document.getElementById("container").offsetWidth;
     var divHeight = document.getElementById("bubbleID").offsetHeight;
-    console.log(divWidth / 3.33 * 0.8)
+    // console.log(divWidth / 3.33 * 0.8)
 
     var dataset = bubbleData[year][country].assets
     var diameter = divWidth / 3.33 * 0.8;
-    var color = d3.scale.category20();
+    var color = d3.scale.category20c();
     var bubble = d3.layout.pack().size([diameter - 30, diameter]).padding(1.5);
 
     var svg = d3.select("#bubbleID").append('svg').attr('width', diameter)
@@ -420,22 +469,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
   var visContainer = document.getElementById('visContainer');
   var slider = document.getElementById('myRange');
-  // console.log(slider.value)
-  var year = slider.value;
-
-
-  // // Change map when year selected from dropdown
-  // d3.select("#dropdown_year")
-  //   .on("change", function() {
-  //     // var year = d3.select("#dropdown_year").node().value;
-  //     updateDashboard(vcdb, worldMap, country, year)
-  //   });
+  year = slider.value;
 
   d3.selectAll('.datamaps-subunit').on('click', function(geography) {
     if (geography.id in worldMap.options.data) {
       d3.select("h2").html(geography.properties.name);
       country = geography.id;
-      // var year = d3.select("#dropdown_year").node().value
       year = slider.value;
       visContainer.scrollIntoView({
         behaviour: 'smooth'
@@ -446,23 +485,16 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
   $("input:radio").change(function() {
     selectionBubble = $(this).val()
-    // var year = d3.select("#dropdown_year").node().value
-    // console.log(selectionBubble)
+    year = slider.value;
     updateDashboard(vcdb, worldMap, country, year)
   });
 
 
   slider.oninput = function() {
-    // console.log(this.value)
     var year = this.value;
 
     d3.select(".sliderYear").html(year);
 
     updateDashboard(vcdb, worldMap, country, year)
   }
-
-  // d3.select("#myRange").on('change', function(d) {
-  //   var test = document.getElementById('myRange')
-  // })
-
 }
