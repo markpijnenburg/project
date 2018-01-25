@@ -1,7 +1,7 @@
 window.onload = function() {
   queue()
-    .defer(d3.json, "src/json/vcdb.json")
-    .defer(d3.json, "src/json/barchartdata.json")
+    .defer(d3.json, "src/vcdb.json")
+    .defer(d3.json, "src/barchartdata.json")
     .defer(d3.json, "src/json/bubble.json")
     .await(initDashboard);
 }
