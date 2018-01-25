@@ -1,7 +1,7 @@
 window.onload = function() {
   queue()
-    .defer(d3.json, "src/vcdb.json")
-    .defer(d3.json, "src/barchartdata.json")
+    .defer(d3.json, "src/json/vcdb.json")
+    .defer(d3.json, "src/json/barchartdata.json")
     .defer(d3.json, "src/json/bubble.json")
     .await(initDashboard);
 }
@@ -18,12 +18,17 @@ var barchartUpdateNecessities = {};
 
 var bubbleSettings = {};
 
+var widthVis;
+
+
 function initDashboard(error, vcdb, barchartData, bubbleData) {
-  // console.log(bubble)
+  widthVis = document.getElementById("container").offsetWidth / 3.33
+  // console.log(widthVis)
+
   function initMap(year) {
     //https://github.com/markmarkoh/datamaps/blob/master/src/examples/highmaps_world.html
 
-      worldMap = new Datamap({
+    worldMap = new Datamap({
       element: document.getElementById("worldmap"),
       projection: 'mercator',
       data: prepareDataMap(vcdb, year),
@@ -59,6 +64,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
   function initDonut(year) {
     var divWidth = document.getElementById("donutId").offsetWidth;
     var divHeight = document.getElementById("donutId").offsetHeight;
+    // console.log(divWidth)
 
     var industryData = countIndustry(vcdb, year, country)
     industryData.sort(function(x, y) {
@@ -79,7 +85,8 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .padAngle(.03);
 
-    var donutWidth = divWidth / 2 + 50;
+    var donutWidth = widthVis / 2 + 50;
+    // console.log(donutWidth)
     var donutHeight = divWidth / 2;
     var outerRadius = donutWidth / 2;
     var innerRadius = 100;
@@ -99,14 +106,16 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var svg = d3.select('.donut')
       .append('svg')
       .attr({
-        width: divWidth,
-        height: divHeight,
+        width: widthVis,
+        height: widthVis / 1.5,
         class: 'shadow donutSVG'
+      }).attr({
+        transform: 'translate(0,' + divHeight / 16 + ')'
       })
-      .append('g')
+    .append('g')
       .attr('class', 'gDonut')
       .attr({
-        transform: 'translate(' + divWidth / 2 + ',' + divHeight / 2 + ')'
+        transform: 'translate(' + widthVis / 2 + ',' + divHeight / 2 + ')'
       });
 
     var path = svg.selectAll('path')
@@ -131,7 +140,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
     var legend = d3.select('.donutSVG').append('g')
       .attr("class", 'legendDonut')
-      .attr('transform', 'translate(' + (divWidth / 2 - innerRadius / 2) + ',' + divHeight / 2 + ')')
+      .attr('transform', 'translate(' + (widthVis / 2 - innerRadius / 2) + ',' + divHeight / 2 + ')')
       .selectAll('.legend')
       .data(donut(industryData))
       .enter()
@@ -306,7 +315,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr('transform', function(d, i) {
         var height = 23;
         var offset = height * legendArray.length / 2;
-        var horz = 0;
+        var horz = -20;
         var vert = i * height - offset;
         return 'translate(' + horz + ',' + vert + ')';
       });
@@ -339,9 +348,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
   function initBubble(year, bubbleData) {
 
+    var divWidth = document.getElementById("container").offsetWidth;
+    var divHeight = document.getElementById("bubbleID").offsetHeight;
+    console.log(divWidth / 3.33 * 0.8)
+
     var dataset = bubbleData[year][country].assets
-    // console.log(dataset)
-    var diameter = 450;
+    var diameter = divWidth / 3.33 * 0.8;
     var color = d3.scale.category20();
     var bubble = d3.layout.pack().size([diameter - 30, diameter]).padding(1.5);
 
@@ -391,7 +403,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .attr('text-anchor', 'middle')
       .text(function(d) {
-        if (d.r > 55) {
+        if (d.r > 45) {
           return d.asset;
         }
       });
@@ -425,7 +437,9 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       country = geography.id;
       // var year = d3.select("#dropdown_year").node().value
       year = slider.value;
-      visContainer.scrollIntoView({behaviour: 'smooth'});
+      visContainer.scrollIntoView({
+        behaviour: 'smooth'
+      });
       updateDashboard(vcdb, worldMap, country, year)
     }
   })

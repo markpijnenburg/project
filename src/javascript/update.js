@@ -211,9 +211,9 @@ function updateDashboard(vcdb, worldMap, country, year) {
     var color = d3.scale.category20();
     var bubble = bubbleSettings.bubble;
     var svg = bubbleSettings.svg;
-    if (typeof bubbleSettings.dataset.year.country[selectionBubble] == "undefined") {
-      return;
-    }
+    // if (typeof bubbleSettings.dataset.year.country[selectionBubble] == "undefined") {
+    //   return;
+    // }
 
     var dataset = bubbleSettings.dataset[year][country][selectionBubble]
 
@@ -267,7 +267,7 @@ function updateDashboard(vcdb, worldMap, country, year) {
       });
 
     node.select('text').text(function(d) {
-        if (d.r > 55) {
+        if (d.r > 45) {
           // console.log(selectionBubble)
           return d[selectionBubble.slice(0, -1)];
         }
