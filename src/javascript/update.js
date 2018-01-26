@@ -1,5 +1,19 @@
+/*
+Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren / University of Amsterdam
+Visualizing IT Security Incidents
+*/
+
+/*
+Main update function. Is called when a user interacts with the visualizations.
+Updates all the visualizations on the dashboard if neccessary.
+*/
 function updateDashboard(vcdb, worldMap, country, year) {
-  // console.log("TEST")
+
+  /*
+
+  */
   function updateMap(vcdb, worldMap, year) {
     worldMap.updateChoropleth(null, {
       reset: true
@@ -33,7 +47,6 @@ function updateDashboard(vcdb, worldMap, country, year) {
       return;
     }
 
-    // console.log(industryData.length)
     d3.select('.donutTitle').html("Top " + industryData.length + " Industries");
 
 
@@ -43,36 +56,35 @@ function updateDashboard(vcdb, worldMap, country, year) {
     var minIndustryData = d3.min(industryData, function(d) {
       return d.value;
     });
-    donutUpdateNecessities.color.domain([minIndustryData, maxIndustryData]);
-    donutUpdateNecessities.path = donutUpdateNecessities.path.data(donutUpdateNecessities.donut(industryData));
-    // console.log(donutUpdateNecessities.path)
-    donutUpdateNecessities.path.enter().append('path').attr('fill', '#F5F5F5');
-    donutUpdateNecessities.path.transition()
+    donutProperties.color.domain([minIndustryData, maxIndustryData]);
+    donutProperties.path = donutProperties.path.data(donutProperties.donut(industryData));
+    donutProperties.path.enter().append('path').attr('fill', '#F5F5F5');
+    donutProperties.path.transition()
       .duration(1000)
       .attr('fill', function(d) {
-        return donutUpdateNecessities.color(d.data.value);
+        return donutProperties.color(d.data.value);
       })
-      .attr('d', donutUpdateNecessities.arc)
+      .attr('d', donutProperties.arc)
       .each(function(d) {
         this._current = d;
       });
 
-    donutUpdateNecessities.path.exit().remove();
-    donutUpdateNecessities.path.attr("d", donutUpdateNecessities.arc);
+    donutProperties.path.exit().remove();
+    donutProperties.path.attr("d", donutProperties.arc);
 
     var legend = d3.select('.legendDonut').selectAll('g.legend').data(industryData);
     var legendEnter = legend.enter().append('g').attr('class', 'legend');
     legendEnter.append('rect').attr('width', 15).attr('height', 15);
     legendEnter.append('text').attr('x', 25).attr('y', 13);
     legend.select('rect').style('fill', function(d) {
-      return donutUpdateNecessities.color(d.value)
+      return donutProperties.color(d.value)
     });
     legend.select('text').text(function(d) {
       return d.key;
     });
     legend.attr('transform', function(d, i) {
       var height = 23;
-      var offset = height * donutUpdateNecessities.donut(industryData).length / 2;
+      var offset = height * donutProperties.donut(industryData).length / 2;
       var horz = 0;
       var vert = i * height - offset;
       return 'translate(' + horz + ',' + vert + ')';
@@ -80,31 +92,29 @@ function updateDashboard(vcdb, worldMap, country, year) {
 
     legend.exit().remove();
 
-    donutUpdateNecessities.path.on('mouseover', mouseoverDonut);
-    donutUpdateNecessities.path.on('mouseout', mouseoutDonut);
-    donutUpdateNecessities.path.on('mousemove', mousemoveDonut);
+    donutProperties.path.on('mouseover', mouseoverDonut);
+    donutProperties.path.on('mouseout', mouseoutDonut);
+    donutProperties.path.on('mousemove', mousemoveDonut);
 
   }
 
   function updateStackedBarChart(year) {
-    var dataset = barchartUpdateNecessities.dataset[year][country]
+    var dataset = barchartProperties.dataset[year][country]
 
     if (dataset == null) {
       showError();
       return;
     }
-
-    // console.log(dataset)
-    var xData = barchartUpdateNecessities.xData
-    var y = barchartUpdateNecessities.y
-    var x = barchartUpdateNecessities.x
-    var z = barchartUpdateNecessities.z
-    var svg = barchartUpdateNecessities.svg
-    var xAxis = barchartUpdateNecessities.xAxis
-    var yAxis = barchartUpdateNecessities.yAxis
-    var height = barchartUpdateNecessities.height
-    var legendWidth = barchartUpdateNecessities.legendWidth
-    var legendOffset = barchartUpdateNecessities.legendOffset
+    var xData = barchartProperties.xData
+    var y = barchartProperties.y
+    var x = barchartProperties.x
+    var z = barchartProperties.z
+    var svg = barchartProperties.svg
+    var xAxis = barchartProperties.xAxis
+    var yAxis = barchartProperties.yAxis
+    var height = barchartProperties.height
+    var legendWidth = barchartProperties.legendWidth
+    var legendOffset = barchartProperties.legendOffset
 
     var maxbarchartData = d3.max(dataset, function(d) {
       return d3.max(d3.values(d).slice(1, ));
@@ -205,9 +215,9 @@ function updateDashboard(vcdb, worldMap, country, year) {
     legend.attr('transform', function(d, i) {
       var height = 23;
       var offset = height * legendArray.length / 2;
-      var horz = -10;
+      var horz = -30;
       var vert = i * height - offset;
-      return 'translate(-20,' + vert + ')';
+      return 'translate('+ horz + "," + vert + ')';
     });
 
     legend.exit().remove();
@@ -217,24 +227,20 @@ function updateDashboard(vcdb, worldMap, country, year) {
   function updateBubble(year) {
 
     var color = d3.scale.category20c();
-    var bubble = bubbleSettings.bubble;
-    var svg = bubbleSettings.svg;
+    var bubble = bubbleProperties.bubble;
+    var svg = bubbleProperties.svg;
 
-    if (bubbleSettings.dataset[year][country] == undefined) {
+    if (bubbleProperties.dataset[year][country] == undefined) {
       showError();
       return;
     }
-    var dataset = bubbleSettings.dataset[year][country][selectionBubble]
-
-
-    // console.log(dataset)
+    var dataset = bubbleProperties.dataset[year][country][selectionBubble]
     var nodes = bubble.nodes({
         children: dataset
       })
       .filter(function(d) {
         return !d.children;
       });
-    // console.log(nodes)
     var node = d3.select('.bubbleSVG').selectAll('g.node').data(nodes);
     var nodeEnter = node.enter().append('g').attr('class', 'node');
 

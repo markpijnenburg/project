@@ -1,3 +1,9 @@
+/*Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren
+University of Amsterdam*/
+
+
 html, body {
   height: 100%;
 }
@@ -133,7 +139,7 @@ h1, text {
   /* Sit on top of the screen */
   z-index: 1;
   /* Add a z-index if needed */
-  left: 50%;
+  left: 48%;
   /* Center the snackbar */
   bottom: 30px;
   /* 30px from the bottom */

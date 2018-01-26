@@ -1,3 +1,11 @@
+/*
+Name: Mark Pijnenburg
+Student number: 11841117
+Minor Programmeren / University of Amsterdam
+Visualizing IT Security Incidents
+*/
+
+// Load data and start script if window is loaded
 window.onload = function() {
   queue()
     .defer(d3.json, "src/vcdb.json")
@@ -6,28 +14,31 @@ window.onload = function() {
     .await(initDashboard);
 }
 
+// Init global variables used throughout functions
+var worldMap;
+var donutProperties = {};
+var barchartProperties = {};
+var bubbleProperties = {};
+var widthVis;
+var year;
+var selectionBubble = "assets"
 var country = "Worldwide";
 
-var worldMap;
-
-var selectionBubble = "assets"
-
-var donutUpdateNecessities = {};
-
-var barchartUpdateNecessities = {};
-
-var bubbleSettings = {};
-
-var widthVis;
-
-var year;
-
+/*
+Main function called when page is loaded.
+Initiates the dashboard and draws all the visualizations.
+*/
 function initDashboard(error, vcdb, barchartData, bubbleData) {
-  widthVis = document.getElementById("container").offsetWidth / 3.33
 
+  // Determine width of page for auto scaling vis DIV's
+  numberOfVis = 3.33
+  widthVis = document.getElementById("container").offsetWidth / numberOfVis
+
+  /*
+  Initiates the worldmap with the default settings.
+  These settings are currently the year 2017 and showing the wordwide data.
+  */
   function initMap(year) {
-    //https://github.com/markmarkoh/datamaps/blob/master/src/examples/highmaps_world.html
-
     worldMap = new Datamap({
       element: document.getElementById("worldmap"),
       projection: 'mercator',
@@ -43,11 +54,11 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
           return geo['fillColor'] || '#DDD';
         },
         popupTemplate: function(geo, data) {
-          // don't show tooltip if country don't present in dataset
+          // Don't show tooltip if country not in dataset
           if (!data) {
             return;
           }
-          // tooltip content
+          // Content of tooltip
           return ['<div class="hoverinfo">',
             '<strong>', geo.properties.name, '</strong>',
             '<br>Number of incidents: <strong>', data.numberOfIncidents, '</strong>',
@@ -56,7 +67,6 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         }
       }
     });
-
 
     var mapHeight = document.getElementById("worldmap").offsetHeight - 50;
     var mapWidth = document.getElementById("worldmap").offsetWidth / 10;
@@ -73,9 +83,9 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var xAxisGradient = d3.svg.axis().scale(gradientScale).ticks(3);
 
     var xAxisGroup = legendSVG.append('g')
-    .attr('class', 'gradientAxis')
-    .call(xAxisGradient)
-  
+      .attr('class', 'gradientAxis')
+      .call(xAxisGradient)
+
     var defs = d3.select('.datamap').append('defs');
     var linearGradient = defs.append('linearGradient')
       .attr('id', 'linear-gradient')
@@ -110,15 +120,21 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       });
   }
 
+  /*
+  Creates the donut chart on the page with the default dataset.
+  Default year is 2017 and the worldwide data.
+  */
   function initDonut(year) {
     var divWidth = document.getElementById("donutId").offsetWidth;
     var divHeight = document.getElementById("donutId").offsetHeight;
-    // console.log(divWidth)
 
+    // Preparing the data for usage
     var industryData = countIndustry(vcdb, year, country)
     industryData.sort(function(x, y) {
       return d3.descending(x.value, y.value)
     });
+
+    // Only show up to the top 5 industries
     industryData = industryData.slice(0, 5)
 
     var maxIndustryData = d3.max(industryData, function(d) {
@@ -134,8 +150,8 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .padAngle(.03);
 
+    // Defining dimensions of donut
     var donutWidth = widthVis / 1.5;
-    // console.log(donutWidth)
     var donutHeight = divWidth / 2;
     var outerRadius = donutWidth / 2;
     var innerRadius = 100;
@@ -144,6 +160,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .range(["#BBDEFB", "#0D47A1"])
       .interpolate(d3.interpolateHcl);
 
+    // Prepare tooltip div
     var donutTooltip = d3.select('#donutId')
       .append('div')
       .attr('class', 'donutTooltip');
@@ -152,6 +169,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .outerRadius(outerRadius)
       .innerRadius(innerRadius);
 
+    // Adding the actual elements to the DOM
     var svg = d3.select('.donut')
       .append('svg')
       .attr({
@@ -183,10 +201,13 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         this._current = d;
       });
 
+    // Show tooltip on hovering the donut elements
     path.on('mouseover', mouseoverDonut);
     path.on('mouseout', mouseoutDonut);
     path.on('mousemove', mousemoveDonut);
 
+    // Adding the legend to the donut SVG
+    var dimensionsLegend = 15
     var legend = d3.select('.donutSVG').append('g')
       .attr("class", 'legendDonut')
       .attr('transform', 'translate(' + (widthVis / 2 - innerRadius / 2) + ',' + divHeight / 2 + ')')
@@ -204,8 +225,8 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       });
 
     legend.append('rect')
-      .attr('width', 15)
-      .attr('height', 15)
+      .attr('width', dimensionsLegend)
+      .attr('height', dimensionsLegend)
       .style('fill', function(d) {
         return color(d.data.value)
       });
@@ -217,39 +238,45 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         return d.data.key;
       });
 
-    donutUpdateNecessities["arc"] = arc;
-    donutUpdateNecessities["donut"] = donut;
-    donutUpdateNecessities["legend"] = legend;
-    donutUpdateNecessities["path"] = path;
-    donutUpdateNecessities["color"] = color;
-    donutUpdateNecessities["divWidth"] = divWidth;
-    donutUpdateNecessities["divHeight"] = divHeight;
-    donutUpdateNecessities["innerRadius"] = innerRadius;
+    // Adding neccessary data to global variable for updating
+    donutProperties["arc"] = arc;
+    donutProperties["donut"] = donut;
+    donutProperties["legend"] = legend;
+    donutProperties["path"] = path;
+    donutProperties["color"] = color;
+    donutProperties["divWidth"] = divWidth;
+    donutProperties["divHeight"] = divHeight;
+    donutProperties["innerRadius"] = innerRadius;
 
-    return donut;
   }
 
+  /*
+  Creates the stacked barchart on the page with the default dataset.
+  Default year is 2017 and the worldwide data.
+  */
   function initBarChart(year, barchartData) {
-    var divWidth = document.getElementById("donutId").offsetWidth;
-    var divHeight = document.getElementById("donutId").offsetHeight;
+    // var divWidth = document.getElementById("donutId").offsetWidth;
+    // var divWidth = widthVis
 
+    // Defining dimensions of barchart
+    var divHeight = document.getElementById("donutId").offsetHeight;
     var margin = {
       top: 20,
       right: 150,
       bottom: 50,
       left: 40
     }
-    var width = divWidth - margin.left - margin.right
+    var width = widthVis - margin.left - margin.right
     var height = divHeight
 
+    // Init tooltip DIV
     var barChartTooltip = d3.select('#barchartID')
       .append('div')
       .attr('class', 'barChartTooltip');
 
+    // Defineing scales for X and Y axis. Also color scale
     var x = d3.scale.ordinal().rangeRoundBands([0, width], .3);
-
     var y = d3.scale.linear().rangeRound([height, 0]);
-
     var z = d3.scale.category20();
 
     var xAxis = d3.svg.axis()
@@ -260,12 +287,14 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .scale(y)
       .orient('left');
 
+    // Adding empty SVG element to DOM
     var svg = d3.select('#barchartID').append('svg').attr('class', 'barchartSVG')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
       .append('g').attr('class', 'stacks')
       .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
+    // Preparing the dataset for enter/append
     var xData = ["Financial", "Other", "Unknown", "Grudge", "Fun", "Ideology", "Convenience", "Espionage", "Fear", "Secondary"]
     var dataset = barchartData[year][country]
 
@@ -277,10 +306,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       return d3.min(d3.values(d).slice(1, ));
     });
 
+    // Keep track of actors/motives with a non-zero value
     var legendArray = []
 
     var dataIntermediate = xData.map(function(c) {
       return dataset.map(function(d) {
+        // Set Y height to zero if no data available
         if (d[c] == null) {
           return {
             x: d.actor,
@@ -300,10 +331,10 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       });
     });
 
+    // Convert data to usable stacked layout
     var dataStackLayout = d3.layout.stack()(dataIntermediate);
 
-    // console.log(dataStackLayout)
-
+    // Define X and Y domain
     x.domain(dataStackLayout[0].map(function(d) {
       return d.x;
     }));
@@ -312,6 +343,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       return d.y0 + d.y;
     })]).nice();
 
+    // Appending the actual elements to the DOM
     var layer = svg.selectAll('.stack')
       .data(dataStackLayout)
       .enter()
@@ -337,10 +369,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         return y(d.y0) - y(d.y + d.y0);
       })
       .attr('width', x.rangeBand())
+      // Show tooltip when hovering elements
       .on('mouseover', mouseoverBarChart)
       .on('mouseout', mouseoutBarChart)
       .on('mousemove', mousemoveBarChart);
 
+    // Adding X and Y axis to the DOM
     svg.append('g')
       .attr('class', 'x axis')
       .attr('transform', "translate(0," + height + ")")
@@ -350,9 +384,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr('class', 'y axis')
       .call(yAxis);
 
+    // Calculating legend dimensions
     var legendOffset = ((document.getElementById("barchartID").offsetHeight) - margin.bottom) / 2
     var legendWidth = ((document.getElementById("barchartID").offsetWidth) - margin.right)
 
+    // Adding the legend rect's and text
+    var dimensionsLegend = 15
     var legend = d3.select('.barchartSVG').append('g')
       .attr("class", 'legendBarChart')
       .attr('transform', 'translate(' + legendWidth + ',' + legendOffset + ')')
@@ -364,55 +401,69 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr('transform', function(d, i) {
         var height = 23;
         var offset = height * legendArray.length / 2;
-        var horz = -20;
+        var horz = -30;
         var vert = i * height - offset;
         return 'translate(' + horz + ',' + vert + ')';
       });
 
     legend.append('rect')
-      .attr('width', 15)
-      .attr('height', 15)
+      .attr('width', dimensionsLegend)
+      .attr('height', dimensionsLegend)
       .style('fill', z);
 
     legend.append('text')
-      .attr('x', 15 + 10)
+      .attr('x', dimensionsLegend + 10)
       .attr('y', 23 - 10)
       .text(function(d) {
         return xData[d];
       });
 
-    barchartUpdateNecessities["dataset"] = barchartData;
-    barchartUpdateNecessities["y"] = y;
-    barchartUpdateNecessities["x"] = x;
-    barchartUpdateNecessities["xAxis"] = xAxis;
-    barchartUpdateNecessities["yAxis"] = yAxis;
-    barchartUpdateNecessities["legend"] = legend;
-    barchartUpdateNecessities["svg"] = svg;
-    barchartUpdateNecessities["xData"] = xData;
-    barchartUpdateNecessities["height"] = height;
-    barchartUpdateNecessities['z'] = z;
-    barchartUpdateNecessities['legendWidth'] = legendWidth;
-    barchartUpdateNecessities['legendOffset'] = legendOffset;
+    // Adding properties to global variable for updating
+    barchartProperties["dataset"] = barchartData;
+    barchartProperties["y"] = y;
+    barchartProperties["x"] = x;
+    barchartProperties["xAxis"] = xAxis;
+    barchartProperties["yAxis"] = yAxis;
+    barchartProperties["legend"] = legend;
+    barchartProperties["svg"] = svg;
+    barchartProperties["xData"] = xData;
+    barchartProperties["height"] = height;
+    barchartProperties['z'] = z;
+    barchartProperties['legendWidth'] = legendWidth;
+    barchartProperties['legendOffset'] = legendOffset;
   }
 
+  /*
+  Creates the bubble chart on the page with the default dataset.
+  Default year is 2017 and the worldwide data.
+  */
   function initBubble(year, bubbleData) {
 
+    // Calculate dimensions for bubble SVG and elements
     var divWidth = document.getElementById("container").offsetWidth;
     var divHeight = document.getElementById("bubbleID").offsetHeight;
-    // console.log(divWidth / 3.33 * 0.8)
-
-    var dataset = bubbleData[year][country].assets
     var diameter = divWidth / 3.33 * 0.8;
-    var color = d3.scale.category20c();
-    var bubble = d3.layout.pack().size([diameter - 30, diameter]).padding(1.5);
+    var bubbleOffset = 40;
+    var bubblePadding = 1.5;
 
+    // Select proper data from dataset
+    var dataset = bubbleData[year][country].assets
+
+    // Define color scale
+    var color = d3.scale.category20c();
+
+    var bubble = d3.layout.pack().size([diameter - bubbleOffset, diameter]).padding(bubblePadding);
+
+    // Add empty SVG to Bubble DIV
     var svg = d3.select("#bubbleID").append('svg').attr('width', diameter)
       .attr('height', diameter).attr('class', 'bubbleSVG');
 
+    // Init bubble tooltip DIV
     var bubbleTooltip = d3.select('#bubbleID')
       .append('div')
       .attr('class', 'bubbleTooltip');
 
+    // Prepare dataset nodes for usage
     var nodes = bubble.nodes({
         children: dataset
       })
@@ -420,13 +471,11 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         return !d.children;
       });
 
-    // console.log(nodes)
-
+    // Adding the actual bubbles to the SVG
     var bubbles = svg.selectAll('.bubble').data(nodes).enter().append('g')
       .attr('class', 'node');
 
     bubbles.append('circle')
-      // .attr('class', 'node')
       .attr('r', function(d) {
         return d.r;
       })
@@ -439,10 +488,12 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .style('fill', function(d) {
         return color(d[selectionBubble.slice(0, -1)]);
       })
+      // Show tooltip when hovering bubbles
       .on('mouseover', mouseoverBubble)
       .on('mouseout', mouseoutBubble)
       .on('mousemove', mousemoveBubble);
 
+    // Adding text inside the bubble
     bubbles.append('text')
       .attr('x', function(d) {
         return d.x;
@@ -452,25 +503,32 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .attr('text-anchor', 'middle')
       .text(function(d) {
+        // Only add text if it fits inside bubble
         if (d.r > 45) {
           return d.asset;
         }
       });
 
-    bubbleSettings['dataset'] = bubbleData;
-    bubbleSettings['svg'] = svg;
-    bubbleSettings['bubble'] = bubble;
+    // Adding properties to global variable for updating
+    bubbleProperties['dataset'] = bubbleData;
+    bubbleProperties['svg'] = svg;
+    bubbleProperties['bubble'] = bubble;
   }
 
+  // Calling the functions to draw the 4 visualizations
   initMap(2017)
   initDonut(2017)
   initBarChart(2017, barchartData)
   initBubble(2017, bubbleData)
 
+  // Get positions of the lower visualizations
   var visContainer = document.getElementById('visContainer');
+
+  // Get value of slider
   var slider = document.getElementById('myRange');
   year = slider.value;
 
+  // Update dashboard when clicking on a country
   d3.selectAll('.datamaps-subunit').on('click', function(geography) {
     if (geography.id in worldMap.options.data) {
       d3.select("h2").html(geography.properties.name);
@@ -479,22 +537,24 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       visContainer.scrollIntoView({
         behaviour: 'smooth'
       });
+
       updateDashboard(vcdb, worldMap, country, year)
     }
-  })
+  });
 
+  // Update the bubble chart when switching radio button
   $("input:radio").change(function() {
     selectionBubble = $(this).val()
     year = slider.value;
+
     updateDashboard(vcdb, worldMap, country, year)
   });
 
-
+  // Update the dashboard if slider is moved
   slider.oninput = function() {
     var year = this.value;
-
     d3.select(".sliderYear").html(year);
 
     updateDashboard(vcdb, worldMap, country, year)
-  }
+  };
 }
