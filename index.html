@@ -7,29 +7,31 @@ University of Amsterdam -->
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/bootstrap.min.css">
   <link href="src/css/style.css" rel="stylesheet">
   <script src="src/javascript/queue.v1.min.js"></script>
   <script src="src/javascript/d3.v3.min.js"></script>
   <script src="src/javascript/topojson.min.js"></script>
   <script src="src/javascript/d3.tip.v0.6.3.js"></script>
-  <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+  <script src="src/javascript/d3-collection.v1.min.js"></script>
   <script src="src/javascript/datamaps.world.min.js"></script>
   <script src="src/javascript/worldmap.js"></script>
+  <script src="src/javascript/bubble.js"></script>
+  <script src="src/javascript/donut.js"></script>
+  <script src="src/javascript/stackedbarchart.js"></script>
   <script src="src/javascript/main.js"></script>
   <script src="src/javascript/update.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="src/javascript/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="src/javascript/jquery-3.2.1.slim.min.js"></script>
+  <script src="src/javascript/popper.min.js"></script>
+  <script src="src/javascript/bootstrap.min.js"></script>
   <script src="src/javascript/support.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="src/javascript/underscore-min.js"></script>
   <link href="src/css/font.css" rel="stylesheet">
 
   <title>Visualizing security incidents</title>
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5b5555;">
     <a class="navbar-brand" href="#">Security Incidents</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,26 +68,21 @@ University of Amsterdam -->
     <div class="collapse" id="collapseExample">
       <div class="card card-body text-center" style="width: 50%; margin: 0 auto">
         <b>Visualizing IT security incidents</b>
-        <p style="text-align: justify; text-justify: inter-word">This is my final project of the minor Programming at the University of Amsterdam.
-        I personally think there is not enough open source data available about IT security incidents.
-        We hear alot about cyber security and hacking in the news, but what about it world wide?
-        With the VERIS community database I tend to offer some overview into the overload of information about this topic.
-        The dataset I used for this visualization is last updated on 28-12-2017.</p>
+        <p style="text-align: justify; text-justify: inter-word">This is my final project of the minor Programming at the University of Amsterdam. I personally think there is not enough open source data available about IT security incidents. We hear alot about cyber security and hacking in the news, but what
+          about it world wide? With the VERIS community database I tend to offer some overview into the overload of information about this topic. The dataset I used for this visualization is last updated on 28-12-2017.</p>
 
         <b>About the data source</b>
-        <p style="text-align: justify; text-justify: inter-word">These visualizations are based on the Vocabulary for Event Recording and Incident Sharing (VERIS) database.
-        This database is mantained by volunteers, that add IT security incidents to the open source database in a uniform format.
-        Note that this is one of the few public available data resources on this topic. Data represented is fully based on voluntairy work.
-        For more information about the data source, please check their website.</p>
+        <p style="text-align: justify; text-justify: inter-word">These visualizations are based on the Vocabulary for Event Recording and Incident Sharing (VERIS) database. This database is mantained by volunteers, that add IT security incidents to the open source database in a uniform format. Note that this
+          is one of the few public available data resources on this topic. Data represented is fully based on voluntairy work. For more information about the data source, please check their website.</p>
       </div>
     </div>
     <h1>IT Security Incidents</h1>
-    <h2 class='countryName'>Worldwide</h2>
+    <button type="button" class="btn btn-secondary worldWideButton">Back to Worldwide</button>
     <div class="row worldmapContainer">
       <div class="col" id="worldmap">
       </div>
     </div>
-    <h2 class="sliderYear">2017</h2>
+    <h2 class="sliderYear">2017: Worldwide</h2>
     <div class="slidecontainer text-center" style="width: 50%; margin: 0 auto">
       <input autocomplete="off" type="range" min="1998" max="2017" value="2017" class="slider" id="myRange">
     </div>

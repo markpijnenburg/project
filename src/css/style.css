@@ -112,9 +112,10 @@ h1, text {
   /* Fully shown on mouse-over */
 }
 
-.gradientAxis path, .gradientAxis line {
-  fill: black;
+.label {
+  font-weight: bold;
 }
+
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 
