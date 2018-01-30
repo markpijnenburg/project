@@ -8,8 +8,8 @@ Visualizing IT Security Incidents
 // Load data and start script if window is loaded
 window.onload = function() {
   queue()
-    .defer(d3.json, "src/vcdb.json")
-    .defer(d3.json, "src/barchartdata.json")
+    .defer(d3.json, "src/json/vcdb.json")
+    .defer(d3.json, "src/json/barchartdata.json")
     .defer(d3.json, "src/json/bubble.json")
     .await(initDashboard);
 }
@@ -22,7 +22,7 @@ var barchartProperties = {};
 var bubbleProperties = {};
 var widthVis;
 var year = 2017;
-var selectionBubble = "assets"
+var selectionBubble = "assets";
 var country = "Worldwide";
 var countryFull = "Worldwide";
 
@@ -210,7 +210,6 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var height = divHeight;
     var xAxisOffset = 45;
     var yAxisOffset = -60;
-
 
     // Init tooltip DIV
     var barChartTooltip = d3.select('#barchartID')

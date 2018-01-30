@@ -9,22 +9,27 @@ University of Amsterdam -->
   <meta charset="utf-8" />
   <link rel="stylesheet" href="src/css/bootstrap.min.css">
   <link href="src/css/style.css" rel="stylesheet">
-  <script src="src/javascript/queue.v1.min.js"></script>
-  <script src="src/javascript/d3.v3.min.js"></script>
-  <script src="src/javascript/topojson.min.js"></script>
-  <script src="src/javascript/d3.tip.v0.6.3.js"></script>
-  <script src="src/javascript/d3-collection.v1.min.js"></script>
-  <script src="src/javascript/datamaps.world.min.js"></script>
+
+  <!-- External JavaScript libraries -->
+  <script src="src/javascript/libs/queue.v1.min.js"></script>
+  <script src="src/javascript/libs/d3.v3.min.js"></script>
+  <script src="src/javascript/libs/topojson.min.js"></script>
+  <script src="src/javascript/libs/d3-collection.v1.min.js"></script>
+  <script src="src/javascript/libs/datamaps.world.min.js"></script>
+
+  <!-- BootStrap requirements -->
+  <script src="src/javascript/libs/jquery-3.2.1.slim.min.js"></script>
+  <script src="src/javascript/libs/popper.min.js"></script>
+  <script src="src/javascript/libs/bootstrap.min.js"></script>
+  <script src="src/javascript/libs/underscore-min.js"></script>
+
+  <!-- Self written JavaScript files -->
+  <script src="src/javascript/support.js"></script>
   <script src="src/javascript/worldmap.js"></script>
   <script src="src/javascript/bubble.js"></script>
   <script src="src/javascript/donut.js"></script>
   <script src="src/javascript/stackedbarchart.js"></script>
   <script src="src/javascript/main.js"></script>
-  <script src="src/javascript/jquery-3.2.1.slim.min.js"></script>
-  <script src="src/javascript/popper.min.js"></script>
-  <script src="src/javascript/bootstrap.min.js"></script>
-  <script src="src/javascript/support.js"></script>
-  <script src="src/javascript/underscore-min.js"></script>
   <link href="src/css/font.css" rel="stylesheet">
 
   <title>Visualizing security incidents</title>
@@ -86,11 +91,11 @@ University of Amsterdam -->
       <input autocomplete="off" type="range" min="1998" max="2017" value="2017" class="slider" id="myRange">
     </div>
     <div class="row visContainer" id="visContainer">
-      <div class="col donut" id="donutId">
-        <h4 class="donutTitle">Top 5 industries</h4>
-      </div>
       <div class="col barchart" id="barchartID">
         <h4>Actors and their motives</h4>
+      </div>
+      <div class="col donut" id="donutId">
+        <h4 class="donutTitle">Top 5 industries</h4>
       </div>
       <div class="col bubble" id="bubbleID">
         <h4>Assets and actions</h4>
@@ -100,8 +105,8 @@ University of Amsterdam -->
                         <input type="radio" name="options" value='assets' autocomplete="off" checked> Assets
                     </label>
           <label class="btn btn-secondary">
-                        <input type="radio" name="options" value='actions' autocomplete="off"> Actions
-                    </label>
+              <input type="radio" name="options" value='actions' autocomplete="off"> Actions
+          </label>
         </div>
 
       </div>

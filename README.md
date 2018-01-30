@@ -1,13 +1,28 @@
-# Visualizing Security Incidents  | Minor Programmeren | UvA
-[Link to visualization](https://markpijnenburg.github.io/project/)
-## Author
-* Mark Pijnenburg
+# Visualizing IT Security Incidents  | Minor Programmeren | UvA
+[View the D3 dashboard](https://markpijnenburg.github.io/project/)
 
 ## Summary (visualization goals)
 
-The goal of this visualization is to give cyber security experts and interested people insight into security incidents over the past couple years around the world.
+The goal of this visualization is to give cyber security experts and people interested in the topic insight into IT security incidents over the past couple years around the world.
 
-This repository will ultimately contain the final product, report, process book and other materials, for assessing the project. (Work in progress)
+This repository contains the final working D3 dashboard, a report, process book and other materials, for assessing the project.
+
+![overview](doc/capture_visualization.png)
+
+## Acknowledgments
+Not everything in this repository is written by myself. The following external code/libraries are used in the final product:
+* bootstrap.min.js
+* d3.v3.min.js
+* d3-collection.v1.min.js
+* datamaps.world.min.js
+* jquery-3.2.1.slim.min.js
+* popper.min.js
+* queue.v1.min.js
+* topojson.min.js
+* underscore-min.js
+
+These files have their own respective licenses. All the external files are located within the [src/javascript/libs](https://github.com/markpijnenburg/project/tree/master/src/javascript/libs) folder.
+
 
 ## Project proposal
 ### Problem statement
@@ -71,3 +86,6 @@ I have some parts of my visualization idea that prove to be difficult:
 Especially the new visualizations I never made during the previous course could be difficult to implement. If the new visualizations tend to be too difficult, I could revert to a normal bar chart. But with the help of the internet and the staff at UvA I could overcome that problem.
 
 The linking/updating/mapping/nesting can be fixed by using the JSON file correctly and implementing the updating via the D3 general update pattern. (Enter, update, exit)
+
+## Author
+* Mark Pijnenburg (11841117)

@@ -1,1 +1,4762 @@
-{"2015": {"USA": {"actions": [{"action": "Misuse", "value": 198}, {"action": "Error", "value": 227}, {"action": "Physical", "value": 152}, {"action": "Unknown", "value": 15}, {"action": "Social", "value": 75}, {"action": "Hacking", "value": 174}, {"action": "Malware", "value": 90}], "assets": [{"asset": "User Device", "value": 134}, {"asset": "Media", "value": 202}, {"asset": "Public Terminal", "value": 54}, {"asset": "People", "value": 48}, {"asset": "Server", "value": 285}, {"asset": "Network", "value": 7}, {"asset": "Other", "value": 1}]}, "CAN": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Error", "value": 16}, {"action": "Misuse", "value": 23}, {"action": "Physical", "value": 7}, {"action": "Malware", "value": 1}], "assets": [{"asset": "Server", "value": 26}, {"asset": "Media", "value": 17}, {"asset": "User Device", "value": 4}]}, "QAT": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "AUS": {"actions": [{"action": "Error", "value": 13}, {"action": "Unknown", "value": 1}, {"action": "Physical", "value": 7}, {"action": "Misuse", "value": 4}, {"action": "Hacking", "value": 4}, {"action": "Social", "value": 4}], "assets": [{"asset": "User Device", "value": 5}, {"asset": "Server", "value": 9}, {"asset": "Media", "value": 6}, {"asset": "Public Terminal", "value": 1}, {"asset": "People", "value": 4}]}, "GBR": {"actions": [{"action": "Error", "value": 30}, {"action": "Physical", "value": 13}, {"action": "Hacking", "value": 18}, {"action": "Misuse", "value": 11}, {"action": "Social", "value": 2}, {"action": "Malware", "value": 2}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Media", "value": 20}, {"asset": "Server", "value": 28}, {"asset": "User Device", "value": 15}, {"asset": "People", "value": 3}, {"asset": "Public Terminal", "value": 4}]}, "IND": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 5}]}, "NZL": {"actions": [{"action": "Misuse", "value": 10}, {"action": "Physical", "value": 2}, {"action": "Error", "value": 10}, {"action": "Social", "value": 1}], "assets": [{"asset": "Media", "value": 5}, {"asset": "Server", "value": 9}, {"asset": "User Device", "value": 2}, {"asset": "People", "value": 2}]}, "SWE": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "TWN": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Misuse", "value": 1}, {"action": "Malware", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 1}]}, "UKR": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "DEU": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}, {"action": "Social", "value": 2}, {"action": "Misuse", "value": 1}, {"action": "Physical", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 4}, {"asset": "People", "value": 1}]}, "IRL": {"actions": [{"action": "Error", "value": 4}, {"action": "Unknown", "value": 1}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}, {"asset": "Media", "value": 2}]}, "FRA": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 3}]}, "SGP": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PAK": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "THA": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 3}]}, "CHN": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 6}, {"action": "Malware", "value": 4}], "assets": [{"asset": "Server", "value": 8}]}, "RUS": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 4}]}, "ISR": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Physical", "value": 2}, {"action": "Malware", "value": 1}], "assets": [{"asset": "People", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "Media", "value": 2}, {"asset": "Network", "value": 1}]}, "CRI": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "JPN": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Unknown", "value": 4}, {"action": "Misuse", "value": 1}, {"action": "Error", "value": 3}, {"action": "Malware", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 3}]}, "ITA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "NLD": {"actions": [{"action": "Physical", "value": 1}, {"action": "Hacking", "value": 2}, {"action": "Social", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Server", "value": 2}]}, "KOR": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 5}, {"action": "Social", "value": 3}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 1}]}, "BWA": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "JAM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}]}, "TUR": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "CHE": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "People", "value": 1}, {"asset": "Server", "value": 1}]}, "COL": {"actions": [{"action": "Misuse", "value": 4}, {"action": "Hacking", "value": 4}, {"action": "Malware", "value": 4}, {"action": "Physical", "value": 4}], "assets": [{"asset": "Server", "value": 2}]}, "BGR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NOR": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "DNK": {"actions": [{"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "SRB": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "SWZ": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ECU": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}], "assets": [{"asset": "Server", "value": 1}]}, "HKG": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Error", "value": 4}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 1}]}, "PAN": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}]}, "VNM": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ZAF": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 269}, {"action": "Error", "value": 314}, {"action": "Physical", "value": 191}, {"action": "Unknown", "value": 23}, {"action": "Social", "value": 89}, {"action": "Hacking", "value": 248}, {"action": "Malware", "value": 113}], "assets": [{"asset": "User Device", "value": 176}, {"asset": "Media", "value": 257}, {"asset": "Public Terminal", "value": 59}, {"asset": "People", "value": 62}, {"asset": "Server", "value": 421}, {"asset": "Network", "value": 8}, {"asset": "Other", "value": 1}]}}, "2010": {"USA": {"actions": [{"action": "Misuse", "value": 66}, {"action": "Error", "value": 308}, {"action": "Physical", "value": 162}, {"action": "Social", "value": 17}, {"action": "Unknown", "value": 26}, {"action": "Hacking", "value": 44}, {"action": "Malware", "value": 16}], "assets": [{"asset": "Server", "value": 100}, {"asset": "Media", "value": 336}, {"asset": "User Device", "value": 150}, {"asset": "People", "value": 8}, {"asset": "Network", "value": 3}]}, "CAN": {"actions": [{"action": "Error", "value": 2}, {"action": "Misuse", "value": 9}, {"action": "Social", "value": 2}], "assets": [{"asset": "Media", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Server", "value": 6}, {"asset": "People", "value": 1}]}, "ZWE": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "GBR": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Misuse", "value": 2}, {"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 1}, {"asset": "Server", "value": 3}]}, "KOR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "NLD": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "JPN": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "BEL": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 5}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Server", "value": 1}]}, "IRL": {"actions": [{"action": "Social", "value": 1}, {"action": "Misuse", "value": 2}, {"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 1}]}, "DEU": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 80}, {"action": "Error", "value": 312}, {"action": "Physical", "value": 163}, {"action": "Social", "value": 35}, {"action": "Unknown", "value": 27}, {"action": "Hacking", "value": 63}, {"action": "Malware", "value": 33}], "assets": [{"asset": "Server", "value": 111}, {"asset": "Media", "value": 341}, {"asset": "User Device", "value": 162}, {"asset": "People", "value": 15}, {"asset": "Network", "value": 8}]}}, "2014": {"USA": {"actions": [{"action": "Physical", "value": 171}, {"action": "Error", "value": 207}, {"action": "Misuse", "value": 152}, {"action": "Malware", "value": 70}, {"action": "Social", "value": 51}, {"action": "Hacking", "value": 171}, {"action": "Unknown", "value": 21}, {"action": "Environmental", "value": 2}], "assets": [{"asset": "User Device", "value": 233}, {"asset": "Media", "value": 200}, {"asset": "Server", "value": 273}, {"asset": "People", "value": 32}, {"asset": "Public Terminal", "value": 28}, {"asset": "Network", "value": 6}]}, "AUT": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}]}, "NZL": {"actions": [{"action": "Error", "value": 3}, {"action": "Hacking", "value": 2}, {"action": "Physical", "value": 3}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 2}, {"asset": "Media", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "ALB": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "CAN": {"actions": [{"action": "Physical", "value": 7}, {"action": "Error", "value": 5}, {"action": "Misuse", "value": 14}, {"action": "Hacking", "value": 10}, {"action": "Malware", "value": 2}, {"action": "Social", "value": 1}], "assets": [{"asset": "Media", "value": 5}, {"asset": "User Device", "value": 8}, {"asset": "Server", "value": 18}, {"asset": "People", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "FRA": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 2}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 2}]}, "ARE": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "GBR": {"actions": [{"action": "Hacking", "value": 25}, {"action": "Misuse", "value": 12}, {"action": "Physical", "value": 13}, {"action": "Error", "value": 32}, {"action": "Social", "value": 11}, {"action": "Environmental", "value": 1}], "assets": [{"asset": "Server", "value": 35}, {"asset": "Media", "value": 20}, {"asset": "Public Terminal", "value": 8}, {"asset": "People", "value": 6}, {"asset": "User Device", "value": 13}, {"asset": "Network", "value": 1}]}, "RUS": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 6}, {"asset": "User Device", "value": 1}]}, "JPN": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "Media", "value": 1}]}, "IND": {"actions": [{"action": "Hacking", "value": 11}, {"action": "Notes", "value": 2}, {"action": "Unknown", "value": 1}, {"action": "Malware", "value": 4}, {"action": "Social", "value": 4}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 10}, {"asset": "User Device", "value": 3}, {"asset": "People", "value": 2}, {"asset": "Media", "value": 1}]}, "TKM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NLD": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "IRL": {"actions": [{"action": "Physical", "value": 2}, {"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 2}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 2}, {"asset": "Media", "value": 2}]}, "TUR": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 4}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}]}, "EGY": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "DEU": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "People", "value": 1}, {"asset": "Network", "value": 1}]}, "PAK": {"actions": [{"action": "Hacking", "value": 4}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 1}]}, "AUS": {"actions": [{"action": "Error", "value": 5}, {"action": "Misuse", "value": 4}, {"action": "Hacking", "value": 4}, {"action": "Unknown", "value": 1}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 4}, {"asset": "Server", "value": 4}, {"asset": "User Device", "value": 6}, {"asset": "Public Terminal", "value": 1}]}, "PHL": {"actions": [{"action": "Physical", "value": 1}, {"action": "Hacking", "value": 3}], "assets": [{"asset": "Public Terminal", "value": 1}, {"asset": "Server", "value": 3}]}, "VEN": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "KOR": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Hacking", "value": 3}, {"action": "Malware", "value": 2}, {"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 4}, {"asset": "Media", "value": 1}, {"asset": "Network", "value": 1}]}, "PER": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "DNK": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "UKR": {"actions": [{"action": "Hacking", "value": 8}], "assets": [{"asset": "Server", "value": 6}, {"asset": "User Device", "value": 1}, {"asset": "Network", "value": 1}]}, "SYR": {"actions": [{"action": "Hacking", "value": 4}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 1}]}, "NPL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "CHN": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Misuse", "value": 2}, {"action": "Social", "value": 2}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 3}, {"asset": "People", "value": 1}]}, "KEN": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "KHM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "FIN": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "MYS": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 1}]}, "THA": {"actions": [{"action": "Physical", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Public Terminal", "value": 1}, {"asset": "Server", "value": 1}]}, "BEL": {"actions": [{"action": "Physical", "value": 1}, {"action": "Hacking", "value": 1}, {"action": "Malware", "value": 1}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 1}]}, "SGP": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "SWE": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "COL": {"actions": [{"action": "Unknown", "value": 2}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}]}, "ISR": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 6}, {"asset": "Network", "value": 1}]}, "PRI": {"actions": [{"action": "Physical", "value": 3}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Media", "value": 1}]}, "YEM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ARG": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "NOR": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Social", "value": 2}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Server", "value": 1}]}, "POL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "CHE": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "IDN": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Public Terminal", "value": 1}]}, "NAM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "URY": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "HKG": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "Worldwide": {"actions": [{"action": "Physical", "value": 206}, {"action": "Error", "value": 261}, {"action": "Misuse", "value": 192}, {"action": "Malware", "value": 84}, {"action": "Social", "value": 74}, {"action": "Hacking", "value": 306}, {"action": "Unknown", "value": 29}, {"action": "Environmental", "value": 3}, {"action": "Notes", "value": 2}], "assets": [{"asset": "User Device", "value": 288}, {"asset": "Media", "value": 242}, {"asset": "Server", "value": 422}, {"asset": "People", "value": 45}, {"asset": "Public Terminal", "value": 43}, {"asset": "Network", "value": 11}]}}, "2012": {"GBR": {"actions": [{"action": "Hacking", "value": 31}, {"action": "Misuse", "value": 20}, {"action": "Error", "value": 31}, {"action": "Physical", "value": 11}, {"action": "Social", "value": 9}, {"action": "Malware", "value": 5}], "assets": [{"asset": "Server", "value": 37}, {"asset": "User Device", "value": 19}, {"asset": "Media", "value": 19}, {"asset": "People", "value": 4}]}, "USA": {"actions": [{"action": "Error", "value": 270}, {"action": "Misuse", "value": 204}, {"action": "Hacking", "value": 243}, {"action": "Physical", "value": 216}, {"action": "Social", "value": 24}, {"action": "Unknown", "value": 35}, {"action": "Malware", "value": 66}], "assets": [{"asset": "Media", "value": 293}, {"asset": "User Device", "value": 260}, {"asset": "Server", "value": 448}, {"asset": "People", "value": 21}, {"asset": "Public Terminal", "value": 7}, {"asset": "Network", "value": 7}]}, "CAN": {"actions": [{"action": "Error", "value": 6}, {"action": "Hacking", "value": 15}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 8}, {"action": "Misuse", "value": 16}, {"action": "Physical", "value": 2}, {"action": "Environmental", "value": 2}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 6}, {"asset": "Server", "value": 24}, {"asset": "User Device", "value": 13}, {"asset": "People", "value": 3}, {"asset": "Network", "value": 1}]}, "KAZ": {"actions": [{"action": "Hacking", "value": 15}, {"action": "Malware", "value": 15}, {"action": "Social", "value": 15}], "assets": [{"asset": "User Device", "value": 10}, {"asset": "Network", "value": 5}, {"asset": "Server", "value": 5}, {"asset": "People", "value": 5}]}, "GHA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PRY": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "LUX": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "DEU": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 3}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 4}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 3}]}, "IND": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 5}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "ISR": {"actions": [{"action": "Hacking", "value": 9}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 5}, {"asset": "Server", "value": 4}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "ESP": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "People", "value": 2}]}, "ARE": {"actions": [{"action": "Hacking", "value": 15}, {"action": "Malware", "value": 12}, {"action": "Social", "value": 12}], "assets": [{"asset": "User Device", "value": 9}, {"asset": "Network", "value": 4}, {"asset": "Server", "value": 8}, {"asset": "People", "value": 4}]}, "JPN": {"actions": [{"action": "Hacking", "value": 11}, {"action": "Misuse", "value": 1}, {"action": "Malware", "value": 7}, {"action": "Social", "value": 6}], "assets": [{"asset": "Server", "value": 9}, {"asset": "User Device", "value": 5}, {"asset": "Network", "value": 2}, {"asset": "People", "value": 2}]}, "UZB": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "COG": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "IRL": {"actions": [{"action": "Error", "value": 4}, {"action": "Hacking", "value": 5}, {"action": "Misuse", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Server", "value": 4}, {"asset": "Media", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "KOR": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 1}]}, "NZL": {"actions": [{"action": "Error", "value": 5}, {"action": "Physical", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 6}, {"asset": "Public Terminal", "value": 1}]}, "MOZ": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "SVK": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "SAU": {"actions": [{"action": "Malware", "value": 5}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "BEL": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 5}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 5}, {"action": "Misuse", "value": 2}], "assets": [{"asset": "Server", "value": 7}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 2}]}, "MDA": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 2}]}, "BHR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "RUS": {"actions": [{"action": "Hacking", "value": 19}, {"action": "Malware", "value": 18}, {"action": "Social", "value": 18}], "assets": [{"asset": "User Device", "value": 12}, {"asset": "Network", "value": 6}, {"asset": "Server", "value": 7}, {"asset": "People", "value": 6}]}, "QAT": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "IRN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 1}]}, "BRA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NLD": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Error", "value": 4}, {"action": "Misuse", "value": 3}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}, {"asset": "Network", "value": 1}]}, "LVA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "HKG": {"actions": [{"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "AUS": {"actions": [{"action": "Error", "value": 4}, {"action": "Hacking", "value": 13}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 10}, {"asset": "User Device", "value": 5}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 2}]}, "ITA": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 3}, {"asset": "People", "value": 1}]}, "ARM": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 2}]}, "PAK": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Error", "value": 2}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "CYP": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 2}]}, "SWE": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "NGA": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 1}]}, "KWT": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "ZAF": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "AZE": {"actions": [{"action": "Hacking", "value": 12}, {"action": "Malware", "value": 12}, {"action": "Social", "value": 12}], "assets": [{"asset": "User Device", "value": 8}, {"asset": "Network", "value": 4}, {"asset": "Server", "value": 4}, {"asset": "People", "value": 4}]}, "ARG": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "LBN": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "BRN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "SDN": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "IDN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "AFG": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 2}]}, "DNK": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "User Device", "value": 2}]}, "TUR": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 5}, {"asset": "People", "value": 1}]}, "CHE": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Misuse", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 2}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 1}]}, "PAN": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "BLR": {"actions": [{"action": "Hacking", "value": 12}, {"action": "Malware", "value": 12}, {"action": "Social", "value": 12}], "assets": [{"asset": "User Device", "value": 8}, {"asset": "Network", "value": 4}, {"asset": "Server", "value": 4}, {"asset": "People", "value": 4}]}, "BLZ": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "AUT": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "ALB": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "VNM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "TZA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "CHN": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 1}]}, "ETH": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "People", "value": 1}]}, "MEX": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PRK": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}]}, "MRT": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "TKM": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 2}]}, "MAR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "UKR": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ROU": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "LKA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "PHL": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}]}, "BWA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "KEN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "MKD": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "EGY": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Error", "value": 2}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 1}]}, "HRV": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "OMN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "SRB": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "UGA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "DZA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "HUN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "POL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "FIN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "FRA": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 4}, {"asset": "Network", "value": 2}, {"asset": "People", "value": 2}]}, "BIH": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "GEO": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "TWN": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "IRQ": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "EST": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "MLI": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "CZE": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "LTU": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "PRT": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "SGP": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "JOR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 641}, {"action": "Misuse", "value": 257}, {"action": "Error", "value": 334}, {"action": "Physical", "value": 237}, {"action": "Social", "value": 304}, {"action": "Malware", "value": 341}, {"action": "Unknown", "value": 37}, {"action": "Environmental", "value": 2}], "assets": [{"asset": "Server", "value": 692}, {"asset": "User Device", "value": 497}, {"asset": "Media", "value": 334}, {"asset": "People", "value": 116}, {"asset": "Public Terminal", "value": 8}, {"asset": "Network", "value": 96}]}}, "2016": {"GBR": {"actions": [{"action": "Error", "value": 30}, {"action": "Hacking", "value": 24}, {"action": "Misuse", "value": 17}, {"action": "Physical", "value": 17}, {"action": "Malware", "value": 10}, {"action": "Social", "value": 14}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 18}, {"asset": "Server", "value": 32}, {"asset": "User Device", "value": 11}, {"asset": "People", "value": 7}, {"asset": "Public Terminal", "value": 8}, {"asset": "Network", "value": 1}]}, "USA": {"actions": [{"action": "Error", "value": 143}, {"action": "Malware", "value": 117}, {"action": "Physical", "value": 135}, {"action": "Hacking", "value": 183}, {"action": "Misuse", "value": 109}, {"action": "Unknown", "value": 21}, {"action": "Social", "value": 100}], "assets": [{"asset": "User Device", "value": 83}, {"asset": "Server", "value": 236}, {"asset": "Media", "value": 107}, {"asset": "Public Terminal", "value": 50}, {"asset": "People", "value": 65}]}, "THA": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Error", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 6}]}, "CZE": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "LTU": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "HKG": {"actions": [{"action": "Physical", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}]}, "IRL": {"actions": [{"action": "Error", "value": 4}, {"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 4}, {"asset": "Server", "value": 2}]}, "CAN": {"actions": [{"action": "Physical", "value": 7}, {"action": "Error", "value": 19}, {"action": "Hacking", "value": 16}, {"action": "Malware", "value": 8}, {"action": "Misuse", "value": 16}, {"action": "Social", "value": 6}], "assets": [{"asset": "Media", "value": 11}, {"asset": "Server", "value": 32}, {"asset": "User Device", "value": 10}, {"asset": "People", "value": 5}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 1}]}, "NLD": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Misuse", "value": 1}, {"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 5}, {"asset": "Media", "value": 1}]}, "AUS": {"actions": [{"action": "Error", "value": 19}, {"action": "Hacking", "value": 4}, {"action": "Social", "value": 2}, {"action": "Misuse", "value": 5}, {"action": "Physical", "value": 3}, {"action": "Malware", "value": 1}], "assets": [{"asset": "Media", "value": 7}, {"asset": "User Device", "value": 4}, {"asset": "Server", "value": 13}, {"asset": "People", "value": 1}]}, "CHN": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Misuse", "value": 5}, {"action": "Malware", "value": 4}, {"action": "Social", "value": 4}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "Media", "value": 1}, {"asset": "User Device", "value": 4}, {"asset": "People", "value": 1}]}, "DEU": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Malware", "value": 2}, {"action": "Social", "value": 3}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 3}, {"asset": "People", "value": 3}, {"asset": "User Device", "value": 2}]}, "ISR": {"actions": [{"action": "Error", "value": 2}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 1}]}, "FRA": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "KEN": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Social", "value": 3}, {"action": "Physical", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "People", "value": 1}]}, "NZL": {"actions": [{"action": "Misuse", "value": 8}, {"action": "Physical", "value": 3}, {"action": "Error", "value": 10}, {"action": "Hacking", "value": 1}, {"action": "Malware", "value": 1}, {"action": "Social", "value": 3}], "assets": [{"asset": "Media", "value": 4}, {"asset": "Server", "value": 4}, {"asset": "User Device", "value": 2}, {"asset": "People", "value": 1}]}, "JPN": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Malware", "value": 5}, {"action": "Social", "value": 3}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 7}, {"asset": "People", "value": 2}, {"asset": "User Device", "value": 1}]}, "ZAF": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Physical", "value": 4}, {"action": "Hacking", "value": 4}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Public Terminal", "value": 3}, {"asset": "Server", "value": 3}]}, "FIN": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "RUS": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 3}]}, "BGD": {"actions": [{"action": "Social", "value": 2}, {"action": "Physical", "value": 2}], "assets": [{"asset": "Public Terminal", "value": 1}, {"asset": "People", "value": 1}]}, "AUT": {"actions": [{"action": "Social", "value": 2}, {"action": "Error", "value": 3}], "assets": [{"asset": "People", "value": 1}, {"asset": "Server", "value": 1}]}, "KOR": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Social", "value": 2}, {"action": "Physical", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "People", "value": 1}]}, "BHS": {"actions": [{"action": "Malware", "value": 1}, {"action": "Hacking", "value": 1}, {"action": "Unknown", "value": 2}, {"action": "Error", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}]}, "IND": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 6}, {"action": "Misuse", "value": 4}, {"action": "Social", "value": 4}, {"action": "Malware", "value": 5}, {"action": "Physical", "value": 3}], "assets": [{"asset": "Server", "value": 7}, {"asset": "People", "value": 2}, {"asset": "User Device", "value": 2}, {"asset": "Media", "value": 1}, {"asset": "Public Terminal", "value": 1}]}, "UKR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "TUR": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "SGP": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "TTO": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Public Terminal", "value": 1}]}, "JAM": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "CYP": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NOR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "POL": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 3}]}, "IRN": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "DNK": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "ARE": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ARM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "SAU": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "GTM": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 1}]}, "TWN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Physical", "value": 3}], "assets": [{"asset": "Public Terminal", "value": 1}]}, "PAK": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PHL": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Physical", "value": 2}], "assets": [{"asset": "Media", "value": 1}]}, "IDN": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Error", "value": 243}, {"action": "Hacking", "value": 296}, {"action": "Misuse", "value": 179}, {"action": "Physical", "value": 188}, {"action": "Malware", "value": 159}, {"action": "Social", "value": 148}, {"action": "Unknown", "value": 25}], "assets": [{"asset": "Media", "value": 161}, {"asset": "Server", "value": 388}, {"asset": "User Device", "value": 126}, {"asset": "People", "value": 91}, {"asset": "Public Terminal", "value": 66}, {"asset": "Network", "value": 2}]}}, "2013": {"AZE": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "USA": {"actions": [{"action": "Misuse", "value": 269}, {"action": "Physical", "value": 279}, {"action": "Error", "value": 396}, {"action": "Hacking", "value": 339}, {"action": "Unknown", "value": 54}, {"action": "Malware", "value": 128}, {"action": "Social", "value": 75}, {"action": "Environmental", "value": 1}], "assets": [{"asset": "Server", "value": 544}, {"asset": "User Device", "value": 396}, {"asset": "Media", "value": 373}, {"asset": "Public Terminal", "value": 35}, {"asset": "People", "value": 54}, {"asset": "Network", "value": 6}]}, "GBR": {"actions": [{"action": "Physical", "value": 19}, {"action": "Error", "value": 31}, {"action": "Hacking", "value": 34}, {"action": "Malware", "value": 9}, {"action": "Misuse", "value": 12}, {"action": "Social", "value": 14}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "User Device", "value": 18}, {"asset": "Server", "value": 50}, {"asset": "Media", "value": 23}, {"asset": "People", "value": 6}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 7}]}, "SYR": {"actions": [{"action": "Hacking", "value": 6}], "assets": [{"asset": "Server", "value": 7}]}, "RUS": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "CAN": {"actions": [{"action": "Physical", "value": 9}, {"action": "Misuse", "value": 25}, {"action": "Error", "value": 19}, {"action": "Social", "value": 6}, {"action": "Environmental", "value": 1}, {"action": "Hacking", "value": 8}, {"action": "Malware", "value": 4}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 15}, {"asset": "User Device", "value": 18}, {"asset": "Server", "value": 31}, {"asset": "People", "value": 3}, {"asset": "Network", "value": 1}]}, "TWN": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}, {"action": "Misuse", "value": 3}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 5}, {"asset": "Server", "value": 7}, {"asset": "People", "value": 3}]}, "SGP": {"actions": [{"action": "Hacking", "value": 5}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 1}]}, "NZL": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 9}, {"action": "Error", "value": 19}, {"action": "Physical", "value": 5}], "assets": [{"asset": "Server", "value": 9}, {"asset": "User Device", "value": 8}, {"asset": "Media", "value": 13}]}, "ISR": {"actions": [{"action": "Hacking", "value": 15}, {"action": "Physical", "value": 1}, {"action": "Error", "value": 1}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 13}, {"asset": "User Device", "value": 2}, {"asset": "Media", "value": 1}, {"asset": "People", "value": 1}]}, "KEN": {"actions": [{"action": "Hacking", "value": 4}], "assets": [{"asset": "Server", "value": 4}]}, "EST": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "AUS": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Physical", "value": 6}, {"action": "Malware", "value": 1}, {"action": "Error", "value": 8}, {"action": "Unknown", "value": 4}, {"action": "Misuse", "value": 5}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 12}, {"asset": "Media", "value": 8}, {"asset": "User Device", "value": 7}, {"asset": "People", "value": 2}]}, "PSE": {"actions": [{"action": "Hacking", "value": 3}], "assets": [{"asset": "Server", "value": 3}]}, "IND": {"actions": [{"action": "Hacking", "value": 30}, {"action": "Misuse", "value": 6}, {"action": "Malware", "value": 6}, {"action": "Social", "value": 6}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Server", "value": 30}, {"asset": "User Device", "value": 6}, {"asset": "People", "value": 3}, {"asset": "Public Terminal", "value": 1}]}, "TUR": {"actions": [{"action": "Hacking", "value": 13}, {"action": "Malware", "value": 5}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 9}, {"asset": "User Device", "value": 2}, {"asset": "People", "value": 1}]}, "GEO": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "DEU": {"actions": [{"action": "Hacking", "value": 12}, {"action": "Malware", "value": 3}, {"action": "Misuse", "value": 2}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 11}, {"asset": "User Device", "value": 3}, {"asset": "Media", "value": 1}]}, "IRL": {"actions": [{"action": "Error", "value": 7}, {"action": "Physical", "value": 7}, {"action": "Misuse", "value": 2}, {"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Media", "value": 2}, {"asset": "User Device", "value": 4}, {"asset": "Public Terminal", "value": 5}, {"asset": "Server", "value": 8}, {"asset": "People", "value": 2}]}, "KOR": {"actions": [{"action": "Hacking", "value": 55}, {"action": "Malware", "value": 50}, {"action": "Social", "value": 48}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "People", "value": 16}, {"asset": "User Device", "value": 21}, {"asset": "Server", "value": 12}, {"asset": "Public Terminal", "value": 4}]}, "VNM": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "ISL": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "CZE": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "ZAF": {"actions": [{"action": "Error", "value": 2}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "BGD": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Misuse", "value": 2}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "ARM": {"actions": [{"action": "Hacking", "value": 3}], "assets": [{"asset": "Server", "value": 3}]}, "ECU": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "ROU": {"actions": [{"action": "Hacking", "value": 5}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 6}, {"asset": "People", "value": 1}]}, "TUN": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "CHN": {"actions": [{"action": "Hacking", "value": 14}, {"action": "Malware", "value": 8}, {"action": "Social", "value": 6}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 6}, {"asset": "User Device", "value": 5}, {"asset": "People", "value": 2}]}, "PHL": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Physical", "value": 2}], "assets": [{"asset": "Server", "value": 4}, {"asset": "Public Terminal", "value": 2}]}, "QAT": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NLD": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "FRA": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Social", "value": 1}], "assets": [{"asset": "Server", "value": 8}, {"asset": "People", "value": 1}, {"asset": "User Device", "value": 1}]}, "JPN": {"actions": [{"action": "Error", "value": 2}, {"action": "Hacking", "value": 11}, {"action": "Malware", "value": 5}, {"action": "Social", "value": 3}, {"action": "Misuse", "value": 3}, {"action": "Physical", "value": 2}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 3}, {"asset": "Server", "value": 9}, {"asset": "People", "value": 1}]}, "ESP": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 6}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "MYS": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "THA": {"actions": [{"action": "Physical", "value": 4}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 3}]}, "PRT": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "CHE": {"actions": [{"action": "Physical", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 2}, {"asset": "User Device", "value": 1}]}, "PAK": {"actions": [{"action": "Hacking", "value": 7}], "assets": [{"asset": "Server", "value": 8}]}, "BHR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "DNK": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Media", "value": 1}, {"asset": "Network", "value": 1}]}, "JOR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "COK": {"actions": [{"action": "Hacking", "value": 7}], "assets": [{"asset": "Server", "value": 7}, {"asset": "User Device", "value": 1}]}, "MAR": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "UKR": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 2}, {"asset": "People", "value": 1}]}, "BEL": {"actions": [{"action": "Malware", "value": 4}, {"action": "Hacking", "value": 5}, {"action": "Social", "value": 5}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 3}, {"asset": "People", "value": 2}, {"asset": "Media", "value": 1}]}, "HKG": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Social", "value": 2}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "People", "value": 1}, {"asset": "Server", "value": 2}]}, "GAB": {"actions": [{"action": "Hacking", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "User Device", "value": 1}]}, "BRA": {"actions": [{"action": "Hacking", "value": 8}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "Server", "value": 6}, {"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "LVA": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "ATG": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "BOL": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "MEX": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "SWE": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ARG": {"actions": [{"action": "Hacking", "value": 7}], "assets": [{"asset": "Server", "value": 7}]}, "PRK": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PRI": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "CHL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "LTU": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "BLZ": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "IDN": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "LKA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "CRI": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ARE": {"actions": [{"action": "Unknown", "value": 2}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 4}, {"asset": "User Device", "value": 1}]}, "NAM": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "JAM": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "POL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "HND": {"actions": [{"action": "Hacking", "value": 3}], "assets": [{"asset": "Server", "value": 3}]}, "TJK": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PRY": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "EGY": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "IRN": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Network", "value": 1}, {"asset": "Server", "value": 1}]}, "RWA": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NGA": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 2}]}, "MNE": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "KHM": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "SVN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "NOR": {"actions": [{"action": "Malware", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "OMN": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "User Device", "value": 1}]}, "SWZ": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PER": {"actions": [{"action": "Hacking", "value": 4}], "assets": [{"asset": "Server", "value": 4}]}, "ITA": {"actions": [{"action": "Unknown", "value": 1}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "People", "value": 1}]}, "LBN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "BGR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "HUN": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 3}, {"action": "Social", "value": 3}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "GRC": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "VEN": {"actions": [{"action": "Hacking", "value": 6}, {"action": "Malware", "value": 2}], "assets": [{"asset": "Server", "value": 5}]}, "ZMB": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "ZWE": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "LUX": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 752}, {"action": "Misuse", "value": 347}, {"action": "Physical", "value": 338}, {"action": "Error", "value": 492}, {"action": "Unknown", "value": 66}, {"action": "Malware", "value": 283}, {"action": "Social", "value": 235}, {"action": "Environmental", "value": 2}], "assets": [{"asset": "Server", "value": 925}, {"asset": "User Device", "value": 534}, {"asset": "Media", "value": 444}, {"asset": "Public Terminal", "value": 58}, {"asset": "People", "value": 116}, {"asset": "Network", "value": 11}]}}, "2011": {"USA": {"actions": [{"action": "Physical", "value": 99}, {"action": "Unknown", "value": 28}, {"action": "Error", "value": 145}, {"action": "Hacking", "value": 51}, {"action": "Misuse", "value": 149}, {"action": "Malware", "value": 13}, {"action": "Environmental", "value": 1}, {"action": "Social", "value": 16}], "assets": [{"asset": "User Device", "value": 113}, {"asset": "Media", "value": 156}, {"asset": "Server", "value": 212}, {"asset": "People", "value": 12}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 1}]}, "GBR": {"actions": [{"action": "Error", "value": 22}, {"action": "Misuse", "value": 5}, {"action": "Hacking", "value": 3}, {"action": "Physical", "value": 7}, {"action": "Social", "value": 3}], "assets": [{"asset": "Media", "value": 22}, {"asset": "Server", "value": 7}, {"asset": "User Device", "value": 7}, {"asset": "People", "value": 3}]}, "NZL": {"actions": [{"action": "Unknown", "value": 1}, {"action": "Misuse", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}]}, "CAN": {"actions": [{"action": "Misuse", "value": 4}, {"action": "Hacking", "value": 2}, {"action": "Physical", "value": 5}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 4}, {"asset": "Public Terminal", "value": 1}, {"asset": "User Device", "value": 5}, {"asset": "Media", "value": 2}]}, "HKG": {"actions": [{"action": "Error", "value": 2}], "assets": [{"asset": "User Device", "value": 2}]}, "CHN": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Misuse", "value": 3}, {"action": "Social", "value": 2}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 8}, {"asset": "People", "value": 1}]}, "PRK": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "DEU": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Error", "value": 2}], "assets": [{"asset": "Server", "value": 3}]}, "CHE": {"actions": [{"action": "Misuse", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "IND": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "PRI": {"actions": [{"action": "Physical", "value": 2}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 4}]}, "NLD": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "KOR": {"actions": [{"action": "Hacking", "value": 3}, {"action": "Malware", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}]}, "POL": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "AUS": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "JPN": {"actions": [{"action": "Error", "value": 2}, {"action": "Hacking", "value": 2}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}, {"asset": "Network", "value": 1}]}, "BEL": {"actions": [{"action": "Hacking", "value": 4}, {"action": "Social", "value": 4}, {"action": "Malware", "value": 4}, {"action": "Physical", "value": 4}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "PAN": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Physical", "value": 117}, {"action": "Unknown", "value": 30}, {"action": "Error", "value": 174}, {"action": "Hacking", "value": 77}, {"action": "Misuse", "value": 169}, {"action": "Malware", "value": 19}, {"action": "Environmental", "value": 1}, {"action": "Social", "value": 25}], "assets": [{"asset": "User Device", "value": 140}, {"asset": "Media", "value": 182}, {"asset": "Server", "value": 246}, {"asset": "People", "value": 17}, {"asset": "Network", "value": 2}, {"asset": "Public Terminal", "value": 2}]}}, "2017": {"USA": {"actions": [{"action": "Physical", "value": 69}, {"action": "Error", "value": 30}, {"action": "Malware", "value": 29}, {"action": "Hacking", "value": 36}, {"action": "Misuse", "value": 22}, {"action": "Unknown", "value": 4}, {"action": "Social", "value": 30}], "assets": [{"asset": "Media", "value": 35}, {"asset": "Server", "value": 65}, {"asset": "User Device", "value": 23}, {"asset": "Public Terminal", "value": 40}, {"asset": "People", "value": 27}, {"asset": "Network", "value": 3}, {"asset": "Other", "value": 2}, {"asset": "Embedded", "value": 1}]}, "GBR": {"actions": [{"action": "Physical", "value": 4}, {"action": "Hacking", "value": 2}, {"action": "Error", "value": 12}, {"action": "Malware", "value": 3}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 7}, {"asset": "Media", "value": 9}, {"asset": "Server", "value": 8}, {"asset": "Public Terminal", "value": 1}]}, "CAN": {"actions": [{"action": "Hacking", "value": 7}, {"action": "Malware", "value": 2}, {"action": "Unknown", "value": 2}, {"action": "Physical", "value": 2}, {"action": "Error", "value": 5}, {"action": "Misuse", "value": 3}], "assets": [{"asset": "Server", "value": 5}, {"asset": "User Device", "value": 4}, {"asset": "Media", "value": 4}, {"asset": "Other", "value": 1}, {"asset": "Network", "value": 1}]}, "CHN": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "AUS": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Error", "value": 4}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 2}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 3}, {"asset": "User Device", "value": 3}, {"asset": "People", "value": 1}, {"asset": "Server", "value": 2}]}, "LTU": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "NLD": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "JPN": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Misuse", "value": 4}, {"action": "Physical", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "Media", "value": 1}, {"asset": "User Device", "value": 1}]}, "TWN": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 3}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "NZL": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "IND": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Malware", "value": 1}, {"action": "Hacking", "value": 1}, {"action": "Error", "value": 1}, {"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 2}, {"asset": "Server", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "BMU": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "ARG": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Physical", "value": 79}, {"action": "Error", "value": 54}, {"action": "Malware", "value": 38}, {"action": "Hacking", "value": 53}, {"action": "Misuse", "value": 34}, {"action": "Unknown", "value": 7}, {"action": "Social", "value": 32}], "assets": [{"asset": "Media", "value": 54}, {"asset": "Server", "value": 91}, {"asset": "User Device", "value": 41}, {"asset": "Public Terminal", "value": 42}, {"asset": "People", "value": 28}, {"asset": "Network", "value": 4}, {"asset": "Other", "value": 3}, {"asset": "Embedded", "value": 1}]}}, "2009": {"USA": {"actions": [{"action": "Hacking", "value": 40}, {"action": "Malware", "value": 34}, {"action": "Social", "value": 39}, {"action": "Misuse", "value": 41}, {"action": "Physical", "value": 11}, {"action": "Error", "value": 5}, {"action": "Environmental", "value": 1}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Server", "value": 47}, {"asset": "User Device", "value": 26}, {"asset": "People", "value": 26}, {"asset": "Media", "value": 12}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 2}]}, "GBR": {"actions": [{"action": "Error", "value": 9}, {"action": "Misuse", "value": 2}], "assets": [{"asset": "Media", "value": 9}]}, "IND": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "CAN": {"actions": [{"action": "Misuse", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "NZL": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "AUS": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "JPN": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "FIN": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}], "assets": [{"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 43}, {"action": "Malware", "value": 36}, {"action": "Social", "value": 39}, {"action": "Misuse", "value": 48}, {"action": "Physical", "value": 11}, {"action": "Error", "value": 15}, {"action": "Environmental", "value": 1}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Server", "value": 52}, {"asset": "User Device", "value": 28}, {"asset": "People", "value": 26}, {"asset": "Media", "value": 22}, {"asset": "Network", "value": 1}, {"asset": "Public Terminal", "value": 2}]}}, "2007": {"USA": {"actions": [{"action": "Misuse", "value": 19}, {"action": "Social", "value": 2}, {"action": "Physical", "value": 12}, {"action": "Error", "value": 7}, {"action": "Hacking", "value": 8}, {"action": "Malware", "value": 6}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 21}, {"asset": "User Device", "value": 11}, {"asset": "People", "value": 1}, {"asset": "Media", "value": 8}]}, "IRL": {"actions": [{"action": "Physical", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "Media", "value": 1}]}, "GBR": {"actions": [{"action": "Physical", "value": 2}, {"action": "Misuse", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Media", "value": 1}]}, "SWE": {"actions": [{"action": "Hacking", "value": 1}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 2}]}, "NZL": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "FIN": {"actions": [{"action": "Unknown", "value": 2}, {"action": "Social", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "People", "value": 1}]}, "JPN": {"actions": [{"action": "Misuse", "value": 3}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 2}, {"asset": "People", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 24}, {"action": "Social", "value": 6}, {"action": "Physical", "value": 16}, {"action": "Error", "value": 9}, {"action": "Hacking", "value": 9}, {"action": "Malware", "value": 6}, {"action": "Unknown", "value": 3}], "assets": [{"asset": "Server", "value": 27}, {"asset": "User Device", "value": 15}, {"asset": "People", "value": 3}, {"asset": "Media", "value": 10}]}}, "2006": {"USA": {"actions": [{"action": "Error", "value": 3}, {"action": "Misuse", "value": 10}, {"action": "Physical", "value": 5}, {"action": "Hacking", "value": 3}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Server", "value": 8}, {"asset": "User Device", "value": 7}, {"asset": "Media", "value": 2}, {"asset": "Public Terminal", "value": 1}]}, "JPN": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "RUS": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "CHE": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Error", "value": 3}, {"action": "Misuse", "value": 11}, {"action": "Physical", "value": 5}, {"action": "Hacking", "value": 3}, {"action": "Unknown", "value": 4}], "assets": [{"asset": "Server", "value": 9}, {"asset": "User Device", "value": 8}, {"asset": "Media", "value": 3}, {"asset": "Public Terminal", "value": 1}]}}, "2008": {"USA": {"actions": [{"action": "Misuse", "value": 40}, {"action": "Physical", "value": 10}, {"action": "Error", "value": 8}, {"action": "Social", "value": 11}, {"action": "Hacking", "value": 7}, {"action": "Malware", "value": 2}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Server", "value": 35}, {"asset": "User Device", "value": 9}, {"asset": "Media", "value": 12}, {"asset": "People", "value": 6}, {"asset": "Network", "value": 4}]}, "GBR": {"actions": [{"action": "Error", "value": 8}, {"action": "Hacking", "value": 4}, {"action": "Malware", "value": 2}, {"action": "Physical", "value": 3}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 7}, {"asset": "Public Terminal", "value": 1}, {"asset": "Media", "value": 3}]}, "SWE": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "Server", "value": 2}]}, "CAN": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Hacking", "value": 1}, {"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 2}, {"asset": "Server", "value": 2}]}, "CHL": {"actions": [{"action": "Hacking", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 2}]}, "KOR": {"actions": [{"action": "Error", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 1}]}, "NOR": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 42}, {"action": "Physical", "value": 14}, {"action": "Error", "value": 18}, {"action": "Social", "value": 11}, {"action": "Hacking", "value": 17}, {"action": "Malware", "value": 4}, {"action": "Unknown", "value": 2}], "assets": [{"asset": "Server", "value": 49}, {"asset": "User Device", "value": 13}, {"asset": "Media", "value": 19}, {"asset": "People", "value": 6}, {"asset": "Network", "value": 4}, {"asset": "Public Terminal", "value": 1}]}}, "2004": {"TLS": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "People", "value": 1}]}, "USA": {"actions": [{"action": "Misuse", "value": 10}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 3}, {"action": "Error", "value": 1}], "assets": [{"asset": "Server", "value": 9}, {"asset": "Public Terminal", "value": 1}, {"asset": "Media", "value": 2}, {"asset": "User Device", "value": 5}, {"asset": "People", "value": 3}]}, "CAN": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "GBR": {"actions": [{"action": "Error", "value": 1}, {"action": "Misuse", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Physical", "value": 1}, {"action": "Misuse", "value": 12}, {"action": "Hacking", "value": 3}, {"action": "Social", "value": 3}, {"action": "Error", "value": 2}], "assets": [{"asset": "People", "value": 4}, {"asset": "Server", "value": 11}, {"asset": "Public Terminal", "value": 1}, {"asset": "Media", "value": 3}, {"asset": "User Device", "value": 5}]}}, "2005": {"CAN": {"actions": [{"action": "Misuse", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Media", "value": 1}]}, "USA": {"actions": [{"action": "Misuse", "value": 8}, {"action": "Hacking", "value": 3}, {"action": "Error", "value": 4}, {"action": "Physical", "value": 1}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 9}, {"asset": "Network", "value": 1}, {"asset": "Media", "value": 3}, {"asset": "User Device", "value": 3}, {"asset": "People", "value": 1}]}, "ISR": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 12}, {"action": "Hacking", "value": 3}, {"action": "Error", "value": 4}, {"action": "Physical", "value": 1}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 12}, {"asset": "Media", "value": 4}, {"asset": "Network", "value": 1}, {"asset": "User Device", "value": 3}, {"asset": "People", "value": 1}]}}, "1998": {"USA": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}}, "2001": {"USA": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}, {"action": "Error", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Media", "value": 2}, {"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}, {"action": "Error", "value": 3}], "assets": [{"asset": "Server", "value": 2}, {"asset": "Media", "value": 2}, {"asset": "User Device", "value": 1}]}}, "1971": {"USA": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "Worldwide": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}}, "2003": {"USA": {"actions": [{"action": "Malware", "value": 1}, {"action": "Misuse", "value": 11}, {"action": "Hacking", "value": 5}, {"action": "Physical", "value": 2}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 7}, {"asset": "Media", "value": 2}]}, "JPN": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "CAN": {"actions": [{"action": "Misuse", "value": 2}, {"action": "Social", "value": 2}], "assets": [{"asset": "Server", "value": 1}, {"asset": "People", "value": 1}]}, "Worldwide": {"actions": [{"action": "Malware", "value": 1}, {"action": "Misuse", "value": 13}, {"action": "Hacking", "value": 5}, {"action": "Physical", "value": 2}, {"action": "Unknown", "value": 1}, {"action": "Social", "value": 2}], "assets": [{"asset": "User Device", "value": 3}, {"asset": "Server", "value": 9}, {"asset": "Media", "value": 2}, {"asset": "People", "value": 1}]}}, "2002": {"USA": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 2}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 1}]}, "IRL": {"actions": [{"action": "Physical", "value": 1}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Media", "value": 1}]}, "TWN": {"actions": [{"action": "Unknown", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Misuse", "value": 2}, {"action": "Physical", "value": 1}, {"action": "Unknown", "value": 1}], "assets": [{"asset": "Server", "value": 3}, {"asset": "User Device", "value": 3}, {"asset": "Media", "value": 1}]}}, "1994": {"GBR": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 1}], "assets": [{"asset": "Server", "value": 1}]}}, "1999": {"GBR": {"actions": [{"action": "Error", "value": 1}], "assets": [{"asset": "Media", "value": 1}]}, "USA": {"actions": [{"action": "Malware", "value": 1}], "assets": [{"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Error", "value": 1}, {"action": "Malware", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 1}]}}, "1984": {"USA": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 1}]}, "Worldwide": {"actions": [{"action": "Misuse", "value": 1}, {"action": "Hacking", "value": 1}], "assets": [{"asset": "Media", "value": 1}, {"asset": "User Device", "value": 1}]}}, "2000": {"CAN": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}]}, "Worldwide": {"actions": [{"action": "Hacking", "value": 2}, {"action": "Malware", "value": 2}], "assets": [{"asset": "User Device", "value": 1}, {"asset": "Server", "value": 1}]}}}
+{
+  "2015": {
+    "USA": {
+      "actions": {
+        "Misuse": 198,
+        "Error": 227,
+        "Physical": 152,
+        "Unknown": 15,
+        "Social": 75,
+        "Hacking": 174,
+        "Malware": 90
+      },
+      "assets": {
+        "User Device": 134,
+        "Media": 202,
+        "Public Terminal": 54,
+        "People": 48,
+        "Server": 285,
+        "Network": 7,
+        "Other": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Hacking": 6,
+        "Error": 16,
+        "Misuse": 23,
+        "Physical": 7,
+        "Malware": 1
+      },
+      "assets": {
+        "Server": 26,
+        "Media": 17,
+        "User Device": 4
+      }
+    },
+    "QAT": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Error": 13,
+        "Unknown": 1,
+        "Physical": 7,
+        "Misuse": 4,
+        "Hacking": 4,
+        "Social": 4
+      },
+      "assets": {
+        "User Device": 5,
+        "Server": 9,
+        "Media": 6,
+        "Public Terminal": 1,
+        "People": 4
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Error": 30,
+        "Physical": 13,
+        "Hacking": 18,
+        "Misuse": 11,
+        "Social": 2,
+        "Malware": 2,
+        "Unknown": 2
+      },
+      "assets": {
+        "Media": 20,
+        "Server": 28,
+        "User Device": 15,
+        "People": 3,
+        "Public Terminal": 4
+      }
+    },
+    "IND": {
+      "actions": {
+        "Hacking": 3,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 5
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Misuse": 10,
+        "Physical": 2,
+        "Error": 10,
+        "Social": 1
+      },
+      "assets": {
+        "Media": 5,
+        "Server": 9,
+        "User Device": 2,
+        "People": 2
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Hacking": 1,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Hacking": 1,
+        "Misuse": 1,
+        "Malware": 1
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 1
+      }
+    },
+    "UKR": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2,
+        "Social": 2,
+        "Misuse": 1,
+        "Physical": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 4,
+        "People": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Error": 4,
+        "Unknown": 1,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1,
+        "Media": 2
+      }
+    },
+    "FRA": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "SGP": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PAK": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "THA": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 6,
+        "Malware": 4
+      },
+      "assets": {
+        "Server": 8
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Hacking": 3,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 4
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Misuse": 1,
+        "Physical": 2,
+        "Malware": 1
+      },
+      "assets": {
+        "People": 1,
+        "Server": 1,
+        "Media": 2,
+        "Network": 1
+      }
+    },
+    "CRI": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Hacking": 4,
+        "Unknown": 4,
+        "Misuse": 1,
+        "Error": 3,
+        "Malware": 1
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 3
+      }
+    },
+    "ITA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Physical": 1,
+        "Hacking": 2,
+        "Social": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1,
+        "People": 1,
+        "Server": 2
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 5,
+        "Social": 3,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 2,
+        "People": 1
+      }
+    },
+    "BWA": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "JAM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1
+      }
+    },
+    "TUR": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "People": 1,
+        "Server": 1
+      }
+    },
+    "COL": {
+      "actions": {
+        "Misuse": 4,
+        "Hacking": 4,
+        "Malware": 4,
+        "Physical": 4
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "BGR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NOR": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "DNK": {
+      "actions": {
+        "Error": 2
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "SRB": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "SWZ": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ECU": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Misuse": 2,
+        "Error": 4
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 1
+      }
+    },
+    "PAN": {
+      "actions": {
+        "Misuse": 2,
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "VNM": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ZAF": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 269,
+        "Error": 314,
+        "Physical": 191,
+        "Unknown": 23,
+        "Social": 89,
+        "Hacking": 248,
+        "Malware": 113
+      },
+      "assets": {
+        "User Device": 176,
+        "Media": 257,
+        "Public Terminal": 59,
+        "People": 62,
+        "Server": 421,
+        "Network": 8,
+        "Other": 1
+      }
+    }
+  },
+  "2010": {
+    "USA": {
+      "actions": {
+        "Misuse": 66,
+        "Error": 308,
+        "Physical": 162,
+        "Social": 17,
+        "Unknown": 26,
+        "Hacking": 44,
+        "Malware": 16
+      },
+      "assets": {
+        "Server": 100,
+        "Media": 336,
+        "User Device": 150,
+        "People": 8,
+        "Network": 3
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Error": 2,
+        "Misuse": 9,
+        "Social": 2
+      },
+      "assets": {
+        "Media": 2,
+        "User Device": 2,
+        "Server": 6,
+        "People": 1
+      }
+    },
+    "ZWE": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 3,
+        "Social": 3,
+        "Misuse": 2,
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 3,
+        "Network": 1,
+        "People": 1,
+        "Media": 1,
+        "Server": 3
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "BEL": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 5,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 3,
+        "Network": 1,
+        "People": 1,
+        "Server": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Social": 1,
+        "Misuse": 2,
+        "Error": 2
+      },
+      "assets": {
+        "Server": 1,
+        "People": 1,
+        "Media": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 80,
+        "Error": 312,
+        "Physical": 163,
+        "Social": 35,
+        "Unknown": 27,
+        "Hacking": 63,
+        "Malware": 33
+      },
+      "assets": {
+        "Server": 111,
+        "Media": 341,
+        "User Device": 162,
+        "People": 15,
+        "Network": 8
+      }
+    }
+  },
+  "2014": {
+    "USA": {
+      "actions": {
+        "Physical": 171,
+        "Error": 207,
+        "Misuse": 152,
+        "Malware": 70,
+        "Social": 51,
+        "Hacking": 171,
+        "Unknown": 21,
+        "Environmental": 2
+      },
+      "assets": {
+        "User Device": 233,
+        "Media": 200,
+        "Server": 273,
+        "People": 32,
+        "Public Terminal": 28,
+        "Network": 6
+      }
+    },
+    "AUT": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Error": 3,
+        "Hacking": 2,
+        "Physical": 3
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 2,
+        "Media": 2,
+        "Public Terminal": 1
+      }
+    },
+    "ALB": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Physical": 7,
+        "Error": 5,
+        "Misuse": 14,
+        "Hacking": 10,
+        "Malware": 2,
+        "Social": 1
+      },
+      "assets": {
+        "Media": 5,
+        "User Device": 8,
+        "Server": 18,
+        "People": 2,
+        "Public Terminal": 1
+      }
+    },
+    "FRA": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 2
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 2
+      }
+    },
+    "ARE": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Hacking": 25,
+        "Misuse": 12,
+        "Physical": 13,
+        "Error": 32,
+        "Social": 11,
+        "Environmental": 1
+      },
+      "assets": {
+        "Server": 35,
+        "Media": 20,
+        "Public Terminal": 8,
+        "People": 6,
+        "User Device": 13,
+        "Network": 1
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Hacking": 6,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 6,
+        "User Device": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Hacking": 2,
+        "Misuse": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 4,
+        "Media": 1
+      }
+    },
+    "IND": {
+      "actions": {
+        "Hacking": 11,
+        "Notes": 2,
+        "Unknown": 1,
+        "Malware": 4,
+        "Social": 4,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 10,
+        "User Device": 3,
+        "People": 2,
+        "Media": 1
+      }
+    },
+    "TKM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Hacking": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Physical": 2,
+        "Hacking": 2,
+        "Misuse": 2,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 2,
+        "Media": 2
+      }
+    },
+    "TUR": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 4
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 3,
+        "User Device": 1
+      }
+    },
+    "EGY": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3,
+        "Physical": 1
+      },
+      "assets": {
+        "Server": 2,
+        "People": 1,
+        "Network": 1
+      }
+    },
+    "PAK": {
+      "actions": {
+        "Hacking": 4
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Error": 5,
+        "Misuse": 4,
+        "Hacking": 4,
+        "Unknown": 1,
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 4,
+        "Server": 4,
+        "User Device": 6,
+        "Public Terminal": 1
+      }
+    },
+    "PHL": {
+      "actions": {
+        "Physical": 1,
+        "Hacking": 3
+      },
+      "assets": {
+        "Public Terminal": 1,
+        "Server": 3
+      }
+    },
+    "VEN": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Misuse": 2,
+        "Hacking": 3,
+        "Malware": 2,
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 4,
+        "Media": 1,
+        "Network": 1
+      }
+    },
+    "PER": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "DNK": {
+      "actions": {
+        "Misuse": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "UKR": {
+      "actions": {
+        "Hacking": 8
+      },
+      "assets": {
+        "Server": 6,
+        "User Device": 1,
+        "Network": 1
+      }
+    },
+    "SYR": {
+      "actions": {
+        "Hacking": 4
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 1
+      }
+    },
+    "NPL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Hacking": 4,
+        "Misuse": 2,
+        "Social": 2,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 3,
+        "People": 1
+      }
+    },
+    "KEN": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "KHM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "FIN": {
+      "actions": {
+        "Hacking": 1,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 2,
+        "Public Terminal": 1
+      }
+    },
+    "MYS": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 1
+      }
+    },
+    "THA": {
+      "actions": {
+        "Physical": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Public Terminal": 1,
+        "Server": 1
+      }
+    },
+    "BEL": {
+      "actions": {
+        "Physical": 1,
+        "Hacking": 1,
+        "Malware": 1
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 1
+      }
+    },
+    "SGP": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "COL": {
+      "actions": {
+        "Unknown": 2,
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Hacking": 5,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 6,
+        "Network": 1
+      }
+    },
+    "PRI": {
+      "actions": {
+        "Physical": 3,
+        "Hacking": 1
+      },
+      "assets": {
+        "User Device": 3,
+        "Media": 1
+      }
+    },
+    "YEM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ARG": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "NOR": {
+      "actions": {
+        "Hacking": 2,
+        "Social": 2,
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "People": 1,
+        "Server": 1
+      }
+    },
+    "POL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "IDN": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Public Terminal": 1
+      }
+    },
+    "NAM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "URY": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Physical": 206,
+        "Error": 261,
+        "Misuse": 192,
+        "Malware": 84,
+        "Social": 74,
+        "Hacking": 306,
+        "Unknown": 29,
+        "Environmental": 3,
+        "Notes": 2
+      },
+      "assets": {
+        "User Device": 288,
+        "Media": 242,
+        "Server": 422,
+        "People": 45,
+        "Public Terminal": 43,
+        "Network": 11
+      }
+    }
+  },
+  "2012": {
+    "GBR": {
+      "actions": {
+        "Hacking": 31,
+        "Misuse": 20,
+        "Error": 31,
+        "Physical": 11,
+        "Social": 9,
+        "Malware": 5
+      },
+      "assets": {
+        "Server": 37,
+        "User Device": 19,
+        "Media": 19,
+        "People": 4
+      }
+    },
+    "USA": {
+      "actions": {
+        "Error": 270,
+        "Misuse": 204,
+        "Hacking": 243,
+        "Physical": 216,
+        "Social": 24,
+        "Unknown": 35,
+        "Malware": 66
+      },
+      "assets": {
+        "Media": 293,
+        "User Device": 260,
+        "Server": 448,
+        "People": 21,
+        "Public Terminal": 7,
+        "Network": 7
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Error": 6,
+        "Hacking": 15,
+        "Malware": 6,
+        "Social": 8,
+        "Misuse": 16,
+        "Physical": 2,
+        "Environmental": 2,
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 6,
+        "Server": 24,
+        "User Device": 13,
+        "People": 3,
+        "Network": 1
+      }
+    },
+    "KAZ": {
+      "actions": {
+        "Hacking": 15,
+        "Malware": 15,
+        "Social": 15
+      },
+      "assets": {
+        "User Device": 10,
+        "Network": 5,
+        "Server": 5,
+        "People": 5
+      }
+    },
+    "GHA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PRY": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "LUX": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 8,
+        "Malware": 3,
+        "Social": 3,
+        "Physical": 3
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 4,
+        "Network": 1,
+        "People": 1,
+        "Media": 3
+      }
+    },
+    "IND": {
+      "actions": {
+        "Hacking": 8,
+        "Malware": 3,
+        "Social": 3,
+        "Physical": 1
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 5,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Hacking": 9,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 5,
+        "Server": 4,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "ESP": {
+      "actions": {
+        "Hacking": 7,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 4,
+        "Network": 2,
+        "People": 2
+      }
+    },
+    "ARE": {
+      "actions": {
+        "Hacking": 15,
+        "Malware": 12,
+        "Social": 12
+      },
+      "assets": {
+        "User Device": 9,
+        "Network": 4,
+        "Server": 8,
+        "People": 4
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Hacking": 11,
+        "Misuse": 1,
+        "Malware": 7,
+        "Social": 6
+      },
+      "assets": {
+        "Server": 9,
+        "User Device": 5,
+        "Network": 2,
+        "People": 2
+      }
+    },
+    "UZB": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "COG": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Error": 4,
+        "Hacking": 5,
+        "Misuse": 3,
+        "Malware": 3,
+        "Social": 3,
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 4,
+        "Server": 4,
+        "Media": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 1,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 1
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Error": 5,
+        "Physical": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 6,
+        "Public Terminal": 1
+      }
+    },
+    "MOZ": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "SVK": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "SAU": {
+      "actions": {
+        "Malware": 5,
+        "Hacking": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "BEL": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 5,
+        "Malware": 3,
+        "Social": 5,
+        "Misuse": 2
+      },
+      "assets": {
+        "Server": 7,
+        "User Device": 2,
+        "Network": 1,
+        "People": 2
+      }
+    },
+    "MDA": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 2,
+        "Server": 2,
+        "People": 2
+      }
+    },
+    "BHR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Hacking": 19,
+        "Malware": 18,
+        "Social": 18
+      },
+      "assets": {
+        "User Device": 12,
+        "Network": 6,
+        "Server": 7,
+        "People": 6
+      }
+    },
+    "QAT": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "IRN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3,
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 2,
+        "People": 1
+      }
+    },
+    "BRA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Hacking": 6,
+        "Error": 4,
+        "Misuse": 3
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1,
+        "Network": 1
+      }
+    },
+    "LVA": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Error": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Error": 4,
+        "Hacking": 13,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 10,
+        "User Device": 5,
+        "Network": 1,
+        "People": 1,
+        "Media": 2
+      }
+    },
+    "ITA": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 3,
+        "Network": 1,
+        "Server": 3,
+        "People": 1
+      }
+    },
+    "ARM": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 2,
+        "Server": 2,
+        "People": 2
+      }
+    },
+    "PAK": {
+      "actions": {
+        "Hacking": 5,
+        "Error": 2,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "CYP": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 2,
+        "Server": 2,
+        "People": 2
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "NGA": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 1
+      }
+    },
+    "KWT": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "ZAF": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "AZE": {
+      "actions": {
+        "Hacking": 12,
+        "Malware": 12,
+        "Social": 12
+      },
+      "assets": {
+        "User Device": 8,
+        "Network": 4,
+        "Server": 4,
+        "People": 4
+      }
+    },
+    "ARG": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "LBN": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 3,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "BRN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "SDN": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "IDN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "AFG": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 2,
+        "Server": 2,
+        "People": 2
+      }
+    },
+    "DNK": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "User Device": 2
+      }
+    },
+    "TUR": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 3,
+        "Social": 3,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 5,
+        "People": 1
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Hacking": 4,
+        "Misuse": 3,
+        "Malware": 3,
+        "Social": 3,
+        "Physical": 2
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 2,
+        "Network": 1,
+        "People": 1,
+        "Media": 1
+      }
+    },
+    "PAN": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "BLR": {
+      "actions": {
+        "Hacking": 12,
+        "Malware": 12,
+        "Social": 12
+      },
+      "assets": {
+        "User Device": 8,
+        "Network": 4,
+        "Server": 4,
+        "People": 4
+      }
+    },
+    "BLZ": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "AUT": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "ALB": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "VNM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "TZA": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Hacking": 4,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 1
+      }
+    },
+    "ETH": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 2,
+        "Network": 1,
+        "People": 1
+      }
+    },
+    "MEX": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PRK": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1
+      }
+    },
+    "MRT": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "TKM": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "User Device": 4,
+        "Network": 2,
+        "Server": 2,
+        "People": 2
+      }
+    },
+    "MAR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "UKR": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ROU": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "LKA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "PHL": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 2
+      }
+    },
+    "BWA": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "KEN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "MKD": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "EGY": {
+      "actions": {
+        "Misuse": 2,
+        "Error": 2,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 1
+      }
+    },
+    "HRV": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "OMN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "SRB": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "UGA": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "DZA": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "HUN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "POL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "FIN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "FRA": {
+      "actions": {
+        "Hacking": 7,
+        "Malware": 6,
+        "Social": 6
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 4,
+        "Network": 2,
+        "People": 2
+      }
+    },
+    "BIH": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "GEO": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "IRQ": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "EST": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "MLI": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "CZE": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "LTU": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "PRT": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "SGP": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "JOR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Network": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 641,
+        "Misuse": 257,
+        "Error": 334,
+        "Physical": 237,
+        "Social": 304,
+        "Malware": 341,
+        "Unknown": 37,
+        "Environmental": 2
+      },
+      "assets": {
+        "Server": 692,
+        "User Device": 497,
+        "Media": 334,
+        "People": 116,
+        "Public Terminal": 8,
+        "Network": 96
+      }
+    }
+  },
+  "2016": {
+    "GBR": {
+      "actions": {
+        "Error": 30,
+        "Hacking": 24,
+        "Misuse": 17,
+        "Physical": 17,
+        "Malware": 10,
+        "Social": 14,
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 18,
+        "Server": 32,
+        "User Device": 11,
+        "People": 7,
+        "Public Terminal": 8,
+        "Network": 1
+      }
+    },
+    "USA": {
+      "actions": {
+        "Error": 143,
+        "Malware": 117,
+        "Physical": 135,
+        "Hacking": 183,
+        "Misuse": 109,
+        "Unknown": 21,
+        "Social": 100
+      },
+      "assets": {
+        "User Device": 83,
+        "Server": 236,
+        "Media": 107,
+        "Public Terminal": 50,
+        "People": 65
+      }
+    },
+    "THA": {
+      "actions": {
+        "Hacking": 3,
+        "Error": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 6
+      }
+    },
+    "CZE": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "LTU": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Physical": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Error": 4,
+        "Misuse": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 4,
+        "Server": 2
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Physical": 7,
+        "Error": 19,
+        "Hacking": 16,
+        "Malware": 8,
+        "Misuse": 16,
+        "Social": 6
+      },
+      "assets": {
+        "Media": 11,
+        "Server": 32,
+        "User Device": 10,
+        "People": 5,
+        "Network": 1,
+        "Public Terminal": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Hacking": 3,
+        "Misuse": 1,
+        "Error": 2
+      },
+      "assets": {
+        "Server": 5,
+        "Media": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Error": 19,
+        "Hacking": 4,
+        "Social": 2,
+        "Misuse": 5,
+        "Physical": 3,
+        "Malware": 1
+      },
+      "assets": {
+        "Media": 7,
+        "User Device": 4,
+        "Server": 13,
+        "People": 1
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Hacking": 8,
+        "Misuse": 5,
+        "Malware": 4,
+        "Social": 4,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 4,
+        "Media": 1,
+        "User Device": 4,
+        "People": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 1,
+        "Malware": 2,
+        "Social": 3,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 3,
+        "People": 3,
+        "User Device": 2
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Error": 2,
+        "Physical": 1
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 1
+      }
+    },
+    "FRA": {
+      "actions": {
+        "Hacking": 1,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "KEN": {
+      "actions": {
+        "Hacking": 4,
+        "Social": 3,
+        "Physical": 3
+      },
+      "assets": {
+        "Server": 2,
+        "People": 1
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Misuse": 8,
+        "Physical": 3,
+        "Error": 10,
+        "Hacking": 1,
+        "Malware": 1,
+        "Social": 3
+      },
+      "assets": {
+        "Media": 4,
+        "Server": 4,
+        "User Device": 2,
+        "People": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Hacking": 8,
+        "Malware": 5,
+        "Social": 3,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 7,
+        "People": 2,
+        "User Device": 1
+      }
+    },
+    "ZAF": {
+      "actions": {
+        "Misuse": 1,
+        "Physical": 4,
+        "Hacking": 4
+      },
+      "assets": {
+        "Media": 1,
+        "Public Terminal": 3,
+        "Server": 3
+      }
+    },
+    "FIN": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 2
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 3
+      }
+    },
+    "BGD": {
+      "actions": {
+        "Social": 2,
+        "Physical": 2
+      },
+      "assets": {
+        "Public Terminal": 1,
+        "People": 1
+      }
+    },
+    "AUT": {
+      "actions": {
+        "Social": 2,
+        "Error": 3
+      },
+      "assets": {
+        "People": 1,
+        "Server": 1
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 4,
+        "Social": 2,
+        "Physical": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 2,
+        "Server": 2,
+        "People": 1
+      }
+    },
+    "BHS": {
+      "actions": {
+        "Malware": 1,
+        "Hacking": 1,
+        "Unknown": 2,
+        "Error": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 2
+      }
+    },
+    "IND": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 6,
+        "Misuse": 4,
+        "Social": 4,
+        "Malware": 5,
+        "Physical": 3
+      },
+      "assets": {
+        "Server": 7,
+        "People": 2,
+        "User Device": 2,
+        "Media": 1,
+        "Public Terminal": 1
+      }
+    },
+    "UKR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "TUR": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "SGP": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "TTO": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Public Terminal": 1
+      }
+    },
+    "JAM": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "CYP": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NOR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "POL": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "IRN": {
+      "actions": {
+        "Misuse": 2,
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "DNK": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "ARE": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ARM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "SAU": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "GTM": {
+      "actions": {
+        "Misuse": 2,
+        "Error": 2
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Physical": 3
+      },
+      "assets": {
+        "Public Terminal": 1
+      }
+    },
+    "PAK": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PHL": {
+      "actions": {
+        "Misuse": 2,
+        "Physical": 2
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "IDN": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Error": 243,
+        "Hacking": 296,
+        "Misuse": 179,
+        "Physical": 188,
+        "Malware": 159,
+        "Social": 148,
+        "Unknown": 25
+      },
+      "assets": {
+        "Media": 161,
+        "Server": 388,
+        "User Device": 126,
+        "People": 91,
+        "Public Terminal": 66,
+        "Network": 2
+      }
+    }
+  },
+  "2013": {
+    "AZE": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "USA": {
+      "actions": {
+        "Misuse": 269,
+        "Physical": 279,
+        "Error": 396,
+        "Hacking": 339,
+        "Unknown": 54,
+        "Malware": 128,
+        "Social": 75,
+        "Environmental": 1
+      },
+      "assets": {
+        "Server": 544,
+        "User Device": 396,
+        "Media": 373,
+        "Public Terminal": 35,
+        "People": 54,
+        "Network": 6
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Physical": 19,
+        "Error": 31,
+        "Hacking": 34,
+        "Malware": 9,
+        "Misuse": 12,
+        "Social": 14,
+        "Unknown": 2
+      },
+      "assets": {
+        "User Device": 18,
+        "Server": 50,
+        "Media": 23,
+        "People": 6,
+        "Network": 1,
+        "Public Terminal": 7
+      }
+    },
+    "SYR": {
+      "actions": {
+        "Hacking": 6
+      },
+      "assets": {
+        "Server": 7
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Physical": 9,
+        "Misuse": 25,
+        "Error": 19,
+        "Social": 6,
+        "Environmental": 1,
+        "Hacking": 8,
+        "Malware": 4,
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 15,
+        "User Device": 18,
+        "Server": 31,
+        "People": 3,
+        "Network": 1
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 6,
+        "Social": 6,
+        "Misuse": 3,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 5,
+        "Server": 7,
+        "People": 3
+      }
+    },
+    "SGP": {
+      "actions": {
+        "Hacking": 5
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 1
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Hacking": 2,
+        "Misuse": 9,
+        "Error": 19,
+        "Physical": 5
+      },
+      "assets": {
+        "Server": 9,
+        "User Device": 8,
+        "Media": 13
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Hacking": 15,
+        "Physical": 1,
+        "Error": 1,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 13,
+        "User Device": 2,
+        "Media": 1,
+        "People": 1
+      }
+    },
+    "KEN": {
+      "actions": {
+        "Hacking": 4
+      },
+      "assets": {
+        "Server": 4
+      }
+    },
+    "EST": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Hacking": 8,
+        "Physical": 6,
+        "Malware": 1,
+        "Error": 8,
+        "Unknown": 4,
+        "Misuse": 5,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 12,
+        "Media": 8,
+        "User Device": 7,
+        "People": 2
+      }
+    },
+    "PSE": {
+      "actions": {
+        "Hacking": 3
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "IND": {
+      "actions": {
+        "Hacking": 30,
+        "Misuse": 6,
+        "Malware": 6,
+        "Social": 6,
+        "Physical": 1
+      },
+      "assets": {
+        "Server": 30,
+        "User Device": 6,
+        "People": 3,
+        "Public Terminal": 1
+      }
+    },
+    "TUR": {
+      "actions": {
+        "Hacking": 13,
+        "Malware": 5,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 9,
+        "User Device": 2,
+        "People": 1
+      }
+    },
+    "GEO": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 12,
+        "Malware": 3,
+        "Misuse": 2,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 11,
+        "User Device": 3,
+        "Media": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Error": 7,
+        "Physical": 7,
+        "Misuse": 2,
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Media": 2,
+        "User Device": 4,
+        "Public Terminal": 5,
+        "Server": 8,
+        "People": 2
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 55,
+        "Malware": 50,
+        "Social": 48,
+        "Misuse": 1
+      },
+      "assets": {
+        "People": 16,
+        "User Device": 21,
+        "Server": 12,
+        "Public Terminal": 4
+      }
+    },
+    "VNM": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "ISL": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "CZE": {
+      "actions": {
+        "Hacking": 7,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "ZAF": {
+      "actions": {
+        "Error": 2,
+        "Hacking": 3,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "BGD": {
+      "actions": {
+        "Hacking": 5,
+        "Misuse": 2,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "ARM": {
+      "actions": {
+        "Hacking": 3
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "ECU": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "ROU": {
+      "actions": {
+        "Hacking": 5,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 6,
+        "People": 1
+      }
+    },
+    "TUN": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Hacking": 14,
+        "Malware": 8,
+        "Social": 6,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 6,
+        "User Device": 5,
+        "People": 2
+      }
+    },
+    "PHL": {
+      "actions": {
+        "Hacking": 4,
+        "Physical": 2
+      },
+      "assets": {
+        "Server": 4,
+        "Public Terminal": 2
+      }
+    },
+    "QAT": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Hacking": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "FRA": {
+      "actions": {
+        "Hacking": 7,
+        "Social": 1
+      },
+      "assets": {
+        "Server": 8,
+        "People": 1,
+        "User Device": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Error": 2,
+        "Hacking": 11,
+        "Malware": 5,
+        "Social": 3,
+        "Misuse": 3,
+        "Physical": 2
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 3,
+        "Server": 9,
+        "People": 1
+      }
+    },
+    "ESP": {
+      "actions": {
+        "Hacking": 8,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 6,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "MYS": {
+      "actions": {
+        "Hacking": 2,
+        "Physical": 1
+      },
+      "assets": {
+        "Server": 2,
+        "Public Terminal": 1
+      }
+    },
+    "THA": {
+      "actions": {
+        "Physical": 4
+      },
+      "assets": {
+        "Server": 1,
+        "Network": 1,
+        "Public Terminal": 3
+      }
+    },
+    "PRT": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Physical": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 2,
+        "User Device": 1
+      }
+    },
+    "PAK": {
+      "actions": {
+        "Hacking": 7
+      },
+      "assets": {
+        "Server": 8
+      }
+    },
+    "BHR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "DNK": {
+      "actions": {
+        "Hacking": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 2,
+        "Media": 1,
+        "Network": 1
+      }
+    },
+    "JOR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "COK": {
+      "actions": {
+        "Hacking": 7
+      },
+      "assets": {
+        "Server": 7,
+        "User Device": 1
+      }
+    },
+    "MAR": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "UKR": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 2,
+        "People": 1
+      }
+    },
+    "BEL": {
+      "actions": {
+        "Malware": 4,
+        "Hacking": 5,
+        "Social": 5,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 3,
+        "People": 2,
+        "Media": 1
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Hacking": 2,
+        "Social": 2,
+        "Misuse": 1
+      },
+      "assets": {
+        "People": 1,
+        "Server": 2
+      }
+    },
+    "GAB": {
+      "actions": {
+        "Hacking": 3
+      },
+      "assets": {
+        "Server": 2,
+        "User Device": 1
+      }
+    },
+    "BRA": {
+      "actions": {
+        "Hacking": 8,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "Server": 6,
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "LVA": {
+      "actions": {
+        "Hacking": 4,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "ATG": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "BOL": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "MEX": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ARG": {
+      "actions": {
+        "Hacking": 7
+      },
+      "assets": {
+        "Server": 7
+      }
+    },
+    "PRK": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PRI": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "CHL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "LTU": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "BLZ": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "IDN": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "LKA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "CRI": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ARE": {
+      "actions": {
+        "Unknown": 2,
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 4,
+        "User Device": 1
+      }
+    },
+    "NAM": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "JAM": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "POL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "HND": {
+      "actions": {
+        "Hacking": 3
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "TJK": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PRY": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "EGY": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "IRN": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Network": 1,
+        "Server": 1
+      }
+    },
+    "RWA": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NGA": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 2
+      }
+    },
+    "MNE": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "KHM": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "SVN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "NOR": {
+      "actions": {
+        "Malware": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "OMN": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 1,
+        "User Device": 1
+      }
+    },
+    "SWZ": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PER": {
+      "actions": {
+        "Hacking": 4
+      },
+      "assets": {
+        "Server": 4
+      }
+    },
+    "ITA": {
+      "actions": {
+        "Unknown": 1,
+        "Hacking": 3,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 3,
+        "People": 1
+      }
+    },
+    "LBN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "BGR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "HUN": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 3,
+        "Social": 3
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "GRC": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "VEN": {
+      "actions": {
+        "Hacking": 6,
+        "Malware": 2
+      },
+      "assets": {
+        "Server": 5
+      }
+    },
+    "ZMB": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "ZWE": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "LUX": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 752,
+        "Misuse": 347,
+        "Physical": 338,
+        "Error": 492,
+        "Unknown": 66,
+        "Malware": 283,
+        "Social": 235,
+        "Environmental": 2
+      },
+      "assets": {
+        "Server": 925,
+        "User Device": 534,
+        "Media": 444,
+        "Public Terminal": 58,
+        "People": 116,
+        "Network": 11
+      }
+    }
+  },
+  "2011": {
+    "USA": {
+      "actions": {
+        "Physical": 99,
+        "Unknown": 28,
+        "Error": 145,
+        "Hacking": 51,
+        "Misuse": 149,
+        "Malware": 13,
+        "Environmental": 1,
+        "Social": 16
+      },
+      "assets": {
+        "User Device": 113,
+        "Media": 156,
+        "Server": 212,
+        "People": 12,
+        "Network": 1,
+        "Public Terminal": 1
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Error": 22,
+        "Misuse": 5,
+        "Hacking": 3,
+        "Physical": 7,
+        "Social": 3
+      },
+      "assets": {
+        "Media": 22,
+        "Server": 7,
+        "User Device": 7,
+        "People": 3
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Unknown": 1,
+        "Misuse": 2
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Misuse": 4,
+        "Hacking": 2,
+        "Physical": 5,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 4,
+        "Public Terminal": 1,
+        "User Device": 5,
+        "Media": 2
+      }
+    },
+    "HKG": {
+      "actions": {
+        "Error": 2
+      },
+      "assets": {
+        "User Device": 2
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Hacking": 7,
+        "Misuse": 3,
+        "Social": 2
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 8,
+        "People": 1
+      }
+    },
+    "PRK": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "DEU": {
+      "actions": {
+        "Hacking": 3,
+        "Error": 2
+      },
+      "assets": {
+        "Server": 3
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Misuse": 2
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "IND": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "PRI": {
+      "actions": {
+        "Physical": 2,
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 4
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Hacking": 3,
+        "Malware": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 2
+      }
+    },
+    "POL": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Error": 2,
+        "Hacking": 2
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 1,
+        "Server": 2,
+        "Network": 1
+      }
+    },
+    "BEL": {
+      "actions": {
+        "Hacking": 4,
+        "Social": 4,
+        "Malware": 4,
+        "Physical": 4
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "PAN": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Physical": 117,
+        "Unknown": 30,
+        "Error": 174,
+        "Hacking": 77,
+        "Misuse": 169,
+        "Malware": 19,
+        "Environmental": 1,
+        "Social": 25
+      },
+      "assets": {
+        "User Device": 140,
+        "Media": 182,
+        "Server": 246,
+        "People": 17,
+        "Network": 2,
+        "Public Terminal": 2
+      }
+    }
+  },
+  "2017": {
+    "USA": {
+      "actions": {
+        "Physical": 69,
+        "Error": 30,
+        "Malware": 29,
+        "Hacking": 36,
+        "Misuse": 22,
+        "Unknown": 4,
+        "Social": 30
+      },
+      "assets": {
+        "Media": 35,
+        "Server": 65,
+        "User Device": 23,
+        "Public Terminal": 40,
+        "People": 27,
+        "Network": 3,
+        "Other": 2,
+        "Embedded": 1
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Physical": 4,
+        "Hacking": 2,
+        "Error": 12,
+        "Malware": 3,
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 7,
+        "Media": 9,
+        "Server": 8,
+        "Public Terminal": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Hacking": 7,
+        "Malware": 2,
+        "Unknown": 2,
+        "Physical": 2,
+        "Error": 5,
+        "Misuse": 3
+      },
+      "assets": {
+        "Server": 5,
+        "User Device": 4,
+        "Media": 4,
+        "Other": 1,
+        "Network": 1
+      }
+    },
+    "CHN": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Misuse": 1,
+        "Error": 4,
+        "Hacking": 3,
+        "Social": 2,
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 3,
+        "User Device": 3,
+        "People": 1,
+        "Server": 2
+      }
+    },
+    "LTU": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "NLD": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Hacking": 1,
+        "Misuse": 4,
+        "Physical": 2
+      },
+      "assets": {
+        "Server": 3,
+        "Media": 1,
+        "User Device": 1
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 3
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "IND": {
+      "actions": {
+        "Misuse": 1,
+        "Malware": 1,
+        "Hacking": 1,
+        "Error": 1,
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 2,
+        "Server": 2,
+        "Public Terminal": 1
+      }
+    },
+    "BMU": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "ARG": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Physical": 79,
+        "Error": 54,
+        "Malware": 38,
+        "Hacking": 53,
+        "Misuse": 34,
+        "Unknown": 7,
+        "Social": 32
+      },
+      "assets": {
+        "Media": 54,
+        "Server": 91,
+        "User Device": 41,
+        "Public Terminal": 42,
+        "People": 28,
+        "Network": 4,
+        "Other": 3,
+        "Embedded": 1
+      }
+    }
+  },
+  "2009": {
+    "USA": {
+      "actions": {
+        "Hacking": 40,
+        "Malware": 34,
+        "Social": 39,
+        "Misuse": 41,
+        "Physical": 11,
+        "Error": 5,
+        "Environmental": 1,
+        "Unknown": 2
+      },
+      "assets": {
+        "Server": 47,
+        "User Device": 26,
+        "People": 26,
+        "Media": 12,
+        "Network": 1,
+        "Public Terminal": 2
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Error": 9,
+        "Misuse": 2
+      },
+      "assets": {
+        "Media": 9
+      }
+    },
+    "IND": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Misuse": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Misuse": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "AUS": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "FIN": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 43,
+        "Malware": 36,
+        "Social": 39,
+        "Misuse": 48,
+        "Physical": 11,
+        "Error": 15,
+        "Environmental": 1,
+        "Unknown": 2
+      },
+      "assets": {
+        "Server": 52,
+        "User Device": 28,
+        "People": 26,
+        "Media": 22,
+        "Network": 1,
+        "Public Terminal": 2
+      }
+    }
+  },
+  "2007": {
+    "USA": {
+      "actions": {
+        "Misuse": 19,
+        "Social": 2,
+        "Physical": 12,
+        "Error": 7,
+        "Hacking": 8,
+        "Malware": 6,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 21,
+        "User Device": 11,
+        "People": 1,
+        "Media": 8
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Physical": 2
+      },
+      "assets": {
+        "Server": 1,
+        "Media": 1
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Physical": 2,
+        "Misuse": 1,
+        "Error": 1
+      },
+      "assets": {
+        "User Device": 3,
+        "Media": 1
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Hacking": 1,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "NZL": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "FIN": {
+      "actions": {
+        "Unknown": 2,
+        "Social": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "People": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Misuse": 3,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 2,
+        "People": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 24,
+        "Social": 6,
+        "Physical": 16,
+        "Error": 9,
+        "Hacking": 9,
+        "Malware": 6,
+        "Unknown": 3
+      },
+      "assets": {
+        "Server": 27,
+        "User Device": 15,
+        "People": 3,
+        "Media": 10
+      }
+    }
+  },
+  "2006": {
+    "USA": {
+      "actions": {
+        "Error": 3,
+        "Misuse": 10,
+        "Physical": 5,
+        "Hacking": 3,
+        "Unknown": 2
+      },
+      "assets": {
+        "Server": 8,
+        "User Device": 7,
+        "Media": 2,
+        "Public Terminal": 1
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "RUS": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "CHE": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Error": 3,
+        "Misuse": 11,
+        "Physical": 5,
+        "Hacking": 3,
+        "Unknown": 4
+      },
+      "assets": {
+        "Server": 9,
+        "User Device": 8,
+        "Media": 3,
+        "Public Terminal": 1
+      }
+    }
+  },
+  "2008": {
+    "USA": {
+      "actions": {
+        "Misuse": 40,
+        "Physical": 10,
+        "Error": 8,
+        "Social": 11,
+        "Hacking": 7,
+        "Malware": 2,
+        "Unknown": 2
+      },
+      "assets": {
+        "Server": 35,
+        "User Device": 9,
+        "Media": 12,
+        "People": 6,
+        "Network": 4
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Error": 8,
+        "Hacking": 4,
+        "Malware": 2,
+        "Physical": 3
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 7,
+        "Public Terminal": 1,
+        "Media": 3
+      }
+    },
+    "SWE": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "Server": 2
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Misuse": 2,
+        "Hacking": 1,
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 2,
+        "Server": 2
+      }
+    },
+    "CHL": {
+      "actions": {
+        "Hacking": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 2
+      }
+    },
+    "KOR": {
+      "actions": {
+        "Error": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 1
+      }
+    },
+    "NOR": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 42,
+        "Physical": 14,
+        "Error": 18,
+        "Social": 11,
+        "Hacking": 17,
+        "Malware": 4,
+        "Unknown": 2
+      },
+      "assets": {
+        "Server": 49,
+        "User Device": 13,
+        "Media": 19,
+        "People": 6,
+        "Network": 4,
+        "Public Terminal": 1
+      }
+    }
+  },
+  "2004": {
+    "TLS": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "People": 1
+      }
+    },
+    "USA": {
+      "actions": {
+        "Misuse": 10,
+        "Hacking": 3,
+        "Social": 3,
+        "Error": 1
+      },
+      "assets": {
+        "Server": 9,
+        "Public Terminal": 1,
+        "Media": 2,
+        "User Device": 5,
+        "People": 3
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "GBR": {
+      "actions": {
+        "Error": 1,
+        "Misuse": 1
+      },
+      "assets": {
+        "Media": 1,
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Physical": 1,
+        "Misuse": 12,
+        "Hacking": 3,
+        "Social": 3,
+        "Error": 2
+      },
+      "assets": {
+        "People": 4,
+        "Server": 11,
+        "Public Terminal": 1,
+        "Media": 3,
+        "User Device": 5
+      }
+    }
+  },
+  "2005": {
+    "CAN": {
+      "actions": {
+        "Misuse": 3
+      },
+      "assets": {
+        "Server": 2,
+        "Media": 1
+      }
+    },
+    "USA": {
+      "actions": {
+        "Misuse": 8,
+        "Hacking": 3,
+        "Error": 4,
+        "Physical": 1,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 9,
+        "Network": 1,
+        "Media": 3,
+        "User Device": 3,
+        "People": 1
+      }
+    },
+    "ISR": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 12,
+        "Hacking": 3,
+        "Error": 4,
+        "Physical": 1,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 12,
+        "Media": 4,
+        "Network": 1,
+        "User Device": 3,
+        "People": 1
+      }
+    }
+  },
+  "1998": {
+    "USA": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    }
+  },
+  "2001": {
+    "USA": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1,
+        "Error": 3
+      },
+      "assets": {
+        "Server": 2,
+        "Media": 2,
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1,
+        "Error": 3
+      },
+      "assets": {
+        "Server": 2,
+        "Media": 2,
+        "User Device": 1
+      }
+    }
+  },
+  "1971": {
+    "USA": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    }
+  },
+  "2003": {
+    "USA": {
+      "actions": {
+        "Malware": 1,
+        "Misuse": 11,
+        "Hacking": 5,
+        "Physical": 2
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 7,
+        "Media": 2
+      }
+    },
+    "JPN": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "CAN": {
+      "actions": {
+        "Misuse": 2,
+        "Social": 2
+      },
+      "assets": {
+        "Server": 1,
+        "People": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Malware": 1,
+        "Misuse": 13,
+        "Hacking": 5,
+        "Physical": 2,
+        "Unknown": 1,
+        "Social": 2
+      },
+      "assets": {
+        "User Device": 3,
+        "Server": 9,
+        "Media": 2,
+        "People": 1
+      }
+    }
+  },
+  "2002": {
+    "USA": {
+      "actions": {
+        "Hacking": 2,
+        "Misuse": 2
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 1
+      }
+    },
+    "IRL": {
+      "actions": {
+        "Physical": 1
+      },
+      "assets": {
+        "User Device": 1,
+        "Media": 1
+      }
+    },
+    "TWN": {
+      "actions": {
+        "Unknown": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 2,
+        "Misuse": 2,
+        "Physical": 1,
+        "Unknown": 1
+      },
+      "assets": {
+        "Server": 3,
+        "User Device": 3,
+        "Media": 1
+      }
+    }
+  },
+  "1994": {
+    "GBR": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 1
+      },
+      "assets": {
+        "Server": 1
+      }
+    }
+  },
+  "1999": {
+    "GBR": {
+      "actions": {
+        "Error": 1
+      },
+      "assets": {
+        "Media": 1
+      }
+    },
+    "USA": {
+      "actions": {
+        "Malware": 1
+      },
+      "assets": {
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Error": 1,
+        "Malware": 1
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 1
+      }
+    }
+  },
+  "1984": {
+    "USA": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Misuse": 1,
+        "Hacking": 1
+      },
+      "assets": {
+        "Media": 1,
+        "User Device": 1
+      }
+    }
+  },
+  "2000": {
+    "CAN": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1
+      }
+    },
+    "Worldwide": {
+      "actions": {
+        "Hacking": 2,
+        "Malware": 2
+      },
+      "assets": {
+        "User Device": 1,
+        "Server": 1
+      }
+    }
+  }
+}

@@ -49,13 +49,14 @@ Created my bubble chart. As with the stacked barchart I decided not to use the m
 Made some small design decisions today. I implemented a check to see if data is available when a selection is made with the map or the slider. If no data is available, an error message is shown. This is done with a HTML snackbar/toast notification. It pop's up from the bottom. That way it is always visible to the user. I may do some additional styling to it. Also chosen another color category scale for the bubble chart. The last design decision is the placement of the gradient bar legend on the world map. I think it looks best on the lowerleft bottom of the map.
 
 ### Friday
-Just commented a lot of code and improved some code styling issues. Made no design dicisions today.
+Just commented a lot of code and improved some code styling issues. Made no design decisions today.
 
 ## Week 3
 ### Monday
-Decided to add a legend to my bubble chart that indicates to the user that the size of the bubble depends of the number of incidents. Also change my code styling drastically. From now on, I create my initial visualizations and update them within the same function. Every draw/update function has now a own JavaScript file for a nice overview. This led to drastically less duplicate code. 
+Decided to add a legend to my bubble chart that indicates to the user that the size of the bubble depends of the number of incidents. Also change my code styling drastically. From now on, I create my initial visualizations and update them within the same function. Every draw/update function has now a own JavaScript file for a nice overview. This led to drastically less duplicate code.
 
 ### Tuesday
+Swapped the position of two visualizations on my webpage. This ensures that the user is not quickly confused by similar colors in the visualizations. Also worked on the REPORT.md.
 
 ### Wednesday
 

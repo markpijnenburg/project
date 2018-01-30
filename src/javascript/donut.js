@@ -63,6 +63,7 @@ function drawDonut(vcdb, year) {
   pathEnter.transition()
     .duration(1000)
     .attr('fill', function(d) {
+      console.log(color(d.data.value))
       return color(d.data.value);
     })
     .attr('d', arc)
@@ -79,6 +80,7 @@ function drawDonut(vcdb, year) {
   path.select('path').transition()
     .duration(1000)
     .attr('fill', function(d) {
+      console.log(color(d.data.value))
       return color(d.data.value);
     })
     .attr('d', donutProperties.arc)
@@ -89,24 +91,27 @@ function drawDonut(vcdb, year) {
   // Remove old parts of donut and update "d" attribute
   path.exit().remove();
   path.attr("d", arc);
+  path.attr('fill', function(d) {
+    return color(d.data.value);
+  });
 
   // Adding the legend to the donut SVG
   var dimensionsLegend = 15
 
   var legend = d3.select('.donutSVG')
-  .select('.legendDonut')
-  .attr('transform', 'translate(' + (widthVis / 2 - innerRadius / 2) + ',' + divHeight / 2 + ')')
-  .selectAll('.legend').data(donut(industryData));
+    .select('.legendDonut')
+    .attr('transform', 'translate(' + (widthVis / 2 - innerRadius / 2) + ',' + divHeight / 2 + ')')
+    .selectAll('.legend').data(donut(industryData));
 
   var legendEnter = legend.enter().append('g')
-  .attr('class', 'legend')
-  .attr('transform', function(d, i) {
-    var height = 23;
-    var offset = height * donut(industryData).length / 2;
-    var horz = -10;
-    var vert = i * height - offset;
-    return 'translate(0,' + vert + ')';
-  });
+    .attr('class', 'legend')
+    .attr('transform', function(d, i) {
+      var height = 23;
+      var offset = height * donut(industryData).length / 2;
+      var horz = -10;
+      var vert = i * height - offset;
+      return 'translate(0,' + vert + ')';
+    });
 
   legendEnter.append('rect')
     .attr('width', dimensionsLegend)
