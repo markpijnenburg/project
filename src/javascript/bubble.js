@@ -30,6 +30,8 @@ function drawBubble(year) {
       return !d.children;
     });
 
+  console.log(dataset)
+  console.log(nodes)
   var node = d3.select('.bubbleSVG').selectAll('g.node').data(nodes);
 
   // Adding the actual bubbles to the SVG

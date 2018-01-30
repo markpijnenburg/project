@@ -63,7 +63,6 @@ function drawDonut(vcdb, year) {
   pathEnter.transition()
     .duration(1000)
     .attr('fill', function(d) {
-      console.log(color(d.data.value))
       return color(d.data.value);
     })
     .attr('d', arc)
@@ -80,7 +79,6 @@ function drawDonut(vcdb, year) {
   path.select('path').transition()
     .duration(1000)
     .attr('fill', function(d) {
-      console.log(color(d.data.value))
       return color(d.data.value);
     })
     .attr('d', donutProperties.arc)
