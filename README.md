@@ -1,6 +1,8 @@
 # Visualizing IT Security Incidents  | Minor Programmeren | UvA
 [View the D3 dashboard](https://markpijnenburg.github.io/project/)
 
+[Link to product demo](https://vimeo.com/253663261)
+
 ## Summary (visualization goals)
 
 The goal of this visualization is to give cyber security experts and people interested in the topic insight into IT security incidents over the past couple years around the world.

@@ -59,6 +59,7 @@ Decided to add a legend to my bubble chart that indicates to the user that the s
 Swapped the position of two visualizations on my webpage. This ensures that the user is not quickly confused by similar colors in the visualizations. Also worked on the REPORT.md.
 
 ### Wednesday
+Made no design decisions today.
 
 ### Thursday
 

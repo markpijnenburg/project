@@ -3,7 +3,6 @@ Name: Mark Pijnenburg
 Student number: 11841117
 Minor Programmeren / University of Amsterdam
 Visualizing IT Security Incidents
-The most ugly code ever written by a human
 """
 
 import json

@@ -6,6 +6,7 @@ Visualizing IT Security Incidents
 */
 
 function drawBubble(year) {
+
   // Calculate dimensions for bubble SVG and elements
   var dataset = bubbleProperties.dataset[year][country];
 
@@ -15,6 +16,7 @@ function drawBubble(year) {
     return;
   }
 
+  // Assign local variables from global properties
   var color = bubbleProperties.color;
   var bubble = bubbleProperties.bubble;
   var svg = bubbleProperties.svg;
@@ -30,8 +32,7 @@ function drawBubble(year) {
       return !d.children;
     });
 
-  console.log(dataset)
-  console.log(nodes)
+  // Bind data to elements
   var node = d3.select('.bubbleSVG').selectAll('g.node').data(nodes);
 
   // Adding the actual bubbles to the SVG
@@ -73,6 +74,7 @@ function drawBubble(year) {
       }
     });
 
+  // Update exisiting bubbles
   node.select('circle').transition().duration(300)
     .attr('r', function(d) {
       return d.r;
@@ -87,7 +89,7 @@ function drawBubble(year) {
       return color(d[selectionBubble.slice(0, -1)]);
     });
 
-  // Only add text if it fits inside bubble
+  // Updating text. Only add if it fits inside bubble
   node.select('text').text(function(d) {
       if (d.r > 50) {
         return d[selectionBubble.slice(0, -1)];
@@ -99,5 +101,6 @@ function drawBubble(year) {
       return d.y;
     });
 
+  // Remove unnecessary parts
   node.exit().remove();
 }

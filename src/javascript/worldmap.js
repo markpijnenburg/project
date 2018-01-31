@@ -10,13 +10,19 @@ Updates the colors of the country's and data shown in tooltip.
 Resets the choropleth for removing the old colors.
 */
 function updateMap(vcdb, worldMap, year) {
+
+  // Prepare dataset for correct usage
   var dataset = prepareDataMap(vcdb, year);
   var selectedData = countIncidentsCountry(vcdb, year);
+
+  // Determine highest number of dataset for color scale
   var highestValue = d3.max(d3.values(selectedData));
 
+  // Removing old data from choropleth
   worldMap.updateChoropleth(null, {
     reset: true
   });
+
   // Empty data of worldMap object before assinging new data
   worldMap.options.data = {};
   worldMap.options.geographyConfig.popupTemplate = function(geo, data) {
@@ -30,10 +36,14 @@ function updateMap(vcdb, worldMap, year) {
       ].join('');
     }
   }
+  // Actually update choropleth with new data
   worldMap.updateChoropleth(dataset, {
     reset: true
   });
 
+  // Update gradient legend on the worldmap
   worldMapProperties.gradientScale.domain([0, highestValue]);
-  d3.select('.gradientAxis').transition().duration(300).call(worldMapProperties.xAxisGradient)
+  d3.select('.gradientAxis')
+    .transition().duration(300)
+    .call(worldMapProperties.xAxisGradient);
 }

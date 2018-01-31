@@ -31,10 +31,51 @@ Main function called when page is loaded.
 Initiates the dashboard and draws all the visualizations.
 */
 function initDashboard(error, vcdb, barchartData, bubbleData) {
+  if (error) {
+    console.log("ERROR")
+    dataError();
+    return;
+  }
+
+  // Select slider from HTML
+  var slider = document.getElementById('myRange');
+
+  var visContainer = document.getElementById('visContainer');
+
 
   // Determine width of page for auto scaling vis DIV's
   numberOfVis = 3.33
   widthVis = document.getElementById("container").offsetWidth / numberOfVis
+
+  // Calling the functions to draw the 4 visualizations
+  initMap(year)
+  initDonut(year)
+  initBarChart(year, barchartData)
+  initBubble(year, bubbleData)
+
+  // Update dashboard when clicking on a country
+  d3.selectAll('.datamaps-subunit').on('click', function(geography) {
+    if (geography.id in worldMap.options.data) {
+      console.log('test')
+      updateGlobals(geography.properties.name, geography.id, vcdb);
+    }
+  });
+
+  // Revert back to worldwide dataset
+  d3.select('.worldWideButton').on('click', function() {
+    updateGlobals("Worldwide", "Worldwide", vcdb);
+  })
+
+  // Update the bubble chart when switching radio button
+  $("input:radio").change(function() {
+    selectionBubble = $(this).val()
+    updateDashboard(vcdb, worldMap, country, year)
+  });
+
+  // Update the dashboard if slider is moved
+  slider.oninput = function() {
+    updateGlobals(countryFull, country, vcdb)
+  };
 
   /*
   Initiates the worldmap with the default settings.
@@ -48,6 +89,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var highestValue = d3.max(d3.values(selectedData));
     var svg = document.getElementById("worldmap");
 
+    // Setting options for the worldMap object
     worldMap = new Datamap({
       element: svg,
       projection: 'mercator',
@@ -70,7 +112,8 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
           // Content of tooltip
           return ['<div class="hoverinfo">',
             '<strong>', geo.properties.name, '</strong>',
-            '<br>Number of incidents: <strong>', data.numberOfIncidents, '</strong>',
+            '<br>Number of incidents: <strong>',
+            data.numberOfIncidents, '</strong>',
             '</div>'
           ].join('');
         }
@@ -80,19 +123,28 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     // Get dimensions of worldmap
     var mapHeight = document.getElementById("worldmap").offsetHeight - 50;
     var mapWidth = document.getElementById("worldmap").offsetWidth / 10;
+    var legendWidth = 100;
+    var legendHeight = 40;
+    var gradientScaleRange = 160;
+    var gradientX = 120;
+    var gradientY = 725;
+    var gradientWith = 160;
+    var gradientHeight = 20;
+    var gradientTextTransform = 1.66;
+    var gradientOffset = 4;
 
     // Declare settings for gradient legend
     var gradientScale = d3.scale.linear()
       .domain([0, highestValue])
-      .range([0, 160]);
+      .range([0, gradientScaleRange]);
 
     // Append legend to canvas
     var legendSVG = d3.select('.datamap').append('g')
       .attr('class', 'gradientLegend')
-      .attr('width', 100)
-      .attr('height', 40)
+      .attr('width', legendWidth)
+      .attr('height', legendHeight)
       .attr({
-        transform: 'translate(120,' + 725 + ')'
+        transform: 'translate(' + gradientX + "," + gradientY + ')'
       });
 
     // Define and call axis to DOM
@@ -110,21 +162,23 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr("x2", "100%")
       .attr("y2", "0%");
 
+    // Gradient start color
     linearGradient.append("stop")
       .attr("offset", "0%")
       .attr("stop-color", "#DDDDDD");
 
+    // Gradient stop color
     linearGradient.append("stop")
       .attr("offset", "100%")
       .attr("stop-color", "#0D47A1");
 
     // Add rect for gradient bar
     d3.select('.datamap').append("rect")
-      .attr("width", 160)
-      .attr("height", 20)
+      .attr("width", gradientWith)
+      .attr("height", gradientHeight)
       .style("fill", "url(#linear-gradient)")
       .attr({
-        transform: 'translate(120,' + mapHeight + ')'
+        transform: 'translate(' + gradientX + ',' + mapHeight + ')'
       });
 
     // Add text for description to gradient bar
@@ -134,7 +188,8 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .style("text-anchor", "middle")
       .text("Nr. of Security Incidents")
       .attr({
-        transform: 'translate(' + mapWidth * 1.66 + "," + (mapHeight - 4) + ')'
+        transform: 'translate(' + mapWidth * gradientTextTransform +
+          "," + (mapHeight - gradientOffset) + ')'
       });
 
     // Store variables for updating usage
@@ -148,6 +203,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
   Default year is 2017 and the worldwide data.
   */
   function initDonut(year) {
+
     // Defining dimensions of donut
     var divWidth = document.getElementById("donutId").offsetWidth;
     var divHeight = document.getElementById("donutId").offsetHeight;
@@ -162,7 +218,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .append('div')
       .attr('class', 'donutTooltip');
 
-    // Adding the canvas and G element to DOM
+    // Adding the SVG canvas
     var svg = d3.select('.donut')
       .append('svg')
       .attr({
@@ -173,12 +229,14 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
         transform: 'translate(0,' + divHeight / centreSvgOffset + ')'
       });
 
+    // Adding group element and positioning it
     svg.append('g')
       .attr('class', 'gDonut')
       .attr({
         transform: 'translate(' + widthVis / 2 + ',' + divHeight / 2 + ')'
       });
 
+    // Add grouping element for legend
     svg.append('g').attr('class', 'legendDonut');
 
     // Store variables for updating usage
@@ -221,16 +279,20 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var y = d3.scale.linear().rangeRound([height, 0]);
     var z = d3.scale.category20();
 
+    // xAxis settings
     var xAxis = d3.svg.axis()
       .scale(x)
       .orient('bottom');
 
+    // yAxis settings
     var yAxis = d3.svg.axis()
       .scale(y)
       .orient('left');
 
-    // Adding empty SVG element to DOM
-    var svg = d3.select('#barchartID').append('svg').attr('class', 'barchartSVG')
+    // Adding empty SVG element
+    var svg = d3.select('#barchartID')
+      .append('svg')
+      .attr('class', 'barchartSVG')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
       .append('g').attr('class', 'stacks')
@@ -260,8 +322,10 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .text("Total no. of actors");
 
     // Determine offset for legend placement
-    var legendOffset = ((document.getElementById("barchartID").offsetHeight) - margin.bottom) / 2
-    var legendWidth = ((document.getElementById("barchartID").offsetWidth) - margin.right)
+    var legendOffset = ((document.getElementById("barchartID").offsetHeight) -
+      margin.bottom) / 2;
+    var legendWidth = ((document.getElementById("barchartID").offsetWidth) -
+      margin.right);
 
     // Add grouping G element for legend parts
     var legend = d3.select('.barchartSVG').append('g')
@@ -300,11 +364,14 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var xDivide = 3.5;
     var yOffset = 10;
     var cyOffset = 1.4;
+    var diameterOffset = 2.5;
 
     // Define color scale
     var color = d3.scale.category10();
     var bubble = d3.layout.pack()
-      .size([diameter - bubbleOffset, diameter - (bubbleOffset * 2.5)])
+      .size([diameter - bubbleOffset,
+        diameter - (bubbleOffset * diameterOffset)
+      ])
       .padding(bubblePadding);
 
     // Add empty SVG to Bubble DIV
@@ -316,12 +383,14 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .append('div')
       .attr('class', 'bubbleTooltip');
 
+    // Preparing bubble legend
     var radiusLegend = [10, 20, 40]
     var radiusLegendText = ["Few Incidents", "Some Incidents", "Many Incidents"]
     var bubbleLegend = d3.select('.bubbleSVG').selectAll('.bubbleLegend')
       .data(radiusLegend).enter().append('g')
       .attr('class', 'bubbleLegend');
 
+    // Adding bubbles to legend canvas
     bubbleLegend.append('circle')
       .style('fill', 'lightgrey')
       .attr('r', function(d, i) {
@@ -332,6 +401,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       })
       .attr('cy', divHeight / cyOffset);
 
+    // Adding text to legend canvas
     bubbleLegend.append('text')
       .attr('x', function(d, i) {
         return i * (divWidth / xDivide) + xOffset;
@@ -355,55 +425,4 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
 
   }
 
-  // Calling the functions to draw the 4 visualizations
-  initMap(year)
-  initDonut(year)
-  initBarChart(year, barchartData)
-  initBubble(year, bubbleData)
-
-  // Get positions of the lower visualizations
-  var visContainer = document.getElementById('visContainer');
-
-  // Get value of slider
-  var slider = document.getElementById('myRange');
-  year = slider.value;
-
-  // Update dashboard when clicking on a country
-  d3.selectAll('.datamaps-subunit').on('click', function(geography) {
-    if (geography.id in worldMap.options.data) {
-      countryFull = geography.properties.name;
-      country = geography.id;
-      year = slider.value;
-      d3.select('.sliderYear').html(year + ": " + countryFull)
-      visContainer.scrollIntoView({
-        behaviour: 'smooth'
-      });
-      updateDashboard(vcdb, worldMap, country, year)
-    }
-  });
-
-  d3.select('.worldWideButton').on('click', function() {
-    countryFull = "Worldwide";
-    country = "Worldwide";
-    year = slider.value;
-    d3.select('.sliderYear').html(year + ": " + countryFull);
-    visContainer.scrollIntoView({
-      behaviour: 'smooth'
-    });
-    updateDashboard(vcdb, worldMap, country, year)
-  })
-
-  // Update the bubble chart when switching radio button
-  $("input:radio").change(function() {
-    selectionBubble = $(this).val()
-    year = slider.value;
-    updateDashboard(vcdb, worldMap, country, year)
-  });
-
-  // Update the dashboard if slider is moved
-  slider.oninput = function() {
-    var year = this.value;
-    d3.select('.sliderYear').html(year + ": " + countryFull)
-    updateDashboard(vcdb, worldMap, country, year)
-  };
 }

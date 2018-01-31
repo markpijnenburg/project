@@ -26,16 +26,22 @@ function drawStackedBarChart(year) {
   var height = barchartProperties.height
   var width = barchartProperties.width;
 
+  // Determine highest value in dataset
   var maxbarchartData = d3.max(dataset, function(d) {
+    // Slicing string from d3.values array
     return d3.max(d3.values(d).slice(1, ));
   });
 
+  // Determine lowest value in dataset
   var minbarchartData = d3.min(dataset, function(d) {
+    // Slicing string from d3.values array
     return d3.min(d3.values(d).slice(1, ));
   });
 
-  // Preparing the dataset for enter/append
-  var xData = ["Financial", "Other", "Unknown", "Grudge", "Fun", "Ideology", "Convenience", "Espionage", "Fear", "Secondary"]
+  // Setting possible motvies
+  var xData = ["Financial", "Other", "Unknown", "Grudge", "Fun",
+    "Ideology", "Convenience", "Espionage", "Fear", "Secondary"
+  ]
 
   // Keep track of actors/motives with a non-zero value
   var legendArray = []
@@ -51,9 +57,11 @@ function drawStackedBarChart(year) {
           m: "Unknown"
         };
       } else {
+        // Add motive index to legendArray if not yet present
         if (!legendArray.includes(xData.indexOf(c))) {
           legendArray.push(xData.indexOf(c))
         }
+        // Return type of actor with corresponding motive and Y height
         return {
           x: d.actor,
           y: d[c],
@@ -109,7 +117,7 @@ function drawStackedBarChart(year) {
     .on('mouseout', mouseoutBarChart)
     .on('mousemove', mousemoveBarChart);
 
-  // Adding X and Y axis to the DOM
+  // Calling the X and Y axis
   d3.select('.xaxis')
     .call(xAxis);
 
@@ -131,6 +139,7 @@ function drawStackedBarChart(year) {
       return y(d.y0) - y(d.y + d.y0);
     })
     .attr('width', x.rangeBand())
+    // Remove left over elements
     .exit().remove();
 
   // Calculating legend dimensions
@@ -138,30 +147,35 @@ function drawStackedBarChart(year) {
 
   // Bind new data to legend elements
   var legend = d3.select('.legendBarChart')
-  .selectAll('g.legend')
-  .data(legendArray.reverse());
+    .selectAll('g.legend')
+    .data(legendArray.reverse());
 
   // Add new legend elements if neccessary
   var legendEnter = legend.enter()
-  .append('g')
-  .attr('class', 'legend');
+    .append('g')
+    .attr('class', 'legend');
 
+  // Add rectangles to legend
   legendEnter.append('rect')
-  .attr('width', dimensionsLegend)
-  .attr('height', dimensionsLegend);
+    .attr('width', dimensionsLegend)
+    .attr('height', dimensionsLegend);
 
+  // Add text to legend
   legendEnter.append('text')
-  .attr('x', 25)
-  .attr('y', 13);
+    .attr('x', 25)
+    .attr('y', 13);
 
+  // Update exisiting rects
   legend.select('rect')
-  .style('fill', z);
+    .style('fill', z);
 
+  // Update existing text
   legend.select('text')
-  .text(function(d) {
-    return xData[d];
-  });
+    .text(function(d) {
+      return xData[d];
+    });
 
+  // Position updated legend
   legend.attr('transform', function(d, i) {
     var height = 23;
     var offset = height * legendArray.length / 2;
@@ -170,6 +184,6 @@ function drawStackedBarChart(year) {
     return 'translate(' + horz + "," + vert + ')';
   });
 
-  // Remove not needed legend parts from the DOM
+  // Remove not needed legend parts
   legend.exit().remove();
 }
