@@ -9,7 +9,7 @@ The goal of this visualization is to give cyber security experts and people inte
 
 This repository contains the final working D3 dashboard, a report, process book and other materials, for assessing the project.
 
-![overview](doc/capture_visualization.png)
+![overview](docs/capture_visualization.png)
 
 ## Acknowledgments
 Not everything in this repository is written by myself. The following external code/libraries are used in the final product:
@@ -26,14 +26,14 @@ Not everything in this repository is written by myself. The following external c
 These files have their own respective licenses. All the external files are located within the [src/javascript/libs](https://github.com/markpijnenburg/project/tree/master/src/javascript/libs) folder.
 
 
-## Project proposal
+## Project proposal (Week 1)
 ### Problem statement
 Nowadays, there is a lot going on about cyber security and hacking. Unfortunately there are not many easy to use cyber security visualizations or datasets available. IT professionals specialized in cyber security, or just  interested people, have difficulties to get an easy overview of the topic. They are assigned to closed source visualizations from big security companies, where the source data is not available.
 
 ### Solution
 This visualization project aims to provide the target audience insight in cyber security around the globe, based on open source data.
 
-![Sketch](doc/sketch.png)
+![Sketch](docs/sketch.png)
 
 **Main Features**
 * See total security incidents per country when hovering world map;

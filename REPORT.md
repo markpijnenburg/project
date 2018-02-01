@@ -5,7 +5,7 @@ This GitHub repository contains a D3 visualization for the final project of the 
 
 The visualization is for Cyber Security professionals, but also usable for other people interested in the topic. I made this visualization because there are not many interactive dashboard available, based on open-source data.
 
-![Sketch](doc/capture_visualization.png)
+![Sketch](docs/capture_visualization.png)
 
 ## Technical design
 ### High-level overview
@@ -173,4 +173,4 @@ I do not have that much experience with HTML and CSS, so positioning of the visu
 In an ideal world I would not choose for another solution for the final project. There is one thing I would have done differently though. In the middle of the project I spend significant time on Python scripts to parse the original JSON into a workable format. This was very frustrating, because I wanted to spend my time on programming visualizations. If I had known beforehand that my dataset was not completely in an easy to use format I would have parsed it before I started programming the rest. With a completely ready to use JSON file you can aim completely at the actual visualizations.
 
 ### Author
-* Mark Pijnenburg
+* Mark Pijnenburg (11841117)

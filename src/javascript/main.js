@@ -32,7 +32,7 @@ Initiates the dashboard and draws all the visualizations.
 */
 function initDashboard(error, vcdb, barchartData, bubbleData) {
   if (error) {
-    console.log("ERROR")
+    console.log("Error while loading datasets.")
     dataError();
     return;
   }
@@ -56,7 +56,6 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
   // Update dashboard when clicking on a country
   d3.selectAll('.datamaps-subunit').on('click', function(geography) {
     if (geography.id in worldMap.options.data) {
-      console.log('test')
       updateGlobals(geography.properties.name, geography.id, vcdb);
     }
   });
@@ -363,6 +362,7 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
     var xOffset = 45;
     var xDivide = 3.5;
     var yOffset = 10;
+    var yBubbleOffset = 25;
     var cyOffset = 1.4;
     var diameterOffset = 2.5;
 
@@ -399,7 +399,10 @@ function initDashboard(error, vcdb, barchartData, bubbleData) {
       .attr('cx', function(d, i) {
         return i * (divWidth / xDivide) + xOffset;
       })
-      .attr('cy', divHeight / cyOffset);
+      .attr('cy', function(d) {
+          return diameter - yBubbleOffset - d;
+          // console.log(d)
+        });
 
     // Adding text to legend canvas
     bubbleLegend.append('text')

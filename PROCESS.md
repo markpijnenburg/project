@@ -27,7 +27,7 @@ Fixed the position of my donut chart in the HTML page. Changed my idea for the d
 Partly implemented the linking of the donut chart when changing the year/clicking a country on the map. Donut is updated but not the legend. Decided for updating to use a global variable storing the necessary parts of the visualizations. Made an start implementing an updatable legend.
 
 ### Wednesday
-Made the legend from the donut chart updatable. When changing the year from the drop down menu, or when clicking a country, the donut chart including the legend is updated accordingly. Tried to make a start with the next visualization, a stacked bar chart. I then found out that my dataset nesting was not easy to use for this purpose. End of the day I was busy in Python trying to fix a usable JSON file.
+Made the legend from the donut chart update-able. When changing the year from the drop down menu, or when clicking a country, the donut chart including the legend is updated accordingly. Tried to make a start with the next visualization, a stacked bar chart. I then found out that my dataset nesting was not easy to use for this purpose. End of the day I was busy in Python trying to fix a usable JSON file.
 
 ### Thursday
 Continued all day with Python to parse my original JSON file. This was not easy. At a given moment I skipped parsing the dataset for the stacked bar chart and went on with the dataset for the last visualization, a bubble chart. This dataset was created more easily because there is not that much of nesting/complexity present. End of the day my bubble chart JSON was ready and my stacked bar chart almost.
@@ -43,10 +43,10 @@ Decided not to use my Material Design color palette function for my stacked bar 
 Did not make any design decisions today. Fixed the legend of the stacked bar chart. The visualization is now also linked to the worldmap and the drop down menu. When updating, both the legend and the stacked bar update accordingly.
 
 ### Wednesday
-Created my bubble chart. As with the stacked barchart I decided not to use the material design color pallete. This for the same reason (colors difference is too small). Also change my dropdown in a HTML slider. This is way better for the UX and also more intuitive. The functionality of the slider is the same as the dropdown, namely changing the year of the chosen country.
+Created my bubble chart. As with the stacked barchart I decided not to use the material design color pallet. This for the same reason (colors difference is too small). Also change my dropdown in a HTML slider. This is way better for the UX and also more intuitive. The functionality of the slider is the same as the dropdown, namely changing the year of the chosen country.
 
 ### Thursday
-Made some small design decisions today. I implemented a check to see if data is available when a selection is made with the map or the slider. If no data is available, an error message is shown. This is done with a HTML snackbar/toast notification. It pop's up from the bottom. That way it is always visible to the user. I may do some additional styling to it. Also chosen another color category scale for the bubble chart. The last design decision is the placement of the gradient bar legend on the world map. I think it looks best on the lowerleft bottom of the map.
+Made some small design decisions today. I implemented a check to see if data is available when a selection is made with the map or the slider. If no data is available, an error message is shown. This is done with a HTML snackbar/toast notification. It pop's up from the bottom. That way it is always visible to the user. I may do some additional styling to it. Also chosen another color category scale for the bubble chart. The last design decision is the placement of the gradient bar legend on the world map. I think it looks best on the lower left bottom of the map.
 
 ### Friday
 Just commented a lot of code and improved some code styling issues. Made no design decisions today.
@@ -62,5 +62,7 @@ Swapped the position of two visualizations on my webpage. This ensures that the 
 Made no design decisions today.
 
 ### Thursday
+Also made no design decisions today. Did last checkup of my repo and files before final deadline.
 
 ### Friday
+Not available.

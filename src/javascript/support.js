@@ -118,8 +118,8 @@ Keeps track of position tooltip when hovering donut.
 */
 function mousemoveDonut(d) {
   var donutTooltip = d3.select('.donutTooltip');
-  donutTooltip.style('top', (d3.event.layerY + 10) + 'px')
-    .style('left', (d3.event.layerX + 10) + 'px');
+  donutTooltip.style('top', (d3.event.layerY + 30) + 'px')
+    .style('left', (d3.event.layerX + 40) + 'px');
 }
 
 /*
