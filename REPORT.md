@@ -5,7 +5,7 @@ This GitHub repository contains a D3 visualization for the final project of the 
 
 The visualization is for Cyber Security professionals, but also usable for other people interested in the topic. I made this visualization because there are not many interactive dashboard available, based on open-source data.
 
-![Sketch](docs/capture_visualization.png)
+![Sketch](doc/capture_visualization.png)
 
 ## Technical design
 ### High-level overview
