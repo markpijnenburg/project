@@ -5,7 +5,7 @@ window.onload = function() {
     .await(initDashboard);
 }
 
-var country;
+var country = "Worldwide";
 
 var donutUpdateNecessities = {};
 
@@ -15,8 +15,6 @@ function initDashboard(error, vcdb, barchartdata) {
 
   function initMap(year) {
     //https://github.com/markmarkoh/datamaps/blob/master/src/examples/highmaps_world.html
-
-    // console.log(prepareDataMap(vcdb,year))
 
     var worldMap = new Datamap({
       element: document.getElementById("worldmap"),
@@ -52,13 +50,12 @@ function initDashboard(error, vcdb, barchartdata) {
   function initDonut(year) {
     var divWidth = document.getElementById("donutId").offsetWidth;
     var divHeight = document.getElementById("donutId").offsetHeight;
+
     var industryData = countIndustry(vcdb, year, country)
     industryData.sort(function(x, y) {
       return d3.descending(x.value, y.value)
     });
-
     industryData = industryData.slice(0, 5)
-    d3.select('.donutTitle').html("Top " + industryData.length + " Industries");
 
     var maxIndustryData = d3.max(industryData, function(d) {
       return d.value;
@@ -162,32 +159,31 @@ function initDashboard(error, vcdb, barchartdata) {
     donutUpdateNecessities["divHeight"] = divHeight;
     donutUpdateNecessities["innerRadius"] = innerRadius;
 
-
     return donut;
   }
 
   function initBarChart(year, barchartdata) {
+    var divWidth = document.getElementById("donutId").offsetWidth;
+    var divHeight = document.getElementById("donutId").offsetHeight;
 
     var margin = {
-        top: 20,
-        right: 50,
-        bottom: 30,
-        left: 20
-      },
-      width = 665 - margin.left - margin.right,
-      height = 350 - margin.top - margin.bottom;
+      top: 20,
+      right: 150,
+      bottom: 50,
+      left: 40
+    }
+    var width = divWidth - margin.left - margin.right
+    var height = divHeight
 
+    var barChartTooltip = d3.select('#barchartID')
+      .append('div')
+      .attr('class', 'barChartTooltip');
 
-    var x = d3.scale.ordinal().rangeRoundBands([0, width]);
+    var x = d3.scale.ordinal().rangeRoundBands([0, width], .3);
 
     var y = d3.scale.linear().rangeRound([height, 0]);
 
     var z = d3.scale.category20();
-
-    // var color = d3.scale.log()
-    //   .domain([1, 120])
-    //   .range(["#BBDEFB", "#0D47A1"])
-    //   .interpolate(d3.interpolateHcl);
 
     var xAxis = d3.svg.axis()
       .scale(x)
@@ -197,33 +193,50 @@ function initDashboard(error, vcdb, barchartdata) {
       .scale(y)
       .orient('left');
 
-    var svg = d3.select('#barchartID').append('svg')
+    var svg = d3.select('#barchartID').append('svg').attr('class', 'barchartSVG')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
-      .append('g')
+      .append('g').attr('class', 'stacks')
       .attr('transform', "translate(" + margin.left + "," + margin.top + ")");
 
     var xData = ["Financial", "Other", "Unknown", "Grudge", "Fun", "Ideology", "Convenience", "Espionage", "Fear", "Secondary"]
-    var country = 'Worldwide'
+    var country = 'USA'
     var dataset = barchartdata[year][country]
-    console.log(dataset)
+
+    var maxBarChartData = d3.max(dataset, function(d) {
+      return d3.max(d3.values(d).slice(1, ));
+    });
+
+    var minBarChartData = d3.min(dataset, function(d) {
+      return d3.min(d3.values(d).slice(1, ));
+    });
+
+    var legendArray = []
+
     var dataIntermediate = xData.map(function(c) {
       return dataset.map(function(d) {
-        // console.log(d[c])
         if (d[c] == null) {
           return {
             x: d.actor,
-            y: 0
+            y: 0,
+            m: "Unknown"
           };
         } else {
+          if (!legendArray.includes(xData.indexOf(c))) {
+            legendArray.push(xData.indexOf(c))
+          }
           return {
             x: d.actor,
-            y: d[c]
+            y: d[c],
+            m: c
           };
         }
       });
     });
+
     var dataStackLayout = d3.layout.stack()(dataIntermediate);
+
+    // console.log(dataStackLayout)
 
     x.domain(dataStackLayout[0].map(function(d) {
       return d.x;
@@ -257,13 +270,63 @@ function initDashboard(error, vcdb, barchartdata) {
       .attr('height', function(d) {
         return y(d.y0) - y(d.y + d.y0);
       })
-      .attr('width', x.rangeBand());
+      .attr('width', x.rangeBand())
+      .on('mouseover', mouseoverBarChart)
+      .on('mouseout', mouseoutBarChart)
+      .on('mousemove', mousemoveBarChart);
 
     svg.append('g')
-      .attr('class', 'axis')
+      .attr('class', 'x axis')
       .attr('transform', "translate(0," + height + ")")
       .call(xAxis);
 
+    svg.append('g')
+      .attr('class', 'y axis')
+      .call(yAxis);
+
+    var legendOffset = ((document.getElementById("barchartID").offsetHeight) - margin.bottom) / 2
+    var legendWidth = ((document.getElementById("barchartID").offsetWidth) - margin.right)
+
+    var legend = d3.select('.barchartSVG').append('g')
+      .attr("class", 'legendBarChart')
+      .attr('transform', 'translate(' + legendWidth + ',' + legendOffset + ')')
+      .selectAll('.legend')
+      .data(legendArray.reverse())
+      .enter()
+      .append('g')
+      .attr('class', 'legend')
+      .attr('transform', function(d, i) {
+        var height = 23;
+        var offset = height * legendArray.length / 2;
+        var horz = 0;
+        var vert = i * height - offset;
+        return 'translate(' + horz + ',' + vert + ')';
+      });
+
+    legend.append('rect')
+      .attr('width', 15)
+      .attr('height', 15)
+      .style('fill', z);
+
+    legend.append('text')
+      .attr('x', 15 + 10)
+      .attr('y', 23 - 10)
+      .text(function(d) {
+        return xData[d];
+      });
+
+    barchartUpdateNecessities["dataset"] = barchartdata;
+    barchartUpdateNecessities["y"] = y;
+    barchartUpdateNecessities["x"] = x;
+    barchartUpdateNecessities["xAxis"] = xAxis;
+    barchartUpdateNecessities["yAxis"] = yAxis;
+    barchartUpdateNecessities["legend"] = legend;
+    barchartUpdateNecessities["svg"] = svg;
+    barchartUpdateNecessities["xData"] = xData;
+    barchartUpdateNecessities["height"] = height;
+    barchartUpdateNecessities['z'] = z;
+    barchartUpdateNecessities['legendWidth'] = legendWidth;
+    barchartUpdateNecessities['legendOffset'] = legendOffset;
   }
 
   var worldMap = initMap(2017)
@@ -316,6 +379,8 @@ function updateDashboard(vcdb, worldMap, country, year) {
       return d3.descending(x.value, y.value)
     });
     industryData = industryData.slice(0, 5)
+    d3.select('.donutTitle').html("Top " + industryData.length + " Industries");
+
 
     var maxIndustryData = d3.max(industryData, function(d) {
       return d.value;
@@ -323,12 +388,8 @@ function updateDashboard(vcdb, worldMap, country, year) {
     var minIndustryData = d3.min(industryData, function(d) {
       return d.value;
     });
-
-    // console.log(d3.select('.donutSVG').selectAll('path'))
-    // console.log(donutUpdateNecessities.path)
     donutUpdateNecessities.color.domain([minIndustryData, maxIndustryData]);
     donutUpdateNecessities.path = donutUpdateNecessities.path.data(donutUpdateNecessities.donut(industryData));
-    // console.log(donutUpdateNecessities.path)
 
     donutUpdateNecessities.path.enter().append('path').attr('fill', '#F5F5F5');
     donutUpdateNecessities.path.transition()
@@ -370,9 +431,120 @@ function updateDashboard(vcdb, worldMap, country, year) {
 
   }
 
+  function updateStackedBarChart(year) {
+    var dataset = barchartUpdateNecessities.dataset[year][country]
+    var xData = barchartUpdateNecessities.xData
+    var y = barchartUpdateNecessities.y
+    var x = barchartUpdateNecessities.x
+    var z = barchartUpdateNecessities.z
+    var svg = barchartUpdateNecessities.svg
+    var xAxis = barchartUpdateNecessities.xAxis
+    var yAxis = barchartUpdateNecessities.yAxis
+    var height = barchartUpdateNecessities.height
+    var legendWidth = barchartUpdateNecessities.legendWidth
+    var legendOffset = barchartUpdateNecessities.legendOffset
+
+    var maxBarChartData = d3.max(dataset, function(d) {
+      return d3.max(d3.values(d).slice(1, ));
+    });
+
+    var minBarChartData = d3.min(dataset, function(d) {
+      return d3.min(d3.values(d).slice(1, ));
+    });
+
+    var legendArray = []
+
+    var dataIntermediate = xData.map(function(c) {
+      return dataset.map(function(d) {
+        if (d[c] == null) {
+          return {
+            x: d.actor,
+            y: 0,
+            m: "Unknown"
+          };
+        } else {
+          if (!legendArray.includes(xData.indexOf(c))) {
+            legendArray.push(xData.indexOf(c))
+          }
+          return {
+            x: d.actor,
+            y: d[c],
+            m: c
+          };
+        }
+      });
+    });
+
+    var dataStackLayout = d3.layout.stack()(dataIntermediate);
+
+    y.domain([0, d3.max(dataStackLayout[dataStackLayout.length - 1], function(d) {
+      return d.y0 + d.y;
+    })]).nice();
+
+    x.domain(dataStackLayout[0].map(function(d) {
+      return d.x;
+    }));
+
+    d3.select('.stacks').selectAll('.stack').remove();
+
+    var newStacks = d3.select('.stacks').selectAll('.stack').data(dataStackLayout)
+      .enter().append('g').attr('class', 'stack').style('fill', function(d, i) {
+        return z(i);
+      });
+
+    newStacks.selectAll('rect')
+      .data(function(d) {
+        return d;
+      })
+      .enter().append('rect')
+      .attr("x", function(d) {
+        return x(d.x);
+      })
+      .attr("y", function(d) {
+        return y(d.y + d.y0);
+      })
+      .attr("height", function(d) {
+        return y(d.y0) - y(d.y + d.y0);
+      })
+      .attr("width", x.rangeBand() - 1)
+      .on('mouseover', mouseoverBarChart)
+      .on('mouseout', mouseoutBarChart)
+      .on('mousemove', mousemoveBarChart);
+
+    d3.select('.barchartSVG').select('.x.axis').transition().duration(300).call(xAxis)
+
+    d3.select('.barchartSVG').select('.y.axis').transition().duration(300).call(yAxis)
+
+    var legend = d3.select('.barchartSVG').append('g')
+      .attr("class", 'legendBarChart')
+      .attr('transform', 'translate(' + legendWidth + ',' + legendOffset + ')')
+      .selectAll('.legend')
+      .data(legendArray.reverse())
+
+    var legend = d3.select('.legendBarChart').selectAll('g.legend').data(legendArray);
+    var legendEnter = legend.enter().append('g').attr('class', 'legend');
+    legendEnter.append('rect').attr('width', 15).attr('height', 15);
+    legendEnter.append('text').attr('x', 25).attr('y', 13);
+    legend.select('rect').style('fill', z);
+    legend.select('text').text(function(d) {
+      return xData[d];
+    });
+    legend.attr('transform', function(d, i) {
+      var height = 23;
+      var offset = height * legendArray.length / 2;
+      var horz = 0;
+      var vert = i * height - offset;
+      return 'translate(' + horz + ',' + vert + ')';
+    });
+
+    legend.exit().remove();
+
+  }
+
   if (d3.select("#dropdown_year").node().value == year) {
     updateMap(vcdb, worldMap, year)
   }
   updateDonut(vcdb, country, year);
-  // console.log(donut)
+  updateStackedBarChart(year, country);
+  // console.log(country)
 }

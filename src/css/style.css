@@ -36,13 +36,17 @@ h1 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-path:hover {
+.donut path:hover {
   opacity: 0.8;
   stroke: #000;
   stroke-width: 3;
 }
 
-.donutTooltip {
+.barchart rect:hover {
+  opacity: 0.8;
+}
+
+.barChartTooltip, .donutTooltip {
   background: #FFF;
   box-shadow: 0 0 5px #999999;
   color: #333;
@@ -56,3 +60,9 @@ path:hover {
   width: 160px;
   z-index: 10;
 }
+
+.domain {
+		fill: none;
+		stroke: #000;
+		stroke-width: 2px;
+	}
