@@ -5,7 +5,7 @@
 ## Comprehensive sketch
 The image below shows a more comprehensive sketch relative to the sketch in the proposal document. I clarified which interactivities I want to implement in the visualizations, such as hovering and showing more detailed information.
 
-![Sketch](doc/detailed_sketch.png)
+![Sketch](docs/detailed_sketch.png)
 
 ## Data Source
 As mentioned in the project proposal, I am using the [VERIS Community Database (VCDB)](https://github.com/vz-risk/VCDB). The dataset is available on their GitHub. Luckily for me, they have an joined JSON dataset that contains all the information. I do not need to transform the data to another format to use it. Despite this, I may need to map/nest the data so I have the right information to use in my visualizations.
@@ -18,7 +18,7 @@ The dataset is rather large in raw form. There is some data that is not necessar
 
 Because of the size and extensiveness of the project, it is recommended to split the JavaScript file into separate functions. The image below shows the functions and the flow.
 
-![Flow](doc/flow.png)
+![Flow](docs/flow.png)
 
 ### initDashboard()
 Overarching function that loads and preprocesses the dataset. The loaded dataset is then ready to use by the successive functions. The default data that is shown when the page is loaded, is the most recent year, 2017.
@@ -57,7 +57,7 @@ The JavaScript codestructure for this project is quite uncomplicated. I will inc
 ### HTML
 I choose Bootstrap to make my dashboard look nice. It is a famous webpage framework that can be easily used to style an page. Luckily for me, Bootstrap has a built-in [grid system](https://v4-alpha.getbootstrap.com/layout/grid/). My goal is to create a visualization that looks, acts and feels like a dashboard.
 
-![Grid](doc/html_structure.png)
+![Grid](docs/html_structure.png)
 
 The benefit of this gridsystem is that the visualizations are automatically positioned right. As you can see in the image above, I use two rows and columns to display and format my visualizations. All of this will be present in a main HTML file, index.html. This will be the only HTML file present, because I want to include all visualizations on the same page.
 
